@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社名 | 工業製品メーカー</title>
+    <!-- Swiperのスタイルシートを追加 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/megamenu.css">
+    <link rel="stylesheet" href="/assets/css/top.css">
+</head>
+<body>
+    <div id="commonHeader"></div>
+
+    <main>
+        <!-- メインビジュアル -->
+        <div class="main-visual">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="工場設備">
+                        <div class="slide-content">
+                            <h2>未来を創る技術</h2>
+                            <p>最先端の工業製品で社会に貢献</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80" alt="自動化設備">
+                        <div class="slide-content">
+                            <h2>革新的なソリューション</h2>
+                            <p>自動化技術で産業の発展に貢献</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80" alt="研究開発">
+                        <div class="slide-content">
+                            <h2>持続可能な未来へ</h2>
+                            <p>環境に配慮した製品開発</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80" alt="先端技術">
+                        <div class="slide-content">
+                            <h2>次世代技術の追求</h2>
+                            <p>IoT/ICTで製造業の未来を切り拓く</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <!-- ニュース -->
+        <section class="news-section">
+            <div class="container">
+                <div class="news-grid">
+                    <!-- 左側: 全て/製品/サステナビリティ -->
+                    <div class="news-main">
+                        <h2>お知らせ</h2>
+                        <div class="news-tabs">
+                            <button class="news-tab" data-tab="all">すべて</button>
+                            <button class="news-tab" data-tab="product">製品</button>
+                            <button class="news-tab" data-tab="sustainability">サステナビリティ</button>
+                        </div>
+                        <div class="news-list">
+                            <article class="news-item product">
+                                <time>2024.03.20</time>
+                                <span class="category">製品A</span>
+                                <a href="#">新製品の発売に関するお知らせ</a>
+                            </article>
+                            <article class="news-item product">
+                                <time>2024.03.19</time>
+                                <span class="category">製品B</span>
+                                <a href="#">新製品が記事に掲載されました</a>
+                            </article>
+                            <article class="news-item sustainability">
+                                <time>2024.03.10</time>
+                                <span class="category">サステナビリティ</span>
+                                <a href="#">環境への取り組みについて</a>
+                            </article>
+                        </div>
+                        <a href="/news/" class="more-link">お知らせ一覧</a>
+                    </div>
+
+                    <!-- 右側: IR情報 -->
+                    <div class="news-ir">
+                        <h2>IR情報</h2>
+                        <div class="news-tabs">
+                            <button class="news-tab" data-tab="ir">IR</button>
+                        </div>
+                        <div class="news-list">
+                            <article class="news-item ir">
+                                <time>2024.03.15</time>
+                                <span class="category">IR</span>
+                                <a href="#">2024年度第3四半期決算発表</a>
+                            </article>
+                            <article class="news-item ir">
+                                <time>2024.03.08</time>
+                                <span class="category">IR</span>
+                                <a href="#">人事異動のお知らせ</a>
+                            </article>
+                        </div>
+                        <a href="/ir/news/" class="more-link">IR情報一覧</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 製品分野 -->
+        <section class="products-section">
+            <div class="container">
+                <h2>製品分野</h2>
+                <div class="product-categories">
+                    <a href="/products/category-a/" class="category-card">
+                        <img src="/assets/images/products/category-a.jpg" alt="製品分野A">
+                        <div class="card-content">
+                            <h3>製品分野A</h3>
+                            <p>説明文がここに入ります</p>
+                        </div>
+                    </a>
+                    <!-- 他の製品分野 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- サステナビリティ -->
+        <section class="sustainability-section">
+            <div class="container">
+                <h2>サステナビリティ</h2>
+                <div class="sustainability-grid">
+                    <div class="sustainability-content">
+                        <h3>持続可能な社会の実現に向けて</h3>
+                        <p>当社の取り組みについての説明文...</p>
+                        <a href="/sustainability/" class="more-link">詳しく見る</a>
+                    </div>
+                    <div class="sustainability-image">
+                        <img src="/assets/images/top/sustainability.jpg" alt="サステナビリティ">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- フッターコンテンツ -->
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/js/loadCommonParts.js"></script>
+    <script src="/assets/js/megamenu.js"></script>
+    <script src="/assets/js/top.js"></script>
+</body>
+</html>

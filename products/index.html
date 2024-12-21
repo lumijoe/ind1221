@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製品情報 | 会社名</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/megamenu.css">
+    <link rel="stylesheet" href="/assets/css/breadcrumb.css">
+    <link rel="stylesheet" href="/assets/css/products.css">
+</head>
+<body>
+    <div id="commonHeader"></div>
+
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+            <li class="breadcrumb-item current">製品情報</li>
+        </ol>
+    </nav>
+
+    <main class="products-top">
+        <!-- メインビジュアル -->
+        <div class="main-visual">
+            <h1>製品情報</h1>
+        </div>
+
+        <!-- トピックス＆製品ニュース -->
+        <section class="news-section">
+            <h2>製品ニュース</h2>
+            <div class="news-list">
+                <article class="news-item">
+                    <time>2024.03.20</time>
+                    <span class="category">新製品</span>
+                    <a href="#">新製品Aシリーズを発売開始しました</a>
+                </article>
+                <!-- 他のニュース項目 -->
+            </div>
+        </section>
+
+        <!-- 製品分野バナー -->
+        <section class="category-banners">
+            <div class="banner-grid">
+                <a href="/products/category-a/" class="category-banner">
+                    <img src="/assets/images/products/category-a.jpg" alt="製品分野A">
+                    <div class="banner-content">
+                        <h3>製品分野A</h3>
+                        <p>説明文がここに入ります</p>
+                    </div>
+                </a>
+                <a href="/products/category-b/" class="category-banner">
+                    <img src="/assets/images/products/category-b.jpg" alt="製品分野B">
+                    <div class="banner-content">
+                        <h3>製品分野B</h3>
+                        <p>説明文がここに入ります</p>
+                    </div>
+                </a>
+                <a href="/products/category-c/" class="category-banner">
+                    <img src="/assets/images/products/category-c.jpg" alt="製品分野C">
+                    <div class="banner-content">
+                        <h3>製品分野C</h3>
+                        <p>説明文がここに入ります</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 課題から探す -->
+        <section class="search-by-issue">
+            <h2>課題から探す</h2>
+            <div class="hashtag-container">
+                <button class="hashtag" data-tag="電化">#電化</button>
+                <button class="hashtag" data-tag="脱炭素化">#脱炭素化</button>
+                <button class="hashtag" data-tag="次世代バーナ">#次世代バーナ</button>
+                <button class="hashtag" data-tag="環境改善リサイクル">#環境改善リサイクル</button>
+                <button class="hashtag" data-tag="現場改善">#現場改善</button>
+                <button class="hashtag" data-tag="IOT-ICT">#IOT/ICT</button>
+            </div>
+
+            <div class="product-results">
+                <!-- 製品一覧（初期状態では非表示） -->
+                <div class="product-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター部分は省略 -->
+
+    <script src="/assets/js/loadCommonParts.js"></script>
+    <script src="/assets/js/megamenu.js"></script>
+    <script src="/assets/js/products-search.js"></script>
+</body>
+</html>
