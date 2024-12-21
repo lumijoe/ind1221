@@ -1,3 +1,16 @@
+const preloadImages = () => {
+    const images = [
+        'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80',
+        // 他の画像URLも追加
+    ];
+    images.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+};
+
+document.addEventListener('DOMContentLoaded', preloadImages);
+
 document.addEventListener('DOMContentLoaded', function() {
     // ハインビジュアルスライダー
     new Swiper('.swiper', {
