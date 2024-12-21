@@ -1,8 +1,69 @@
-<!-- IRライブラリーページの例 -->
-<nav class="breadcrumb" aria-label="パンくずリスト">
-    <ol class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="/">ホーム</a></li>
-        <li class="breadcrumb-item"><a href="/ir/">IR情報</a></li>
-        <li class="breadcrumb-item current">IRライブラリー</li>
-    </ol>
-</nav> 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR情報 | 会社名</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/megamenu.css">
+    <link rel="stylesheet" href="/assets/css/breadcrumb.css">
+    <link rel="stylesheet" href="/assets/css/top.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/ir.css"> <!-- ir.cssを追加 -->
+    <script src="loadCommonParts.js" defer></script> <!-- ヘッダーとフッターを読み込む -->
+</head>
+<body>
+    <div id="commonHeader"></div>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+            <li class="breadcrumb-item current">IR情報</li>
+        </ol>
+    </nav>
+
+
+    <main>
+        <h1>IR情報</h1>
+        <section class="ir-overview">
+            <h2>IR情報の概要</h2>
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHN1c3RhaW5hYmlsaXR5fGVufDB8fHx8MTYzMjY5MjY0Nw&ixlib=rb-1.2.1&q=80&w=1080" alt="IR情報の概要" class="section-image">
+            <p>当社のIR情報ページでは、投資家の皆様に向けて、最新のIRニュース、財務情報、株主総会の情報などを提供しています。</p>
+        </section>
+
+        <section class="ir-news">
+            <h2>IRニュース</h2>
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxJUiV8ZW58MHx8fHwxNjMyNjkyNjQ3&ixlib=rb-1.2.1&q=80&w=1080" alt="IRニュース" class="section-image">
+            <ul>
+                <li><a href="/ir/news/2023-01-01">2023年1月1日: 新製品発表のお知らせ</a></li>
+                <li><a href="/ir/news/2023-02-15">2023年2月15日: 第1四半期決算発表のお知らせ</a></li>
+                <li><a href="/ir/news/2023-03-10">2023年3月10日: 株主総会のお知らせ</a></li>
+            </ul>
+        </section>
+
+        <section class="ir-library">
+            <h2>IRライブラリー</h2>
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIwfHxJUiV8ZW58MHx8fHwxNjMyNjkyNjQ3&ixlib=rb-1.2.1&q=80&w=1080" alt="IRライブラリー" class="section-image">
+            <p>当社のIRライブラリーでは、決算資料、プレゼンテーション資料、株主総会の資料などをダウンロードできます。</p>
+            <ul>
+                <li><a href="/ir/library/2023-q1-report.pdf">2023年第1四半期決算報告書</a></li>
+                <li><a href="/ir/library/2022-annual-report.pdf">2022年度年次報告書</a></li>
+                <li><a href="/ir/library/2023-presentation.pdf">2023年株主総会プレゼンテーション資料</a></li>
+            </ul>
+        </section>
+
+        <section class="ir-contact">
+            <h2>IRに関するお問い合わせ</h2>
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fG5vdGV8ZW58MHx8fHwxNjMyNjkyNjQ3&ixlib=rb-1.2.1&q=80&w=1080" alt="お問い合わせ" class="section-image">
+            <p>IRに関するご質問やご意見は、以下の連絡先までお問い合わせください。</p>
+            <p>Email: <a href="mailto:ir@example.com">ir@example.com</a></p>
+            <p>電話: 03-1234-5678</p>
+        </section>
+    </main>
+
+    <div id="commonFooter"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/js/loadCommonParts.js"></script>
+    <script src="/assets/js/megamenu.js"></script>
+    <script src="/assets/js/top.js"></script>
+</body>
+</html>
