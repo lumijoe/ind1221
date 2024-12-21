@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.footer {
+  background-color: #f8f8f8; /* フッターの背景色 */
+  padding: 20px 0; /* 上下のパディング */
+  text-align: center; /* 中央揃え */
+}
+
+.footer-inner {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-around; /* セクションを均等に配置 */
+  flex-wrap: wrap; /* 画面幅に応じて折り返し */
+}
+
+.footer-section {
+  flex: 1; /* 各セクションを均等に広げる */
+  min-width: 200px; /* 最小幅を設定 */
+  margin: 10px; /* セクション間のマージン */
+}
+
+.footer-section h3 {
+  margin-bottom: 10px; /* 見出しの下にマージン */
+}
+
+.footer-section ul {
+  list-style: none; /* リストスタイルを削除 */
+  padding: 0; /* パディングを削除 */
+}
+
+.footer-section li {
+  margin: 5px 0; /* リストアイテムのマージン */
+}
+
+.footer-bottom {
+  margin-top: 20px; /* 上部のマージン */
+  font-size: 14px; /* フォントサイズ */
+  color: #666; /* テキストカラー */
+}
