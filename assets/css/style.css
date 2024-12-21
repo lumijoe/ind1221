@@ -1,4 +1,6 @@
 /* 全体の共通スタイル */
+@charset "UTF-8";
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -25,6 +27,7 @@ section {
 /* ヘッダー固定のための調整 */
 .header {
   position: fixed;
+  box-sizing: border-box;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,5 +39,10 @@ section {
 @media (max-width: 1024px) {
   body {
     padding-top: 80px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 0;
   }
 }

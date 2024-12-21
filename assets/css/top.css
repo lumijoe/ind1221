@@ -72,6 +72,15 @@
   gap: 4%;
 }
 
+.news-main {
+  width: 48%;
+  padding-left: 5%;
+}
+.news-ir {
+  width: 48%;
+  padding-right: 5%;
+}
+
 .news-category {
   font-size: 10px;
   width: 100px;
@@ -165,6 +174,23 @@
 }
 
 /* レスポンシブ対応 */
+/* レスポンシブ対応 */
+@media (max-width: 1024px) {
+  .news-grid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .news-main {
+    width: 70%;
+    padding-left: 0;
+  }
+  .news-ir {
+    margin-top: 20px;
+    width: 70%;
+    padding-right: 0;
+  }
+}
 @media (max-width: 768px) {
   .news-tabs {
     flex-wrap: wrap;
