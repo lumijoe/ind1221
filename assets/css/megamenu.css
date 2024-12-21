@@ -9,9 +9,10 @@
 }
 
 .header-inner {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 .header-top {
@@ -33,9 +34,9 @@
 }
 
 /* メガメニュー */
-.mega-menu {
+/* .mega-menu {
   position: relative;
-}
+} */
 
 .menu-list {
   display: flex;
@@ -44,9 +45,9 @@
   padding: 0;
 }
 
-.menu-item {
+/* .menu-item {
   position: relative;
-}
+} */
 
 .menu-item > a {
   display: block;

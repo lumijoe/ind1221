@@ -66,6 +66,12 @@
   padding: 80px 0;
 }
 
+.news-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4%;
+}
+
 .news-tabs {
   display: flex;
   gap: 20px;
