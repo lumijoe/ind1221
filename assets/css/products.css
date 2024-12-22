@@ -5,6 +5,16 @@
   padding: 0 20px;
 }
 
+.main-visual-products {
+  width: 100%;
+  height: 300px;
+}
+.mvp-c {
+  background-image: url("https://images.unsplash.com/photo-1542274368-443d694d79aa?auto=format&fit=crop&q=80");
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
 /* ニュースセクション */
 .news-section {
   margin: 60px 0;
