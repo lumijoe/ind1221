@@ -95,6 +95,25 @@
   margin: 30px 0;
 }
 
+.news-toppage-ttl {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.news-toppage-ttl h2 {
+  margin-bottom: 0;
+}
+
+.news-toppage-ttl span {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.news-toppage-ttl span a {
+  color: #007bff !important;
+}
+
 .news-item-level1 {
   display: flex;
   gap: 10px;
