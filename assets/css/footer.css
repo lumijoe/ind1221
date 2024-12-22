@@ -35,3 +35,25 @@
   font-size: 14px; /* フォントサイズ */
   color: #666; /* テキストカラー */
 }
+#footer .pagetop {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  z-index: 1002;
+}
+
+#footer .pagetop a {
+  background: #db4e76;
+  color: #fff;
+  line-height: 4em;
+  width: 4em;
+  height: 4em;
+  margin: 0;
+  display: block;
+  transition: all 0.5s ease;
+  border-radius: 60px;
+}
+
+#footer .pagetop a:hover {
+  opacity: 0.8;
+}

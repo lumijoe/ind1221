@@ -59,3 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初期表示時に「すべて」タブをアクティブに
     document.querySelector('.news-tab[data-tab="all"]').classList.add('active');
 }); 
+
