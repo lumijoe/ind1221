@@ -101,6 +101,22 @@
   object-fit: cover;
 }
 
+.product-card-productname {
+  position: absolute;
+  background-color: #313335d1;
+  top: 130px;
+  height: 80px;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.product-card-productname p {
+  margin: 5px 10px;
+  font-size: 14px;
+  color: white;
+}
+
 .product-info {
   padding: 20px;
 }
@@ -108,6 +124,11 @@
 .product-info h3 {
   margin: 0 0 10px;
   font-size: 18px;
+}
+
+.product-info-product {
+  padding: 0px 20px 20px;
+  margin-top: 60px;
 }
 
 .product-tags {
@@ -122,4 +143,9 @@
   background: #f0f0f0;
   padding: 3px 8px;
   border-radius: 4px;
+}
+
+.product-tag-product {
+  font-size: 12px;
+  background-color: #fff;
 }
