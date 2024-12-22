@@ -21,6 +21,10 @@
   margin: 0;
 }
 
+.swiper-pagination {
+  padding-bottom: 20px;
+}
+
 .swiper-wrapper {
   display: flex;
   height: 100%;
@@ -259,7 +263,7 @@
 
 .product-categories {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   gap: 30px;
   margin-top: 40px;
