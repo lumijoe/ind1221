@@ -85,8 +85,8 @@
   position: absolute; /* 絶対位置を設定 */
   bottom: -160px;
   left: -180px;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-image: url("/assets/images/podcast02.png"); /* 背景画像を指定 */
   background-size: contain;
   background-repeat: no-repeat;
@@ -249,14 +249,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .news-main {
-    width: 70%;
+    width: 100%;
     padding-left: 0;
   }
   .news-ir {
     margin-top: 20px;
-    width: 70%;
+    width: 100%;
     padding-right: 0;
   }
 }
