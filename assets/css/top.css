@@ -127,6 +127,7 @@
   height: 70px;
   border-radius: 4px;
   object-fit: cover;
+  margin-left: 8px;
 }
 
 .news-category {
@@ -152,7 +153,8 @@
 }
 
 .news-toppage-ttl h2 {
-  margin-bottom: 3px;
+  margin-bottom: 10px;
+  width: 130px;
 }
 
 .news-toppage-ttl span {
@@ -163,6 +165,7 @@
 
 .news-toppage-ttl span a {
   color: #007bff !important;
+  padding-bottom: 10px;
 }
 
 .news-toppage-ttl-en {
@@ -182,7 +185,9 @@
 }
 
 .more-link img {
-  margin-left: 5px; /* アイコンとテキストの間にスペースを追加 */
+  margin-left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .news-item-level1 {
