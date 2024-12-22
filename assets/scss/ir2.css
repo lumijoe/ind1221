@@ -36,7 +36,7 @@
   flex: 1 1 calc(50% - 20px);
   margin: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .ir__topWrap .ir__topLinkBox01__item {
     flex: 1 1 100%;
   }
