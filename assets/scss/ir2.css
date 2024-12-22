@@ -6,9 +6,6 @@
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.ir-overview h2 {
-  color: #333;
-}
 .ir-overview .section-image {
   width: 100%;
   height: auto;

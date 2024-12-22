@@ -34,21 +34,12 @@
   height: auto;
 }
 
-/* メガメニュー */
-/* .mega-menu {
-  position: relative;
-} */
-
 .menu-list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-/* .menu-item {
-  position: relative;
-} */
 
 .menu-item > a {
   display: block;
@@ -132,32 +123,34 @@
   display: none;
   cursor: pointer;
   width: 30px;
-  height: 20px;
+  height: 41px;
   position: relative;
   z-index: 1001;
+  background: #fff;
+  border: none;
 }
 
 .hamburger span {
   display: block;
   position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #333;
+  width: 80%;
+  height: 1px;
+  background: #3d4143;
   transition: all 0.3s;
 }
 
 .hamburger span:nth-child(1) {
-  top: 0;
+  top: 10px;
 }
 .hamburger span:nth-child(2) {
-  top: 9px;
+  top: 18px;
 }
 .hamburger span:nth-child(3) {
-  top: 18px;
+  top: 26px;
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -165,7 +158,7 @@
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 @media (max-width: 1024px) {
