@@ -1,5 +1,6 @@
 // IRページのスタイル
 $background-color: #f9f9f9;
+$primary-color: #0661a0;;
 .ir-overview {
     margin: 20px 0;
     padding: 20px;
@@ -25,4 +26,65 @@ $background-color: #f9f9f9;
     background-position: center;
     padding: 40px;
     color: white;
+}
+
+.ir__topWrap {
+    margin: 20px 0;
+
+    .ir__topLinkBox01 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item {
+            flex: 1 1 calc(50% - 20px); // 2カラムレイアウト
+            margin: 10px;
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%; // スマホでは1カラム
+            }
+
+            &__img {
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                }
+            }
+
+            &__main {
+                padding: 15px;
+                background-color: #f9f9f9; // 背景色
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                h3 {
+                    margin: 0 0 10px;
+                    color: $primary-color; // 変数を使用
+                }
+
+                p {
+                    margin: 0 0 10px;
+                }
+
+                .ir__topLinkBox01_linkList {
+                    list-style: none;
+                    padding: 0;
+
+                    &__item {
+                        margin: 5px 0;
+
+                        a {
+                            text-decoration: none;
+                            color: $primary-color; // 変数を使用
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
