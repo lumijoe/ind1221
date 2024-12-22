@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/megamenu.css">
     <link rel="stylesheet" href="/assets/css/breadcrumb.css">
     <link rel="stylesheet" href="/assets/css/top.css">
+    <link rel="stylesheet" href="/assets/css/products.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/scss/ir2.css"> 
     <script src="loadCommonParts.js" defer></script> <!-- ヘッダーとフッターを読み込む -->
@@ -35,7 +36,7 @@
         </section>
         <section class="ir-overview">
             <h2>IR情報の概要</h2>
-            <img src="https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?auto=format&fit=crop&q=80" alt="IR情報の概要" class="section-image">　
+            <img src="https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?auto=format&fit=crop&q=80" alt="IR情報の概要" class="section-image">
             <p>当社のIR情報ページでは、投資家の皆様に向けて、最新のIRニュース、財務情報、株主総会の情報などを提供しています。</p>
         </section>
 
@@ -51,7 +52,7 @@
 
         <section class="ir-library">
             <h2>IRライブラリー</h2>
-            <img src="https://images.unsplash.com/photo-1581092588360-1c1c1c1c1c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxmaW5hbmNpYWwlMjBkYXR8ZW58MHx8fHwxNjMyNzI2NDI4&ixlib=rb-1.2.1&q=80&w=1080" alt="IRライブラリー" class="section-image">
+            <img src="../assets/images/img_ir_libraryfile.jpg" alt="IRライブラリー" class="section-image">
             <p>最新の決算短信、有価証券報告書等のIR関係資料をご覧いただけます。</p>
             <ul>
                 <li><a href="/ir/library/financial-results.pdf">決算短信</a></li>
@@ -61,52 +62,40 @@
             </ul>
         </section>
 
-        <section class="top-message">
-            <h2>株主・投資家の皆様へ</h2>
-            <img src="https://images.unsplash.com/photo-1581092588360-1c1c1c1c1c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxmaW5hbmNpYWwlMjBkYXR8ZW58MHx8fHwxNjMyNzI2NDI4&ixlib=rb-1.2.1&q=80&w=1080" alt="株主・投資家の皆様へ" class="section-image">
-            <p>当社代表取締役社長兼CEOから株主・投資家の皆様に向けてのメッセージを掲載しています。</p>
-            <a href="/ir/top-message">メッセージを読む</a>
-        </section>
-
         <!-- その他 -->
-        <div class="ir__topWrap aos-init aos-animate" data-aos="fade-up">
-            <section class="ir__topLinkBox01">
-                <div class="ir__topLinkBox01_item">
-                    <figure class="ir__topLinkBox01_img">
-                        <img src="/ir/img/top/ir_top_img03.jpg" alt="経営情報">
-                    </figure>
-                    <div class="ir__topLinkBox01_main">
-                        <h3 class="ir__topTtl03">
-                            <span class="ir__topTtl03_en"><em>MANAGEMENT</em></span>
-                            <span class="ir__topTtl03_ja">経営情報</span>
-                        </h3>
-                        <p>経営の基本方針を始めとし、経営戦略、対処すべき課題などについてご説明いたします。</p>
+        <section class="category-banners">
+            <div class="banner-grid-2">
+                <div style="display: flex; flex-direction: column;">
+                    <a href="/products/category-a/" class="category-banner">
+                        <img src="../assets/images/img_ir_office.jpg" alt="経営情報">
+                        <div class="banner-content">
+                            <h3>経営情報</h3>
+                            <p>経営の基本方針を始めとし、経営戦略、対処すべき課題などについてご説明いたします。</p>
+                        </div>
                         <ul class="ir__topLinkBox01_linkList">
                             <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/index.php">株主・投資家の皆様へ</a></li>
                             <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/governance.php">コーポレート・ガバナンス</a></li>
                             <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/disclosure.php">ディスクロージャーポリシー</a></li>
                         </ul>
-                    </div>
+                    </a>
                 </div>
-                <div class="ir__topLinkBox01_item">
-                    <figure class="ir__topLinkBox01_img">
-                        <img src="/ir/img/top/ir_top_img04.jpg" alt="株式について">
-                    </figure>
-                    <div class="ir__topLinkBox01_main">
-                        <h3 class="ir__topTtl03">
-                            <span class="ir__topTtl03_en"><em>STOCK INFORMATION</em></span>
-                            <span class="ir__topTtl03_ja">株式について</span>
-                        </h3>
+                <div style="display: flex; flex-direction: column;">
+                <a href="/products/category-b/" class="category-banner">
+                    <img src="../assets/images/img_ir_mtg.png" alt="株式について">
+                    <div class="banner-content">
+                        <h3>株式について</h3>
                         <p>株主さまの各種お手続きや、株式に関する情報などをご覧いただけます。</p>
-                        <ul class="ir__topLinkBox01_linkList">
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/index.php">株式情報</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/meeting.php">株主総会</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="http://stocks.finance.yahoo.co.jp/stocks/detail/?code=7318" target="_blank" rel="noopener noreferrer">株価情報</a></li>
-                        </ul>
                     </div>
+                    <ul class="ir__topLinkBox01_linkList">
+                        <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/index.php">株式情報</a></li>
+                        <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/meeting.php">株主総会</a></li>
+                        <li class="ir__topLinkBox01_linkList_item"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer">株価情報</a></li>
+                        </ul>
+                    </a>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
 
         <!-- よくあるご質問セクション -->
         <section class="faq">

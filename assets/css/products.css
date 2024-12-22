@@ -32,8 +32,16 @@
 
 /* バナーセクション */
 .banner-grid {
+  /*製品のバナー*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+.banner-grid-2 {
+  /*IRのバナー*/
+  display: flex;
+  justify-content: center;
   gap: 30px;
   margin: 40px 0;
 }

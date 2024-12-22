@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ir-overview {
   margin: 20px 0;
   padding: 20px;
@@ -16,12 +17,27 @@
 }
 
 .contact-ir {
-  background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxjb250YWN0fGVufDB8fHx8MTYzMjY5MjY0Nw&ixlib=rb-1.2.1&q=80&w=1080");
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1531973576160-7125cd663d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxjb250YWN0fGVufDB8fHx8MTYzMjY5MjY0Nw&ixlib=rb-1.2.1&q=80&w=1080");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 40px;
   color: white;
+}
+.contact-ir::before {
+  content: ""; /* 擬似要素の内容を空にする */
+  position: absolute; /* 絶対位置を設定 */
+  top: 0; /* 上から0px */
+  left: 0; /* 左から0px */
+  right: 0; /* 右から0px */
+  bottom: 0; /* 下から0px */
+  background-color: rgba(0, 0, 0, 0.5); /* 黒の透過オーバーレイ */
+  z-index: 1; /* オーバーレイをコンテンツの下に配置 */
+}
+.contact-ir h2, .contact-ir p {
+  position: relative; /* テキストをオーバーレイの上に表示 */
+  z-index: 2; /* テキストをオーバーレイの上に配置 */
 }
 
 .ir__topWrap {
