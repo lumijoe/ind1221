@@ -40,20 +40,14 @@
   right: 1em;
   bottom: 1em;
   z-index: 1002;
-}
-
-#footer .pagetop a {
-  background: #db4e76;
-  color: #fff;
-  line-height: 4em;
-  width: 4em;
-  height: 4em;
+  width: 70px;
+  height: 70px;
   margin: 0;
   display: block;
   transition: all 0.5s ease;
-  border-radius: 60px;
+  filter: drop-shadow(1px 1px 1px #dcdcdc);
 }
 
-#footer .pagetop a:hover {
+#footer .pagetop:hover {
   opacity: 0.8;
 }
