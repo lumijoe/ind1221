@@ -145,8 +145,21 @@
   border-radius: 4px;
 }
 
+.product-tag-test {
+  font-size: 11px;
+  color: #fff;
+  background-color: #6574c4;
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 1px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
 .product-tag-product {
-  font-size: 12px;
+  font-size: 11px;
   background-color: #fff;
   padding: 3px 8px;
   border-radius: 4px;
