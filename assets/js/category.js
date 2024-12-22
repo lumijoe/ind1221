@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedTag = tag.dataset.tag;
             
             productCards.forEach(card => {
-                const cardTags = Array.from(card.querySelectorAll('.product-tag'))
+                const cardTags = Array.from(card.querySelectorAll('.product-tag-product'))
                     .map(tag => tag.textContent);
                 
                 if (cardTags.includes(selectedTag)) {

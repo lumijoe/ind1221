@@ -112,3 +112,10 @@
   gap: 30px;
   margin-top: 30px;
 }
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+  .mvp-c {
+    background-position: center center;
+  }
+}
