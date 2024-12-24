@@ -1,6 +1,8 @@
 /* 全体の共通スタイル */
 @charset "UTF-8";
-
+* {
+  box-sizing: border-box; /* すべての要素にボックスモデルを適用 */
+}
 body {
   margin: 0 auto;
   padding: 0;
