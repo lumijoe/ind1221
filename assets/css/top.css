@@ -337,7 +337,7 @@
     width: 85px;
   }
   .product-categories {
-    frid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 @media (max-width: 768px) {
