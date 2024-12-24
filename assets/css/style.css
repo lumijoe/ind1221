@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   color: #3d4143;
   padding-top: 146px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 h1,
 h2 {
