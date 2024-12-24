@@ -8,7 +8,7 @@
 .footer-inner {
   display: flex; /* フレックスボックスを使用 */
   justify-content: space-around; /* セクションを均等に配置 */
-  flex-wrap: wrap; /* 画面幅に応じて折り返し */
+  flex-wrap: nowrap; /* 画面幅に応じて折り返し */
 }
 
 .footer-section {
