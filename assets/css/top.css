@@ -120,7 +120,7 @@
 .news-list-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 1px solid #eee;
   height: auto;
   align-items: center;
@@ -132,6 +132,7 @@
   border-radius: 4px;
   object-fit: cover;
   margin-left: 8px;
+  margin-right: 20px;
 }
 
 .news-category {
