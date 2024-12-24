@@ -3,7 +3,8 @@
 * {
   box-sizing: border-box; /* すべての要素にボックスモデルを適用 */
 }
-html {
+html,
+body {
   overflow-x: hidden;
 }
 body {
