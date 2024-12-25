@@ -3,16 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const productGrid = document.querySelector('.product-grid');
 
     // 製品データ（実際はAPIやJSONファイルから取得）
-    const products = [
-        {
-            id: 1,
-            name: "製品A-1-1",
-            category: "A-1",
-            tags: ["電化", "脱炭素化"],
-            image: "/assets/images/products/a-1-1.jpg"
-        },
+    // const products = [
+    //     {
+    //         id: 1,
+    //         name: "製品A-1-1",
+    //         category: "A-1",
+    //         tags: ["電化", "脱炭素化"],
+    //         image: "/assets/images/products/a-1-1.jpg"
+    //     },
         // 他の製品データ
-    ];
+    // ];
 
     hashtags.forEach(tag => {
         tag.addEventListener('mouseover', () => {
