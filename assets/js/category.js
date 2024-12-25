@@ -56,3 +56,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// _2test アコーディオン用
+document.addEventListener('DOMContentLoaded', function() {
+    // アコーディオンの初期化
+    const sectionHeaders = document.querySelectorAll('.section-header_2test');
+    
+    sectionHeaders.forEach(header => {
+        const toggleIcon = header.querySelector('.toggle-icon_2test');
+        const content = header.nextElementSibling;
+        
+        header.addEventListener('click', () => {
+            // アイコンの切り替え
+            toggleIcon.classList.toggle('closed');
+            
+            // コンテンツの開閉
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.classList.add('closed');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.remove('closed');
+            }
+        });
+        
+        // 初期状態で開いた状態にする
+        content.style.maxHeight = content.scrollHeight + "px";
+    });
+});

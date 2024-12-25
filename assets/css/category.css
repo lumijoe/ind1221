@@ -238,3 +238,65 @@
   padding: 3px 8px;
   border-radius: 4px;
 }
+
+/* _2test アコーディオンのテスト */
+/* アコーディオン用の新しいスタイル */
+.section-header_2test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.toggle-icon_2test {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon_2test::before,
+.toggle-icon_2test::after {
+  content: '';
+  position: absolute;
+  background-color: #007bff;
+}
+
+/* 円形の背景 */
+.toggle-icon_2test::before {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* マイナス/プラスの線 */
+.toggle-icon_2test::after {
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* プラスの縦線（閉じている時のみ表示） */
+.toggle-icon_2test.closed::after {
+  content: '';
+  width: 2px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+}
+
+/* アコーディオンコンテンツ */
+.accordion-content_2test {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content_2test.closed {
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+}
