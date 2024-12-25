@@ -36,6 +36,13 @@
     padding: 20px;
     border-radius: 8px;
 }
+.side-nav_2test h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+}
+/*↑_2test  */
 
 .side-nav h2 {
   font-size: 18px;
