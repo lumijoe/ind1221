@@ -85,6 +85,12 @@
 .issue-search {
   margin-top: 30px;
 }
+.issue-search_2test {
+  padding:  40px 0px 0px 0px !Important;
+  margin: 0!important;
+  margin-top: 30px;
+}
+
 
 .hashtag {
   display: inline-block;
