@@ -162,6 +162,15 @@
   margin-top: 30px;
 }
 
+/* _2test */
+.product-grid_2test {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+
 /* レスポンシブ */
 @media (max-width: 1024px) {
   .mvp-c {
