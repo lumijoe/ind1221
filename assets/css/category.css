@@ -32,7 +32,9 @@
     height: calc(100vh - 40px);
     overflow-y: auto; /* 独自のスクロールバーを追加 */
     width: 300px; /* サイドナビの幅を固定 */
-    padding-right: 1rem;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .side-nav h2 {
