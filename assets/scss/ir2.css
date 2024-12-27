@@ -126,4 +126,77 @@
 }
 .ir__topWrap .ir__topLinkBox01__item__main .ir__topLinkBox01_linkList__item a:hover {
   text-decoration: underline;
+}
+
+.ir-library {
+  padding: 40px 5%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.ir-library h2 {
+  width: 100%;
+  text-align: center;
+}
+.ir-library .section-image {
+  width: calc(50% - 20px);
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .ir-library .section-image {
+    width: 100%;
+  }
+}
+.ir-library > p {
+  width: calc(50% - 20px);
+  text-align: left;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .ir-library > p {
+    width: 100%;
+  }
+}
+.ir-library .ir-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .ir-library .ir-buttons {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+.ir-library .ir-buttons li {
+  width: 200px;
+}
+.ir-library .ir-buttons .ir-button {
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0661a0;
+  transition: all 0.3s ease;
+}
+.ir-library .ir-buttons .ir-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }/*# sourceMappingURL=ir2.css.map */
