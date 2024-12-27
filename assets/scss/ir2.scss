@@ -23,7 +23,9 @@ $primary-color: #0661a0;;
     background-position: center;
     padding: 40px;
     color: white;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &::before {
         content: ""; /* 擬似要素の内容を空にする */
         position: absolute; /* 絶対位置を設定 */
@@ -40,6 +42,27 @@ $primary-color: #0661a0;;
         z-index: 2; /* テキストをオーバーレイの上に配置 */
     }
 }
+
+.button-contact {
+    position: sticky;
+    z-index:1000;
+    color: white;;
+    background: #007bfff2;
+    backdrop-filter: blur(8px);  /* 背景のぼかし効果 */
+    -webkit-backdrop-filter: blur(8px);  /* Safari用 */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.button-contact:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-decoration: none;
+  }
 
 .ir__topWrap {
     margin: 20px 0;

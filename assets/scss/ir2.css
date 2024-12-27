@@ -21,6 +21,9 @@
   background-position: center;
   padding: 40px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-ir::before {
   content: ""; /* 擬似要素の内容を空にする */
@@ -35,6 +38,28 @@
 .contact-ir h2, .contact-ir p {
   position: relative; /* テキストをオーバーレイの上に表示 */
   z-index: 2; /* テキストをオーバーレイの上に配置 */
+}
+
+.button-contact {
+  position: sticky;
+  z-index: 1000;
+  color: white;
+  background: rgba(0, 123, 255, 0.9490196078);
+  backdrop-filter: blur(8px); /* 背景のぼかし効果 */
+  -webkit-backdrop-filter: blur(8px); /* Safari用 */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button-contact:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-decoration: none;
 }
 
 .ir__topWrap {
