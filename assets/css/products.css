@@ -1,4 +1,4 @@
-@charset "UTF-8";
+Ω@charset "UTF-8";
 .products-top {
   max-width: 1200px;
   margin: 0 auto;
@@ -31,6 +31,16 @@
 }
 .mvp-c {
   background-image: url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top -280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mvp-sus {
+  background-image: url("https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top -280px;
