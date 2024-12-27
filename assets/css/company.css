@@ -1,0 +1,55 @@
+h2 {
+  font-size: 24px; /* 見出しのフォントサイズ */
+  margin-bottom: 15px; /* 見出しの下のマージン */
+  color: #333; /* 見出しの色 */
+}
+
+p {
+  margin-bottom: 15px; /* 段落の下のマージン */
+  color: #555; /* 段落の色 */
+}
+
+iframe {
+  width: 100%; /* マップを100%の幅に */
+  height: 450px; /* マップの高さ */
+  border: 0; /* ボーダーをなし */
+  border-radius: 8px; /* 角を丸く */
+  margin-top: 15px; /* 上のマージン */
+}
+
+table {
+  width: 100%; /* テーブルの幅を100%に */
+  border-collapse: collapse; /* ボーダーを重ねる */
+  margin-top: 15px; /* 上のマージン */
+}
+
+th,
+td {
+  border: 1px solid #ddd; /* ボーダーを設定 */
+  padding: 10px; /* パディングを設定 */
+  text-align: left; /* 左揃え */
+}
+
+th {
+  background-color: #f2f2f2; /* ヘッダーの背景色 */
+  color: #333; /* ヘッダーの文字色 */
+}
+
+ul {
+  list-style-type: none; /* リストのデフォルトスタイルを削除 */
+  padding: 0; /* パディングを削除 */
+}
+
+li {
+  display: flex; /* フレックスボックスを使用 */
+  align-items: center; /* 中央揃え */
+  margin-bottom: 20px; /* 各項目の下にマージン */
+}
+
+.history-image {
+  width: 80px; /* 画像の幅 */
+  height: 80px; /* 画像の高さ */
+  border-radius: 50%; /* 丸くする */
+  margin-right: 15px; /* 画像とテキストの間にマージン */
+  object-fit: cover;
+}

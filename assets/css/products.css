@@ -49,6 +49,16 @@
   justify-content: center;
   align-items: center;
 }
+.mvp-com {
+  background-image: url("https://images.unsplash.com/photo-1627744550360-404483bac52b?auto=format&fit=crop&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top -280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .main-visual-products::before {
   content: "";
