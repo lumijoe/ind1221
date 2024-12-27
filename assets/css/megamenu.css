@@ -223,6 +223,10 @@
   justify-content: center;
 }
 
+.navpanel-line {
+  display: none;
+}
+
 /* レスポンシブ対応 */
 @media (max-width: 1024px) {
   .hamburger {
@@ -275,5 +279,13 @@
   .mega-category {
     width: 100%;
     margin: 10px 0;
+  }
+
+  /* tesつ */
+  .navpanel-line {
+    display: block;
+    height: 0.7px;
+    width: 100%;
+    border: 0.3px solid #ddd;
   }
 }
