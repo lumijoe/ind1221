@@ -307,7 +307,7 @@
   padding: 80px 0;
 }
 
-.sustainability-grid {
+.sus-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
@@ -345,7 +345,7 @@
     flex-wrap: wrap;
   }
 
-  .sustainability-grid {
+  .sus-grid {
     grid-template-columns: 1fr;
   }
 
