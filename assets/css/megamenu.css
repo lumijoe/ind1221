@@ -51,6 +51,7 @@
 
 .menu-item:hover > a {
   color: #007bff;
+  border-bottom: 1.7px solid #007bff;
 }
 
 /* メガメニューの中身 */
