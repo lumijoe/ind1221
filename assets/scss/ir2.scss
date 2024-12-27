@@ -147,8 +147,6 @@ $primary-color: #0661a0;;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    // gap: 40px;
-    // max-width: 1200px;
     margin: 0 auto;
 
     // 左側コンテンツ
@@ -156,6 +154,7 @@ $primary-color: #0661a0;;
         width: 100%; // 見出しは全幅
         text-align: center;
     }
+    
 
     .section-image {
         width: calc(50% - 20px); // 画像は左半分
