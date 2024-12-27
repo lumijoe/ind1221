@@ -11,3 +11,7 @@ product-bでテスト中
 →product-b/index.html
 →products.css
 元に戻すときは_2text関連クラスをキーワード検索して削除すること
+
+## BootstrapのCDN導入をクラス打ち消し
+custom.cssでbootstrapの_rfs.scssを消している
+h2が34pxとかになってしまうので、24pxにしている
