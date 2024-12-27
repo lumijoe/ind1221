@@ -87,3 +87,14 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 1024px) {
+  .footer-inner {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦に並べる */
+  }
+
+  .footer-section {
+    margin-bottom: 20px; /* セクション間のマージン */
+  }
+}
