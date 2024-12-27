@@ -30,8 +30,8 @@
 }
 
 .logo img {
-  width: auto;
-  height: 75px;
+  width: 100%;
+  height: auto;
 }
 
 .menu-list {
@@ -209,7 +209,7 @@
 
   .logo {
     width: 80px;
-    padding-top: 5px;
+    padding-top: 0px;
   }
 }
 
