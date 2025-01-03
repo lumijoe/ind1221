@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .footer {
   background-color: #f8f8f8; /* フッターの背景色 */
-  padding: 20px 0; /* 上下のパディング */
+  padding: 20px 5%;
   text-align: center; /* 中央揃え */
 }
 
@@ -18,13 +18,16 @@
 }
 
 .footer-section h3 {
-  margin-bottom: 10px;
-  font-size: 14px; /* h3のフォントサイズを14pxに設定 */
+  margin-bottom: 0px;
+  font-size: 14px;
+  border-bottom: 0.7px solid #ccc;
+  padding-bottom: 10px;
 }
 
 .footer-section ul {
-  list-style: none; /* リストスタイルを削除 */
-  padding: 0; /* パディングを削除 */
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
 }
 
 .footer-section li {
