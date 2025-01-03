@@ -6,15 +6,13 @@
 }
 
 .footer-inner {
-  display: flex; /* フレックスボックスを使用 */
-  justify-content: flex-start; /* セクションを均等に配置 */
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: flex-start;
   padding: 0 10px;
 }
 
 .footer-section {
-  flex: 1; /* 各セクションを均等に広げる */
-  min-width: 200px; /* 最小幅を設定 */
   margin: 10px; /* セクション間のマージン */
 }
 
@@ -98,12 +96,15 @@
 
 @media (max-width: 1024px) {
   .footer-inner {
-    display: flex; /* フレックスボックスを使用 */
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .footer-section {
     margin-bottom: 20px; /* セクション間のマージン */
+  }
+}
+@media (max-width: 640px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
   }
 }
