@@ -64,11 +64,16 @@
 .footer-top {
   background-color: #f8f8f8; /* 背景色 */
   padding: 20px 0; /* 上下のパディング */
-  text-align: left; /* 左揃え */
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .footer-logo {
-  display: inline-block; /* インラインブロックにして横並びに */
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0px;
 }
 
 .footer-info {
@@ -107,4 +112,41 @@
   .footer-inner {
     grid-template-columns: 1fr;
   }
+}
+
+.footer-level-two {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #232323;
+}
+.footer-logo-caption {
+  font-size: 10px;
+  padding-left: 15px;
+  margin-bottom: 0px;
+}
+.footer-logo h2 {
+  font-size: 22px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.copyright {
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+.footer-attention {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 9px;
+}
+.footer-attention li {
+  padding-right: 17px;
+  padding-left: 17px;
+  border-right: 1px solid #ddd;
+  font-size: 10px;
+}
+.footer-attention li:first-child {
+  border-left: 1px solid #ddd;
 }
