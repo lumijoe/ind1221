@@ -65,6 +65,22 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
+/* ニュースセクションアニメーションテスト */
+@keyframes slideup50p {
+  0% {
+    transform: translateY(50%); /* 初期位置を下に設定 */
+    opacity: 0; /* 初期の透明度 */
+  }
+  100% {
+    transform: translateY(0); /* 最終位置を元の位置に設定 */
+    opacity: 1; /* 最終的に不透明に */
+  }
+}
+
+.news-section {
+  animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards slideup50p; /* アニメーションを適用 */
+}
+
 /* ニュースセクション */
 .news-section {
   padding: 80px 0;
