@@ -1,32 +1,37 @@
 /* Bootstrapのクラスを打ち消す */
 /* Typography - Heading sizes */
 h1 {
-    font-size: 36px;
-  }
-  
-  h2 {
-    font-size: 24px;
-    font-weight:600!important;
-  }
-  
-  h3 {
-    font-size: 20px;
-  }
-  
-  h4 {
-    font-size: 18px;
-  }
-  
-  h5 {
-    font-size: 16px;
-  }
-  
-  h6 {
-    font-size: 14px;
-  }
-  
-  /* Base typography */
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Base typography */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
