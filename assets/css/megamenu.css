@@ -320,3 +320,8 @@
     border: 0.3px solid #ddd;
   }
 }
+
+.menu-item-top.active {
+  /* 例: 背景色を変更 */
+  background-color: #f0f0f0;
+}
