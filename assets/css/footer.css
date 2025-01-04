@@ -40,6 +40,7 @@
   height: 20px;
   padding-bottom: 10px !important;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  box-sizing: content-box;
 }
 /* .footer-section h3 {
   margin-bottom: 0px;
