@@ -25,6 +25,7 @@
   padding-bottom: 10px;
   position: relative;
   padding-left: 30px;
+  margin-top: 0px !important;
 }
 .footer-section h3:before {
   content: "";
@@ -37,7 +38,7 @@
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  padding-bottom: 30px !important;
+  padding-bottom: 10px !important;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .footer-section h3:hover:before {
