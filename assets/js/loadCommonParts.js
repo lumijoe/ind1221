@@ -12,4 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             document.getElementById('commonFooter').innerHTML = data;
         });
+
+    // フォームお問い合わせを読み込む
+    fetch('/assets/includes/formcontact.html') // footer.htmlのパスを指定
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('commonFormContact').innerHTML = data;
+        });
 });
