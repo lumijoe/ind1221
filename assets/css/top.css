@@ -65,7 +65,7 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* ニュースセクションアニメーションテスト */
+/* フッターセクションアニメーションテスト */
 @keyframes slideup50p {
   0% {
     visibility: hidden;
@@ -86,6 +86,10 @@
 
 .footer-inner {
   animation: 3s cubic-bezier(0.215, 0.61, 0.355, 1) forwards slideup50p; /* アニメーションを適用 */
+}
+.footer-inner.animate {
+  opacity: 1; /* 不透明にする */
+  transform: translate3d(0, 0, 0);
 }
 
 /* ニュースセクション */
