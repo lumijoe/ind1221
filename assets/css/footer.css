@@ -58,6 +58,9 @@
   padding: 0 0 0 30px;
   margin-top: 0px;
 }
+.footer-section a {
+  text-decoration: none;
+}
 
 .footer-section li a {
   font-size: 12px;
