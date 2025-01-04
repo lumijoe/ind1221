@@ -68,12 +68,19 @@
 /* ニュースセクションアニメーションテスト */
 @keyframes slideup50p {
   0% {
-    transform: translateY(50%); /* 初期位置を下に設定 */
-    opacity: 0; /* 初期の透明度 */
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
   }
   100% {
-    transform: translateY(0); /* 最終位置を元の位置に設定 */
-    opacity: 1; /* 最終的に不透明に */
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
