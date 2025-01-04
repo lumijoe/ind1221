@@ -201,6 +201,7 @@
 .copyright {
   padding-bottom: 5px;
   font-size: 10px;
+  width: -webkit-fill-available;
 }
 .footer-attention {
   display: flex;
