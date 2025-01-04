@@ -10,6 +10,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: flex-start;
   padding: 0 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer-section {
@@ -21,14 +23,36 @@
   font-size: 14px;
   border-bottom: 0.7px solid #ccc;
   padding-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
 }
+.footer-section h3:before {
+  content: "";
+  background-image: url(../../assets/images/icon_right_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.footer-section h3:hover:before {
+  transform: translateY(-50%) scale(1.1);
+  opacity: 0.7;
+}
+
 .h3borderbottomnone {
   border-bottom: none !important;
+  margin-top: 0px;
 }
 
 .footer-section ul {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 30px;
   margin-top: 0px;
 }
 
