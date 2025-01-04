@@ -85,7 +85,7 @@
 }
 
 .footer-inner {
-  animation: 5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards slideup50p; /* アニメーションを適用 */
+  animation: 3s cubic-bezier(0.215, 0.61, 0.355, 1) forwards slideup50p; /* アニメーションを適用 */
 }
 
 /* ニュースセクション */
