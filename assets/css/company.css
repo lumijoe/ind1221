@@ -40,11 +40,11 @@ ul {
   padding: 0; /* パディングを削除 */
 }
 
-li {
-  display: flex; /* フレックスボックスを使用 */
-  align-items: center; /* 中央揃え */
-  margin-bottom: 20px; /* 各項目の下にマージン */
-}
+/* li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+} */
 
 .history-image {
   width: 80px; /* 画像の幅 */
@@ -52,4 +52,14 @@ li {
   border-radius: 50%; /* 丸くする */
   margin-right: 15px; /* 画像とテキストの間にマージン */
   object-fit: cover;
+}
+#history ul {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#history ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
