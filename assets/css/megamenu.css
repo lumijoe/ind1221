@@ -30,7 +30,7 @@
 }
 
 .logo img {
-  width: 70%;
+  width: 60%;
   height: auto;
 }
 
@@ -336,7 +336,7 @@
   border: none; /* ボーダーを消す */
   border-radius: 5px; /* 角を丸くする */
   cursor: pointer;
-  height: 30px;
+  height: 40px;
 }
 
 .button:hover {

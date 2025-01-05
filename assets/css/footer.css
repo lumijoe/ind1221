@@ -228,12 +228,31 @@
   z-index: 520;
   left: 0;
   width: 100%;
-  background-color: cadetblue;
+  background-color: #ffffffe6;
   padding: 10px;
+  box-shadow: -2px -1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .footer-nav-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 0px;
+  margin-bottom: 0px;
+}
+.footer-nav-wrapper li {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid #eee;
+}
+.footer-nav-wrapper-cta {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
 }
