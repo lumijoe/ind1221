@@ -222,3 +222,10 @@ $primary-color: #0661a0;;
         }
     }
 }
+.l-grid--4 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap:30px;
+    margin: 40px 0;
+}
