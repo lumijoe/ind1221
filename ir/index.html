@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IR情報 | 会社名</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/megamenu.css">
-    <link rel="stylesheet" href="/assets/css/breadcrumb.css">
-    <link rel="stylesheet" href="/assets/css/top.css">
-    <link rel="stylesheet" href="/assets/css/products.css">
-    <link rel="stylesheet" href="/assets/scss/ir2.css"> 
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    
-    <script src="loadCommonParts.js" defer></script> <!-- ヘッダーとフッターを読み込む -->
+    <!-- Swiperのスタイルシートを追加 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 
+    <!-- 自サイトのスタイルシート -->
+    <link href="../assets/css/custom.css" rel="stylesheet">
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="../assets/css/megamenu.css">
+   <link rel="stylesheet" href="../assets/css/breadcrumb.css">
+   <link rel="stylesheet" href="../assets/scss/sustainability.css">
+   <link rel="stylesheet" href="../assets/css/top.css">
+   <link rel="stylesheet" href="../assets/css/products.css">
+   <link rel="stylesheet" href="../assets/scss/ir2.css">
+   <link rel="stylesheet" href="../assets/css/footer.css">  
+   
+   <!-- JS  -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   
 </head>
 <body>
     <div id="commonHeader"></div>
@@ -84,93 +93,69 @@
         <!-- その他 -->
         <section class="category-banners" id="irabout" style="padding-left:15%; padding-right:15%">
             <div class="l-grid--4">
-                <!-- <div style="display: flex; flex-direction: column;">
-                    <a href="/products/category-a/" class="category-banner">
-                        <img src="../assets/images/img_ir_office.jpg" alt="経営情報">
-                        <div class="banner-content">
-                            <h3>財務情報</h3>
-                        </div>
-                        <ul class="ir__topLinkBox01_linkList">
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/index.php">株主・投資家の皆様へ</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/governance.php">コーポレート・ガバナンス</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/disclosure.php">ディスクロージャーポリシー</a></li>
-                        </ul>
-                    </a>
-                </div>
-                <div style="display: flex; flex-direction: column;">
-                <a href="/products/category-b/" class="category-banner">
-                    <img src="../assets/images/img_ir_mtg.png" alt="株式について">
-                    <div class="banner-content">
-                        <h3>株式について</h3>
-                    </div>
-                    <ul class="ir__topLinkBox01_linkList">
-                        <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/index.php">株式情報</a></li>
-                        <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/meeting.php">株主総会</a></li>
-                        <li class="ir__topLinkBox01_linkList_item"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer">株価情報</a></li>
-                        </ul>
-                    </a>
-                </div> -->
+                
                 <div style="display: flex; flex-direction: column;">
                     <a href="/products/category-b/" class="category-banner">
                         <img src="../assets/images/img_ir_libraryfile.jpg" alt="IRライブラリー">
-                        <div class="banner-content">
-                            <h3>IRライブラリー</h3>
+                        <div class="banner-content-ir">
+                            <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">IRライブラリー</h3>
                         </div>
-                        <ul class="ir__topLinkBox01_linkList">
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/index.php">株式情報</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/meeting.php">株主総会</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer">株価情報</a></li>
-                        </ul>
-                        <ul class="ir-buttons">
-                            <li><a href="#" class="ir-button">決算短信<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
-                            <li><a href="#" class="ir-button">有価証券報告書<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
-                            <li><a href="#" class="ir-button">決算説明資料<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
-                            <li><a href="#" class="ir-button">IR資料<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
+                        <ul class="ir-buttons" style="padding-left:0px;">
+                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算短信</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">有価証券報告書</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算説明資料</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">IR資料</a></li>
+                            <hr class="ir-banner-hr">
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;">
                     <a href="/products/category-b/" class="category-banner">
                         <img src="../assets/images/img_office.png" alt="統合報告書">
-                        <div class="banner-content">
-                            <h3>統合報告書</h3>
+                        <div class="banner-content-ir">
+                            <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">統合報告書</h3>
                         </div>
-                        <ul class="ir__topLinkBox01_linkList">
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/index.php">株式情報</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/meeting.php">株主総会</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer">株価情報</a></li>
-                        </ul>
-                        <ul class="ir-buttons">
-                            <li><a href="#" class="ir-button">決算短信<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
-                            <li><a href="#" class="ir-button">有価証券報告書<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
-                            <li><a href="#" class="ir-button">決算説明資料<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
-                            <li><a href="#" class="ir-button">IR資料<img src="../assets/images/icon_right_blue.svg" alt="" width="15px" height="15px" ></a></li>
+                        <ul class="ir-buttons" style="padding-left:0px;">
+                            <li class="ir-banner-li"><a href="/ir/stock/index.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株式情報</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="/ir/stock/meeting.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主総会</a></li><hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株価情報</a></li>
+                            <hr class="ir-banner-hr">
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;">
                     <a href="/products/category-a/" class="category-banner">
                         <img src="../assets/images/img_ir_office.jpg" alt="経営情報">
-                        <div class="banner-content">
-                            <h3>財務情報</h3>
+                        <div class="banner-content-ir">
+                            <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">財務情報</h3>
                         </div>
-                        <ul class="ir__topLinkBox01_linkList">
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/index.php">株主・投資家の皆様へ</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/governance.php">コーポレート・ガバナンス</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/management/disclosure.php">ディスクロージャーポリシー</a></li>
+                        <ul class="ir__topLinkBox01_linkList" style="padding-left:0px;">
+                            <li class="ir-banner-li"><a href="/ir/management/index.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主・投資家の皆様へ</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="/ir/management/governance.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">コーポレート・ガバナンス</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="/ir/management/disclosure.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">ディスクロージャーポリシー</a></li>
+                            <hr class="ir-banner-hr">
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;">
                     <a href="/products/category-b/" class="category-banner">
                         <img src="../assets/images/img_ir_mtg.png" alt="株式について">
-                        <div class="banner-content">
-                            <h3>株式について</h3>
+                        <div class="banner-content-ir">
+                            <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">株式について</h3>
                         </div>
-                        <ul class="ir__topLinkBox01_linkList">
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/index.php">株式情報</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/stock/meeting.php">株主総会</a></li>
-                            <li class="ir__topLinkBox01_linkList_item"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer">株価情報</a></li>
+                        <ul class="ir__topLinkBox01_linkList" style="padding-left:0px;">
+                            <li class="ir-banner-li"><a href="/ir/stock/index.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株式情報</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="/ir/stock/meeting.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主総会</a></li>
+                            <hr class="ir-banner-hr">
+                            <li class="ir-banner-li"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株価情報</a></li>
+                            <hr class="ir-banner-hr">
                         </ul>
                     </a>
                 </div>

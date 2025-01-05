@@ -25,9 +25,9 @@ $primary-color: #0661a0;;
     text-align: center;
   }
   .container {
-    max-width: 90%; /* 最大幅を90%に設定 */
-    margin: 0 auto; /* 中央揃え */
-    padding: 0 20px; /* パディングを調整 */
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 0 20px; 
   }
 
 .contact-ir {
@@ -41,19 +41,19 @@ $primary-color: #0661a0;;
     flex-direction: column;
     align-items: center;
     &::before {
-        content: ""; /* 擬似要素の内容を空にする */
-        position: absolute; /* 絶対位置を設定 */
-        top: 0; /* 上から0px */
-        left: 0; /* 左から0px */
-        right: 0; /* 右から0px */
-        bottom: 0; /* 下から0px */
-        background-color: rgba(0, 0, 0, 0.5); /* 黒の透過オーバーレイ */
-        z-index: 1; /* オーバーレイをコンテンツの下に配置 */
+        content: ""; 
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1; 
     }
 
     h2, p {
-        position: relative; /* テキストをオーバーレイの上に表示 */
-        z-index: 2; /* テキストをオーバーレイの上に配置 */
+        position: relative;
+        z-index: 2; 
     }
 }
 
@@ -104,13 +104,13 @@ $primary-color: #0661a0;;
 
             &__main {
                 padding: 15px;
-                background-color: #f9f9f9; // 背景色
+                background-color: #f9f9f9; 
                 border-radius: 8px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
                 h3 {
                     margin: 0 0 10px;
-                    color: $primary-color; // 変数を使用
+                    color: $primary-color; 
                 }
 
                 p {
@@ -126,7 +126,7 @@ $primary-color: #0661a0;;
 
                         a {
                             text-decoration: none;
-                            color: $primary-color; // 変数を使用
+                            color: $primary-color; 
 
                             &:hover {
                                 text-decoration: underline;
@@ -151,13 +151,13 @@ $primary-color: #0661a0;;
 
     // 左側コンテンツ
     h2 {
-        width: 100%; // 見出しは全幅
+        width: 100%; 
         text-align: center;
     }
     
 
     .section-image {
-        width: calc(50% - 20px); // 画像は左半分
+        width: calc(50% - 20px); 
         max-width: 500px;
         height: auto;
         border-radius: 8px;
@@ -168,7 +168,7 @@ $primary-color: #0661a0;;
     }
 
     > p {
-        width: calc(50% - 20px); // テキストは左半分
+        width: calc(50% - 20px); 
         text-align: left;
         margin-top: 0;
 
@@ -180,7 +180,7 @@ $primary-color: #0661a0;;
     // 右側：ボタンリスト
     .ir-buttons {
         list-style: none;
-        padding: 0;
+        padding: 0!important;
         margin: 0;
         display: flex;
         flex-wrap: wrap;
@@ -217,7 +217,7 @@ $primary-color: #0661a0;;
             &:hover {
                 background: rgba(255, 255, 255, 0.3);
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                transform: translateY(-2px);
+                opacity:0.7;
             }
         }
     }
@@ -226,6 +226,47 @@ $primary-color: #0661a0;;
     display:grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap:30px;
-    margin: 40px 0;
+    gap:50px;
+}
+.banner-content-ir {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: #03a9f4cc;
+    color: #fff;
+    height: 25%;
+    & h3 {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+}
+.cd {
+    width:30px!important;
+    height:auto!important;
+    margin-right:8px;
+}
+.cdh3 {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.ir-banner-hr {
+    border:0.7px solid #cdcdcd;
+}
+.ir-banner-li {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    line-height:2rem;
+}
+.ir-banner-a {
+    display:flex;
+    align-items: center;
+    font-size:14px;
+}
+.ir-banner-img {
+    margin-left:48px;
+    margin-right:8px;
 }
