@@ -39,3 +39,46 @@ document.addEventListener('DOMContentLoaded', function() {
         `).join('');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+    const productCards = document.querySelectorAll('.product-card_2test');
+    const resultCount = document.getElementById('result-count');
+
+    const filterProducts = () => {
+        // チェックされている値を配列で取得
+        const selectedTags = Array.from(checkboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+
+        let visibleCount = 0;
+
+        productCards.forEach(card => {
+            const tags = Array.from(card.querySelectorAll('.product-tag-product'))
+                .map(tag => tag.textContent.trim());
+
+            // 選択されたタグに一致するものが1つでもあれば表示
+            if (
+                selectedTags.length === 0 ||
+                selectedTags.some(tag => tags.includes(tag))
+            ) {
+                card.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+
+        resultCount.textContent = visibleCount;
+    };
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', filterProducts);
+    });
+
+    // 初期状態のフィルタリング
+    filterProducts();
+});
+
+
+
