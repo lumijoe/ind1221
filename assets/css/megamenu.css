@@ -100,8 +100,26 @@
   transition: all 0.5s ease;
   border-radius: 0px 0px 4px 4px;
 }
+.mega-content-level1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70vw;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  border-radius: 0px 0px 4px 4px;
+}
 
 .menu-item:hover .mega-content {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-item:hover .mega-content-level1 {
   opacity: 1;
   visibility: visible;
 }
@@ -219,7 +237,8 @@
     flex-direction: column;
   }
 
-  .mega-content {
+  .mega-content,
+  .mega-content-level1 {
     position: static;
     width: 100%;
     transform: none;
@@ -294,7 +313,8 @@
   }
 
   /* メガメニューのコンテンツ */
-  .mega-content {
+  .mega-content,
+  .mega-content-level1 {
     position: static;
     width: 100%;
     opacity: 1;
