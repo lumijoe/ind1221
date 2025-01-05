@@ -150,15 +150,18 @@
   justify-content: flex-start;
   border-bottom: 1px solid #eee;
   height: auto;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .news-list-wrapper img {
   width: 100px;
+  min-width: 100px;
   height: 70px;
   border-radius: 4px;
   object-fit: cover;
   margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .news-category {
@@ -178,14 +181,12 @@
 
 .news-toppage-ttl {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  align-items: flex-end; /* 要素を下揃えにする */
   padding: 10px 0; /* 必要に応じてパディングを設定 */
 }
 
 .news-toppage-ttl h2 {
-  margin-bottom: 10px;
   width: 130px;
 }
 
@@ -207,7 +208,7 @@
 .news-toppage-ttl-en {
   margin-top: -10px;
   border-top: 1px solid #007aff;
-  width: 82%;
+  width: 100%;
   padding-top: 5px;
   color: #94989d;
   font-size: 9px;
