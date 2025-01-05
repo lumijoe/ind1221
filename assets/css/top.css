@@ -179,7 +179,7 @@
 .news-toppage-ttl {
   display: flex;
   justify-content: flex-start;
-  aline-items: center;
+  align-items: center;
   align-items: flex-end; /* 要素を下揃えにする */
   padding: 10px 0; /* 必要に応じてパディングを設定 */
 }
