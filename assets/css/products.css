@@ -1,4 +1,7 @@
-Ω@charset "UTF-8";
+@charset "UTF-8";
+/* product個別ページはproduct-detail.cssを利用 */
+/* product分野ページはcategory.cssを利用 */
+/* products.cssはpuroducts情報トップで利用 */
 .products-top {
   max-width: 1200px;
   margin: 0 auto;
@@ -229,8 +232,8 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size:13px;
-  margin:0px;
+  font-size: 13px;
+  margin: 0px;
 }
 
 .hashtag_2test:hover {
@@ -243,7 +246,6 @@
   gap: 30px;
   margin-top: 30px;
 }
-
 
 /* レスポンシブ */
 @media (max-width: 1024px) {

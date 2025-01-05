@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>検査装置 | 会社名</title>
+    <!-- noindex, nofollowを追加 -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Swiperのスタイルシートを追加 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+     <!-- 自サイトのスタイルシート -->
+     <link href="assets/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/megamenu.css">
     <link rel="stylesheet" href="/assets/css/breadcrumb.css">
@@ -12,6 +23,12 @@
     <link rel="stylesheet" href="/assets/css/category.css">
     <link rel="stylesheet" href="/assets/css/top.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <!-- Bootstrap JS (必要に応じて) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <div id="commonHeader"></div>
@@ -83,7 +100,7 @@
         <!-- メインコンテンツ -->
         <main>
             <!-- A-1 -->
-            <h4>A-1製品群</h4>
+            <h4 class="category-m-title">A-1製品群</h4>
             <div class="product-grid">
                 <!-- A-1製品群 -->
                 <div class="product-card">
@@ -124,10 +141,37 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1526894303636-f7c0ea381b66?auto=format&fit=crop&q=80" alt="製品A-1-2">
+                    <div class="product-card-productname">
+                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
+                    </div>
+                    <div class="product-info-product">
+                        <div class="product-tags">
+                            <span class="product-tag-product">IOT/ICT</span>
+                            <span class="product-tag-product">現場改善</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1488149048941-581936ced6d6?auto=format&fit=crop&q=80" alt="製品A-1-3">
+                    <div class="product-card-productname">
+                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
+                    </div>
+                    <div class="product-info-product">
+                        <div class="product-tags">
+                            <span class="product-tag-product">次世代バーナ</span>
+                            <span class="product-tag-product">環境改善リサイクル</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- A-2 -->
-            <h4>A-2製品群</h4>
+            <h4 class="category-m-title">A-2製品群</h4>
             <div class="product-grid">
                 <!-- A-2製品群 -->
                 <div class="product-card">
@@ -171,7 +215,7 @@
             </div>
 
             <!-- A-3 -->
-            <h4>A-3製品群</h4>
+            <h4 class="category-m-title">A-3製品群</h4>
             <div class="product-grid">
                 <!-- A-3製品群 -->
                 <div class="product-card">

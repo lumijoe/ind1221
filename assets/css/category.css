@@ -28,13 +28,13 @@
 /* _2test */
 .side-nav_2test {
   position: sticky;
-    top: 20px; /* 上からの距離を調整 */
-    height: calc(100vh - 40px);
-    overflow-y: auto; /* 独自のスクロールバーを追加 */
-    width: 300px; /* サイドナビの幅を固定 */
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
+  top: 20px; /* 上からの距離を調整 */
+  height: calc(100vh - 40px);
+  overflow-y: auto; /* 独自のスクロールバーを追加 */
+  width: 300px; /* サイドナビの幅を固定 */
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
 }
 .side-nav_2test h2 {
   font-size: 18px;
@@ -86,11 +86,10 @@
   margin-top: 30px;
 }
 .issue-search_2test {
-  padding:  40px 0px 0px 0px !Important;
-  margin: 0!important;
+  padding: 40px 0px 0px 0px !important;
+  margin: 0 !important;
   margin-top: 30px;
 }
-
 
 .hashtag {
   display: inline-block;
@@ -110,8 +109,9 @@
 /* 製品一覧 */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 30px;
+  margin-top: 20px;
 }
 
 .product-card {
@@ -147,7 +147,7 @@
 
 .product-card-productname p {
   margin: 5px 10px;
-  font-size: 14px;
+  font-size: 13px;
   color: white;
 }
 /* _2test */
@@ -184,9 +184,9 @@
   margin: 5px 10px;
   font-size: 13px;
   color: white;
-  font-weight:100px;
-  letter-spacing:0.03em;
-  line-height:1.3em;
+  font-weight: 100px;
+  letter-spacing: 0.03em;
+  line-height: 1.3em;
 }
 
 .product-info-product_2test {
@@ -195,7 +195,6 @@
 }
 
 /* ↑_2test */
-
 
 .product-info {
   padding: 20px;
@@ -215,7 +214,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .product-tag {
@@ -264,7 +263,7 @@
 
 .toggle-icon_2test::before,
 .toggle-icon_2test::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #007bff;
 }
@@ -289,7 +288,7 @@
 
 /* プラスの縦線（閉じている時のみ表示） */
 .toggle-icon_2test.closed::after {
-  content: '';
+  content: "";
   width: 2px;
   height: 10px;
   transform: translate(-50%, -50%);
@@ -305,4 +304,16 @@
   max-height: 0;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .side-nav {
+    display: none;
+  }
+  .category-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.category-m-title {
+  margin-top: 40px;
 }
