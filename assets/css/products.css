@@ -263,6 +263,11 @@
   margin-right: 5px;
   accent-color: #007bff; /* チェックボックスの色変更 */
 }
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
 /* レスポンシブ */
 @media (max-width: 1024px) {
