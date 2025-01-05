@@ -244,7 +244,24 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
+}
+.hashtag-container_2test {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hashtag_2test {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hashtag_2test input[type="checkbox"] {
+  margin-right: 5px;
+  accent-color: #007bff; /* チェックボックスの色変更 */
 }
 
 /* レスポンシブ */
