@@ -261,12 +261,18 @@
 
 .hashtag_2test input[type="checkbox"] {
   margin-right: 5px;
-  accent-color: #007bff; /* チェックボックスの色変更 */
+  accent-color: #007bff;
 }
 .filter-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 30px;
+}
+
+#result-count {
+  font-size: 30px;
+  color: #007bff;
 }
 
 /* レスポンシブ */
