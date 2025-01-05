@@ -47,6 +47,7 @@
   color: #333;
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 14px;
 }
 
 .menu-item:hover > a {
@@ -343,7 +344,7 @@
 }
 
 .item-level0ne {
-  font-size: 11px;
+  font-size: 11px !important;
   padding: 8px !important;
   display: flex !important;
   align-items: center;
