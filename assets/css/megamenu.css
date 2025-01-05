@@ -334,9 +334,26 @@
   text-decoration: none; /* 下線を消す */
   border: none; /* ボーダーを消す */
   border-radius: 5px; /* 角を丸くする */
-  cursor: pointer; /* カーソルをポインターに */
+  cursor: pointer;
+  height: 30px;
 }
 
 .button:hover {
   background-color: #0056b3; /* ホバー時の背景色 */
+}
+
+.item-level0ne {
+  font-size: 11px;
+  padding: 8px !important;
+  display: flex !important;
+  align-items: center;
+}
+
+.header-levelOne {
+  gap: 10px !important;
+}
+
+.menu-item-button {
+  display: flex;
+  align-items: center;
 }
