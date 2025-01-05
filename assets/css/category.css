@@ -11,9 +11,8 @@
 /* _2test */
 .category-layout_2test {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 40px;
-  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -28,10 +27,10 @@
 /* _2test */
 .side-nav_2test {
   position: sticky;
-  top: 20px; /* 上からの距離を調整 */
+  top: 20px;
   height: calc(100vh - 40px);
-  overflow-y: auto; /* 独自のスクロールバーを追加 */
-  width: 300px; /* サイドナビの幅を固定 */
+  overflow-y: auto;
+  width: 240px;
   background: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
