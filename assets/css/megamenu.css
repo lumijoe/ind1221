@@ -252,7 +252,7 @@
 /* メガメニュー基本スタイル */
 .mega-menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .navpanel-line {
