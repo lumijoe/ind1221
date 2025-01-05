@@ -28,3 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 100); // 100ミリ秒ごとにチェック
 }); 
+
+window.addEventListener('scroll', function(){
+    if( 700 < window.scrollY ) {
+      document.getElementById('megamenu-change-footer-nav').classList.add('hidden');
+      document.getElementById('footer-nav').classList.remove('hidden');
+      document.getElementById('footer').classList.remove('hidden');
+    } else {
+      document.getElementById('megamenu-change-footer-nav').classList.remove('hidden');
+      document.getElementById('footer-nav').classList.add('hidden');
+      document.getElementById('footer').classList.add('hidden');
+    }
+  });
+window.addEventListener('scroll', function(){
+    if( 860 < window.scrollY ) {
+      document.getElementById('footer').classList.remove('hidden');
+    } else {
+      document.getElementById('footer').classList.add('hidden');
+    }
+  });

@@ -14,9 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     // フォームお問い合わせを読み込む
-    fetch('/assets/includes/formcontact.html') // footer.htmlのパスを指定
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('commonFormContact').innerHTML = data;
-        });
+    const formContactElement = document.getElementById('commonFormContact');
+    if (formContactElement) { // 要素が存在する場合のみ読み込み
+        fetch('/assets/includes/formcontact.html') // footer.htmlのパスを指定
+            .then(response => response.text())
+            .then(data => {
+                formContactElement.innerHTML = data;
+            });
+    }
 });
