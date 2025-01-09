@@ -259,4 +259,8 @@
 .ir-banner-img {
   margin-left: 48px;
   margin-right: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d4d4d4;
 }/*# sourceMappingURL=ir2.css.map */

@@ -270,3 +270,6 @@ $primary-color: #0661a0;;
     margin-left:48px;
     margin-right:8px;
 }
+.accordion-button:not(.collapsed) {
+    background-color:#d4d4d4;
+}
