@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkboxes = document.querySelectorAll('.filter-checkbox'); //検索バーの項目(例：電化)
     const productCards = document.querySelectorAll('.product-card_2test'); //各製品カード
     const resultCount = document.getElementById('result-count'); //結果数id
-
     const filterProducts = () => { //以下をfilterProductsとする
         const selectedTags = Array.from(checkboxes) //検索項目全てから配列へ
             .filter(checkbox => checkbox.checked)   //inputtypeのcheckboxがチェック済を.filterする
@@ -19,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 selectedTags.length === 0 ||
                 selectedTags.some(tag => tags.includes(tag))
             ) {
-                card.classList.remove('uinone');
+                card.classList.remove('uinone'); //noneしない
                 visibleCount++;
             } else {
-                card.classList.add('uinone');
+                card.classList.add('uinone'); //非表示hiddenはNG、noneで対応
             }
         });
 

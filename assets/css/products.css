@@ -281,6 +281,11 @@
     background-position: center center;
   }
 }
+
+/* 製品検索条件の際の設定 */
 .uinone {
   display: none;
+}
+.uiblue {
+  background-color: red !important;
 }
