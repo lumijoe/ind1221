@@ -287,5 +287,6 @@
   display: none;
 }
 .uiblue {
-  background-color: red !important;
+  background-color: #007bff !important;
+  color: white !important;
 }
