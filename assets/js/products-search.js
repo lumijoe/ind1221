@@ -40,77 +40,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const checkboxes = document.querySelectorAll('.filter-checkbox');
-//     const productCards = document.querySelectorAll('.product-card_2test');
-//     const resultCount = document.getElementById('result-count');
-
-//     const filterProducts = () => {
-//         const selectedTags = Array.from(checkboxes)
-//             .filter(checkbox => checkbox.checked)
-//             .map(checkbox => checkbox.value);
-
-//         let visibleCount = 0;
-
-//         productCards.forEach(card => {
-//             const tags = Array.from(card.querySelectorAll('.product-tag-product'))
-//                 .map(tag => tag.textContent.trim());
-//             if (
-//                 selectedTags.length === 0 ||
-//                 selectedTags.some(tag => tags.includes(tag))
-//             ) {
-//                 card.classList.remove('hidden');
-//                 visibleCount++;
-//             } else {
-//                 card.classList.add('hidden');
-//             }
-//         });
-
-//         resultCount.textContent = visibleCount;
-//     };
-
-//     checkboxes.forEach(checkbox => {
-//         checkbox.addEventListener('change', filterProducts);
-//     });
-
-//     filterProducts();
-// });
-
-function filterProducts() {
-    // チェックされた項目を取得
-    const selectedValues = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(input => input.value);
-
-    // フィルター対象の製品カードを取得
+// or検索　どれか当てはまれば表示される
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
     const productCards = document.querySelectorAll('.product-card_2test');
+    const resultCount = document.getElementById('result-count');
 
-    let visibleCount = 0;
+    const filterProducts = () => {
+        const selectedTags = Array.from(checkboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
 
-    productCards.forEach(card => {
-        // 各カードに含まれるタグを取得
-        const productTags = Array.from(card.querySelectorAll('.product-tag-product')).map(tag => tag.textContent);
+        let visibleCount = 0;
 
-        // 全ての選択した条件を満たしているか確認
-        const matchesAll = selectedValues.every(value => productTags.includes(value));
+        productCards.forEach(card => {
+            const tags = Array.from(card.querySelectorAll('.product-tag-product'))
+                .map(tag => tag.textContent.trim());
+            if (
+                selectedTags.length === 0 ||
+                selectedTags.some(tag => tags.includes(tag))
+            ) {
+                card.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
 
-        if (matchesAll) {
-            card.style.display = 'block'; // すべての条件に合うものを表示
-            visibleCount++;
-        } else {
-            card.style.display = 'none'; // 合わないものを非表示
-        }
+        resultCount.textContent = visibleCount;
+    };
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', filterProducts);
     });
 
-    // 件数を更新
-    document.getElementById('result-count').textContent = visibleCount;
-}
-
-// チェックボックスが変更されるたびにフィルター処理を実行
-document.querySelectorAll('.filter-checkbox').forEach(input => {
-    input.addEventListener('change', filterProducts);
+    filterProducts();
 });
-
-// 初期表示
-filterProducts();
-
 
 
