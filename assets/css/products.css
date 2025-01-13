@@ -309,3 +309,63 @@
 }
 
 /* 製品情報トップ */
+/* ニュースカルーセル */
+.news-line {
+  padding-inline-start: 0px !important;
+  gap: 20px;
+  height: 130px;
+}
+.news-line li {
+  display: flex;
+  background-color: #ebebeb;
+  border-radius: 4px;
+}
+.news-line li img {
+  height: 130px;
+  object-fit: cover;
+  width: 35%;
+  border-radius: 4px 0 0 4px;
+}
+.news-line article {
+  padding-left: 20px;
+  justify-content: center;
+}
+.news-line time {
+  padding-bottom: 4px;
+}
+.news-line-txt {
+  padding-top: 8px;
+}
+
+/* トップ課題から探す（全てのタグ） */
+.search-by-issue {
+  width: 100vw;
+}
+.search-wrapper-tag-all {
+  display: flex;
+  justify-content: flex-end;
+}
+.search-wrapper-tag-all ul {
+  width: 93%;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  position: relative;
+}
+.addcomment {
+  position: absolute;
+  top: -35px;
+  background-color: #f3e440;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 40px;
+  letter-spacing: 0.1em;
+}
+
+.search-wrapper-tag-all ul .tags-all {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  padding: 25px;
+}
