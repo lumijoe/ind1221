@@ -56,7 +56,7 @@ window.addEventListener('scroll', function(){
     
   });
 window.addEventListener('scroll', function(){
-    if( 560 < window.scrollY ) {
+    if( 660 < window.scrollY ) {
       document.getElementById('footer').classList.remove('hidden');
       document.getElementById('footer').classList.add('visible');
     } else {

@@ -112,6 +112,9 @@
   font-size: 14px; /* フォントサイズ */
   color: #666;
   text-align: center;
+  position: fixed;
+  top: 17px;
+  right: -10px;
 }
 #footer .pagetop {
   position: fixed;
