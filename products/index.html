@@ -27,7 +27,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-
+    <style>
+        .wrapper .swiper-container .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+    </style>
 </head>
 <body>
     <div id="commonHeader"></div>
@@ -43,11 +47,35 @@
 
     <main class="products-top">
         <!-- カルーセル -->
-         
-        
+        <div class="wrapper">
+            <div class="swiper-container">
+              <ul class="swiper-wrapper" style="transition-timing-function: unset!important; padding-inline-start: 0px!important; gap:20px;">
+                <li class="swiper-slide bgnone" style="display: flex; background-color:#ebebeb; border-radius:4px;"><img src="https://images.unsplash.com/photo-1669707041081-dd4d51943041?auto=format&fit=crop&q=80" alt="" style="height:130px; object-fit:cover; width:35%; border-radius: 4px 0 0 4px;"><article class="news-item" style="padding-left:20px; justify-content:center;">
+                    <time style="padding-bottom:4px;">2024.03.20</time>
+                    <span class="category">新製品</span>
+                    <a href="#" style="padding-top:8px;">検査装置1313を4月より受注開始</a>
+                </article></li>
+                <li class="swiper-slide bgnone" style="display: flex; background-color:#ebebeb; border-radius:4px;"><img src="https://images.unsplash.com/photo-1655562693681-ee2a0a81db88?auto=format&fit=crop&q=80" alt="" style="height:130px; object-fit:cover; width:35%; border-radius: 4px 0 0 4px;"><article class="news-item" style="padding-left:20px;justify-content:center;">
+                    <time style="padding-bottom:4px;">2024.03.20</time>
+                    <span class="category">新製品</span>
+                    <a href="#" style="padding-top:8px;">テキストが入ります</a>
+                </article></li>
+                <li class="swiper-slide bgnone" style="display: flex; background-color:#ebebeb; border-radius:4px;"><img src="https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?auto=format&fit=crop&q=80" alt="" style="height:130px; object-fit:cover; width:35%; border-radius: 4px 0 0 4px;"><article class="news-item" style="padding-left:20px;justify-content:center;">
+                    <time style="padding-bottom:4px;">2024.03.20</time>
+                    <span class="category">新製品</span>
+                    <a href="#" style="padding-top:8px;">新製品Aシリーズを発売開始しました</a>
+                </article></li>
+                <li class="swiper-slide bgnone" style="display: flex; background-color:#ebebeb; border-radius:4px;"><img src="https://images.unsplash.com/photo-1682562031269-58a59c81432c?auto=format&fit=crop&q=80" alt="" style="height:130px; object-fit:cover; width:35%; border-radius: 4px 0 0 4px;"><article class="news-item" style="padding-left:20px;justify-content:center;">
+                    <time style="padding-bottom:4px;">2024.03.20</time>
+                    <span class="category">新製品</span>
+                    <a href="#" style="padding-top:8px;">新製品Aシリーズを発売開始しました</a>
+                </article></li>
+              </ul>
+            </div>
+        </div>
 
         <!-- トピックス＆製品ニュース -->
-        <div class="news-section">
+        <!-- <div class="news-section">
             <h2>製品ニュース</h2>
             <div class="news-list">
                 <article class="news-item">
@@ -55,9 +83,8 @@
                     <span class="category">新製品</span>
                     <a href="#">新製品Aシリーズを発売開始しました</a>
                 </article>
-                <!-- 他のニュース項目 -->
             </div>
-        </div>
+        </div> -->
 
         <!-- 課題から探す -->
         <section class="search-by-issue">
@@ -112,5 +139,9 @@
     <script src="/assets/js/top.js"></script>
     <script src="/assets/js/category.js"></script>
     <script src="/assets/js/products-search.js"></script>
+    <script src="/assets/js/product-top.js"></script>
+   
+
+   
 </body>
 </html>

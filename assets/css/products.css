@@ -164,6 +164,13 @@
   gap: 30px;
   margin: 40px 0;
 }
+.banner-grid-3 {
+  /*IRのバナー*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 40px 0;
+}
 
 .category-banner {
   position: relative;
@@ -300,3 +307,5 @@
   background-color: #007bff !important;
   color: white !important;
 }
+
+/* 製品情報トップ */
