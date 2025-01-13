@@ -46,6 +46,17 @@
     </nav>
 
     <main class="products-top">
+        <div style="display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between;" >
+            <h1 style="font-size:60px; margin:0px;">PRODUCTS</h1>
+            <ul style="display: flex; flex-direction:row; gap: 20px;">
+                <a href="/products/index.html#topics"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;"> TOPICS<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
+
+                <a href="/products/index.html#issue"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;">課題タグ<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
+
+                <a href="/products/index.html#category"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;">分野別<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
+            </ul>   
+        </div>
+        <h2 style="margin:0px;" id="topics">TOPICS</h2>
         <!-- カルーセル -->
         <div class="wrapper">
             <div class="swiper-container">
@@ -87,8 +98,8 @@
         </div> -->
 
         <!-- 課題から探す -->
-        <section class="search-by-issue">
-            <h2>課題から探す</h2>
+        <section class="search-by-issue" id="issue" style="padding-top:20px;">
+            <h2>課題タグから探す</h2>
             <div class="search-wrapper-tag-all">
                 <ul>
                     <div class="tags-all">
@@ -116,8 +127,8 @@
         </section>
 
         <!-- 製品分野バナー -->
-        <section class="category-banners">
-            <h2>分野から探す</h2>
+        <section class="category-banners" id="category">
+            <h2>分野別から探す</h2>
             <div class="banner-grid">
                 <a href="/products/category-a/" class="category-banner">
                     <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="製品分野A">
