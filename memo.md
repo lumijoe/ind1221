@@ -34,3 +34,16 @@ setting HDR 設定解除
 
 ## フッターとヘッダーの出現調整
 
+## テーブルプラグイン
+WPWP Table Manager
+参考サイト
+https://tcd-theme.com/2011/04/table-reloaded.html
+TablePress
+https://ja.wordpress.org/plugins/tablepress/
+参考サイト
+https://blog-bootcamp.com/start/wordpress-tablepresscss/
+WP Table Builder
+https://ja.wordpress.org/plugins/wp-table-builder/
+参考サイト
+https://www.hiskip.com/wp/plugin/spreadsheet/table/23959.html
+
