@@ -549,3 +549,48 @@
 }
 
 format が compressed だとコードが横一列に表示されてスタイル変更の時に大変なので、開発中は expanded が良き。本番環境では圧縮版を活用することが良いらしい
+
+## 遷移かつ指定ページ途中までスクロール
+
+先に id を指定しつつ、元に<a href="/company/#history">のように、#history の後ろには/入れないこと
+・ブラウザによって/を入れると#の解釈が異なってしまう
+・/company#hisotry だと company ファイルを探そうとしてしまうので、
+・company/#history 形式で company の中の index.html の#history という処理となる
+
+<!-- company/index.html -->
+<section id="history">
+            <h2>沿革</h2>
+            <p>私たちの会社は、20XX年に設立され、以来、様々な製品を提供してきました。以下は、主な沿革です。</p>
+            <ul style="gap: 20px;">
+                <li>
+                    <img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&q=80" alt="サステナビリティ" class="history-image">
+                    <span>20XX年: 会社設立</span>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&q=80" alt="サステナビリティ" class="history-image">
+                    <span>20XX年: 初の製品を発売</span>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1627744550360-404483bac52b?auto=format&fit=crop&q=80" alt="サステナビリティ" class="history-image">
+                    <span>20XX年: 海外進出</span>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1547895749-888a559fc2a7?auto=format&fit=crop&q=80" alt="サステナビリティ" class="history-image">
+                    <span>20XX年: 新工場を設立</span>
+                </li>
+            </ul>
+        </section>
+<!-- ir/index.html -->
+ <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Q3.	コーポレート・ガバナンス体制はどうなっていますか。
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>コーポレートガバナンスページをご覧ください。</p>
+                      <a href="/company/#history"><img src="../assets/images/icon_right_blue.png" alt="" width="20" height="20">コーポレートガバナンス</a>
+                    </div>
+                  </div>
+                </div>
