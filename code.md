@@ -511,3 +511,41 @@
     </div>
 
 </header>
+
+## setting.json
+
+{
+"workbench.colorTheme": "Default Dark Modern",
+"livePreview.customExternalBrowser": "Chrome",
+"liveServer.settings.CustomBrowser": "chrome",
+"editor.unicodeHighlight.ambiguousCharacters": false,
+"tailwind-fold.foldStyle": "QUOTES",
+"tailwind-fold.autoFold": false,
+"tailwindCSS.experimental.configFile": null,
+"editor.quickSuggestions": {
+"strings": true
+},
+"editor.codeActionsOnSave": {},
+"workbench.iconTheme": "material-icon-theme",
+"editor.formatOnSave": true,
+"yaml.schemas": {
+"file:///Users/lumi/.cursor/extensions/atlassian.atlascode-3.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+},
+"phpserver.phpPath": "/Users/lumi/Desktop/testphp/index.php",
+"phpserver.port": 8888,
+"liveServer.settings.donotVerifyTags": true,
+"liveServer.settings.donotShowInfoMsg": true,
+"svg.preview.mode": "svg",
+"liveSassCompile.settings.autoprefix": [
+],
+"liveSassCompile.settings.formats": [
+{
+"format": "compressed",
+"extensionName": ".min.css",
+"savePath": "/css"
+}
+],
+"liveSassCompile.settings.forceBaseDirectory": "/sass"
+}
+
+format が compressed だとコードが横一列に表示されてスタイル変更の時に大変なので、開発中は expanded が良き。本番環境では圧縮版を活用することが良いらしい
