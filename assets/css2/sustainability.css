@@ -29,8 +29,7 @@
   width: 100%;
   height: 560px;
   border-radius: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sustainability-grid .sustainability-content h3 {
   margin-top: 15px;
@@ -71,5 +70,6 @@
     margin-top: 0;
     font-size: 1em;
     color: #666;
+    padding-top: 60px;
   }
 }/*# sourceMappingURL=sustainability.css.map */
