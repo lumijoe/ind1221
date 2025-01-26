@@ -35,3 +35,21 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+
+/* アコーディオン */
+.accordion-button {
+  font-size: 14px !important;
+}
+.accordion-body p {
+  font-size: 14px !important;
+}
+.accordion-body a {
+  font-size: 14px !important;
+}
+.accordion-body a:hover {
+  color: #007bff;
+}
+.accordion-body img {
+  margin-right: 8px !important;
+  margin-top: -2px;
+}

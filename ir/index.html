@@ -26,57 +26,65 @@
 </head>
 <body>
     <div id="commonHeader"></div>
-    <div class="main-visual-products2 mvp-ir">
-        <h2>IR</h2>
+    <div class="wrapper-pageherobread">
+        <div class="main-visual-products2 mvp-ir">
+            <h2>IR情報</h2>
+        </div>
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+                <li class="breadcrumb-item current">IR情報</li>
+            </ol>
+        </nav>
     </div>
-    <nav class="breadcrumb" aria-label="パンくずリスト">
-        <ol class="breadcrumb-list">
-            <li class="breadcrumb-item"><a href="/">ホーム</a></li>
-            <li class="breadcrumb-item current">IR情報</li>
-        </ol>
-    </nav>
 
 
     <main>
        
 
         <!-- ニュースセクション -->
-        <section class="news-section" style="padding-top:0px; margin-top:0px; margin-bottom:0px;">
+        <section class="news-section" style="margin-top:0px; margin-bottom:0px;">
             <div class="container news-container">
                 <div class="news-grid">
-                    <div class="news-main" style="width:70%!important; padding-left:0px; padding-right:0px;">
+                    <div class="news-main" style="width:80%!important; padding-left:0px; padding-right:0px; max-width:600px;">
                         <div class="news-toppage-ttl">
                             <h2 style="width:auto">IRニュース</h2>
+                            <span>
+                                <a href="/ir/news/" class="more-link animationbutton">
+                                    <img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" style="fill: #007bff;">
+                                    一覧を見る
+                                </a>
+                            </span>
                         </div>
                         <p class="news-toppage-ttl-en">IR NEWS</p>
                         <div class="news-list">
                             <div class="news-list-wrapper">
-                                <article class="news-item product" style="align-items:flex-start;">
+                                <article class="news-item-row product">
                                     <div class="news-item-level1">
                                         <time>2024.11.01</time>
-                                        <span class="news-category">決算短信</span>
+                                        <span class="news-category-row">決算短信</span>
                                     </div>
-                                    <a href="#" class="news-item-txt">2025年3月期 第2四半期決算短信を掲載しました。</a>
+                                    <a href="#" class="news-item-txt-row">2025年3月期 第2四半期決算短信を掲載しました。</a>
                                 </article>
                             </div>
 
                             <div class="news-list-wrapper">
-                                <article class="news-item product" style="align-items:flex-start;">
+                                <article class="news-item-row product">
                                     <div class="news-item-level1">
                                         <time>2024.11.01</time>
-                                        <span class="news-category">決算説明会</span>
+                                        <span class="news-category-row">決算説明会</span>
                                     </div>
-                                    <a href="#" class="news-item-txt">2025年3月期 第2四半期決算説明会資料を掲載しました。</a>
+                                    <a href="#" class="news-item-txt-row">2025年3月期 第2四半期決算説明会資料を掲載しました。</a>
                                 </article>
                             </div>
 
                             <div class="news-list-wrapper">
-                                <article class="news-item product" style="align-items:flex-start;">
+                                <article class="news-item-row product">
                                     <div class="news-item-level1">
                                         <time>2024.03.19</time>
-                                        <span class="news-category">その他</span>
+                                        <span class="news-category-row">その他</span>
                                     </div>
-                                    <a href="#" class="news-item-txt">人事異動のお知らせ</a>
+                                    <a href="#" class="news-item-txt-row">人事異動のお知らせ</a>
                                 </article>
                             </div>
                         </div>
@@ -86,68 +94,68 @@
         </section>
 
         <!-- その他 -->
-        <section class="category-banners" id="irabout" style="padding:60px 15%!important;">
+        <section class="section-tight" id="irabout">
             <div class="l-grid--4">
                 
                 <div style="display: flex; flex-direction: column;">
-                    <a href="/products/category-b/" class="category-banner">
+                    <a href="/products/category-b/" class="category-banner-ir">
                         <img src="../assets/images/img_ir_libraryfile.jpg" alt="IRライブラリー">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">IRライブラリー</h3>
                         </div>
-                        <ul class="ir-buttons" style="padding-left:0px;">
+                        <ul class="ir-buttons" style="padding-left:0px; padding-top:10px;">
                             <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算短信</a></li>
-                            <hr class="ir-banner-hr">
+                            
                             <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">有価証券報告書</a></li>
-                            <hr class="ir-banner-hr">
+                            
                             <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算説明資料</a></li>
-                            <hr class="ir-banner-hr">
+                            
                             <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">IR資料</a></li>
-                            <hr class="ir-banner-hr">
+                            
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;">
-                    <a href="/products/category-b/" class="category-banner">
+                    <a href="/products/category-b/" class="category-banner-ir">
                         <img src="../assets/images/img_office.png" alt="統合報告書">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">統合報告書</h3>
                         </div>
-                        <ul class="ir-buttons" style="padding-left:0px;">
+                        <ul class="ir-buttons" style="padding-left:0px; padding-top:10px;">
                             <li class="ir-banner-li"><a href="/ir/stock/index.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">統合報告書</a></li>
-                            <hr class="ir-banner-hr">
+                           
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;">
-                    <a href="/products/category-a/" class="category-banner">
+                    <a href="/products/category-a/" class="category-banner-ir">
                         <img src="../assets/images/img_ir_office.jpg" alt="経営情報">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">財務情報</h3>
                         </div>
-                        <ul class="ir__topLinkBox01_linkList" style="padding-left:0px;">
+                        <ul class="ir__topLinkBox01_linkList" style="padding-left:0px; padding-top:10px;">
                             <li class="ir-banner-li"><a href="/ir/management/index.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主・投資家の皆様へ</a></li>
-                            <hr class="ir-banner-hr">
+                            
                             <li class="ir-banner-li"><a href="/ir/management/governance.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">コーポレート・ガバナンス</a></li>
-                            <hr class="ir-banner-hr">
+                            
                             <li class="ir-banner-li"><a href="/ir/management/disclosure.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">ディスクロージャーポリシー</a></li>
-                            <hr class="ir-banner-hr">
+                            
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;">
-                    <a href="/products/category-b/" class="category-banner">
+                    <a href="/products/category-b/" class="category-banner-ir">
                         <img src="../assets/images/img_ir_mtg.png" alt="株式について">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="../assets/images/icon_right_white.svg" alt="" class="cd">株式について</h3>
                         </div>
-                        <ul class="ir__topLinkBox01_linkList" style="padding-left:0px;">
+                        <ul class="ir__topLinkBox01_linkList" style="padding-left:0px; padding-top:10px;">
                             <li class="ir-banner-li"><a href="/ir/stock/index.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株式情報</a></li>
-                            <hr class="ir-banner-hr">
+                           
                             <li class="ir-banner-li"><a href="/ir/stock/meeting.php" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主総会</a></li>
-                            <hr class="ir-banner-hr">
+                           
                             <li class="ir-banner-li"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer" class="ir-button ir-banner-a"><img src="../assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株価情報</a></li>
-                            <hr class="ir-banner-hr">
+                        
                         </ul>
                     </a>
                 </div>
@@ -156,15 +164,11 @@
 
 
         <!-- よくあるご質問セクション -->
-        <section class="faq" id="iffaq">
+        <section class="faq section-tight" id="iffaq">
             <h2>よくあるご質問</h2>
-            <p>企業情報・経営</p>
             <hr>
-
+            <!-- アコーディオン -->
             <div class="accordion" id="accordionExample" style="margin-left:10%; margin-right:10%;">
-                <h2>よくあるご質問</h2>
-            <p>企業情報・経営</p>
-            <hr>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -201,7 +205,7 @@
                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>コーポレートガバナンスページをご覧ください。</p>
-                      <a href="/company#history"><img src="../assets/images/icon_right_blue.png" alt="" width="20" height="20">コーポレートガバナンス</a>
+                      <a href="/company/#history"><img src="../assets/images/icon_right_blue.png" alt="" width="20" height="20">コーポレートガバナンス</a>
                     </div>
                   </div>
                 </div>
