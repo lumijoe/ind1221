@@ -95,7 +95,6 @@
 <?php wp_footer(); ?>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/loadCommonParts.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/category.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/megamenu.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/product-detail.js"></script>

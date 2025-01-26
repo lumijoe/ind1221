@@ -19,12 +19,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- 自サイトのスタイルシート -->
-    <link href="<?php echo get_template_directory_uri(); ?>assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/custom.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/megamenu.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/breadcrumb.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/sustainability.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/products.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/top.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/ir2.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/footer.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/footer.css">  
 
     <!-- Bootstrap JS (必要に応じて) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

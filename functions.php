@@ -1,10 +1,13 @@
 <!-- functions.php -->
 <?php
-function enqueue_custom_styles()
-{
-    $uri = get_template_directory_uri();
+function enqueue_custom_scripts() {
+    $uri = get_template_directory_uri(); // $uriを定義
 
-    
+    // jQueryを読み込み
+    wp_enqueue_script('jquery');
+
+    // Bootstrap JSの読み込み
+    wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js', array('jquery'), null, true);
 
     // CSS（home.css）を読み込み
     wp_enqueue_style(
@@ -24,3 +27,5 @@ function enqueue_custom_styles()
     //     );
     // }
 }
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+?>

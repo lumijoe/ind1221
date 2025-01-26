@@ -17,7 +17,7 @@ get_header('ir');
                         <div class="news-toppage-ttl">
                             <h2 style="width:auto">IRニュース</h2>
                             <span>
-                                <a href="/ir/news/" class="more-link animationbutton">
+                                <a href="<?php echo esc_url(home_url()); ?>/ir/#irnews/" class="more-link animationbutton">
                                     <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" style="fill: #007bff;">
                                     一覧を見る
                                 </a>
@@ -31,7 +31,7 @@ get_header('ir');
                                         <time>2024.11.01</time>
                                         <span class="news-category-row">決算短信</span>
                                     </div>
-                                    <a href="#" class="news-item-txt-row">2025年3月期 第2四半期決算短信を掲載しました。</a>
+                                    <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt-row">2025年3月期 第2四半期決算短信を掲載しました。</a>
                                 </article>
                             </div>
 
@@ -41,7 +41,7 @@ get_header('ir');
                                         <time>2024.11.01</time>
                                         <span class="news-category-row">決算説明会</span>
                                     </div>
-                                    <a href="#" class="news-item-txt-row">2025年3月期 第2四半期決算説明会資料を掲載しました。</a>
+                                    <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt-row">2025年3月期 第2四半期決算説明会資料を掲載しました。</a>
                                 </article>
                             </div>
 
@@ -51,7 +51,7 @@ get_header('ir');
                                         <time>2024.03.19</time>
                                         <span class="news-category-row">その他</span>
                                     </div>
-                                    <a href="#" class="news-item-txt-row">人事異動のお知らせ</a>
+                                    <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt-row">人事異動のお知らせ</a>
                                 </article>
                             </div>
                         </div>
@@ -65,63 +65,63 @@ get_header('ir');
             <div class="l-grid--4">
                 
                 <div style="display: flex; flex-direction: column;" id="irlibrary">
-                    <a href="/products/category-b/" class="category-banner-ir">
+                    <a href="<?php echo esc_url(home_url()); ?>" class="category-banner-ir">
                         <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_libraryfile.jpg" alt="IRライブラリー">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_white.svg" alt="" class="cd">IRライブラリー</h3>
                         </div>
                         <ul class="ir-buttons text80" style="padding-left:0px; padding-top:10px;">
-                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算短信</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算短信</a></li>
                             
-                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">有価証券報告書</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">有価証券報告書</a></li>
                             
-                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算説明資料</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">決算説明資料</a></li>
                             
-                            <li class="ir-banner-li"><a href="#" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">IR資料</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">IR資料</a></li>
                             
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;" id="irreport">
-                    <a href="/products/category-b/" class="category-banner-ir">
+                    <a href="<?php echo esc_url(home_url()); ?>" class="category-banner-ir">
                         <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_office.png" alt="統合報告書">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_white.svg" alt="" class="cd">統合報告書</h3>
                         </div>
                         <ul class="ir-buttons text80" style="padding-left:0px; padding-top:10px;">
-                            <li class="ir-banner-li"><a href="/ir/stock/index.php" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">統合報告書</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>/ir/stock/index.php" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">統合報告書</a></li>
                            
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;" id="irfinancial">
-                    <a href="/products/category-a/" class="category-banner-ir">
+                    <a href="<?php echo esc_url(home_url()); ?>" class="category-banner-ir">
                         <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_office.jpg" alt="経営情報">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_white.svg" alt="" class="cd">財務情報</h3>
                         </div>
                         <ul class="ir__topLinkBox01_linkList text80" style="padding-left:0px; padding-top:10px;">
-                            <li class="ir-banner-li"><a href="/ir/management/index.php" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主・投資家の皆様へ</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主・投資家の皆様へ</a></li>
                             
-                            <li class="ir-banner-li"><a href="/ir/management/governance.php" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">コーポレート・ガバナンス</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">コーポレート・ガバナンス</a></li>
                             
-                            <li class="ir-banner-li"><a href="/ir/management/disclosure.php" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">ディスクロージャーポリシー</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">ディスクロージャーポリシー</a></li>
                             
                         </ul>
                     </a>
                 </div>
                 <div style="display: flex; flex-direction: column;" id="irstocks">
-                    <a href="/products/category-b/" class="category-banner-ir">
+                    <a href="<?php echo esc_url(home_url()); ?>" class="category-banner-ir">
                         <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_mtg.png" alt="株式について">
                         <div class="banner-content-ir">
                             <h3 class="cdh3"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_white.svg" alt="" class="cd">株式について</h3>
                         </div>
                         <ul class="ir__topLinkBox01_linkList text80" style="padding-left:0px; padding-top:10px;">
-                            <li class="ir-banner-li"><a href="/ir/stock/index.php" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株式情報</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株式情報</a></li>
                            
-                            <li class="ir-banner-li"><a href="/ir/stock/meeting.php" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主総会</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株主総会</a></li>
                            
-                            <li class="ir-banner-li"><a href="/ir/index.html" target="_blank" rel="noopener noreferrer" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株価情報</a></li>
+                            <li class="ir-banner-li"><a href="<?php echo esc_url(home_url()); ?>" target="_blank" rel="noopener noreferrer" class="ir-button ir-banner-a"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" class="ir-banner-img">株価情報</a></li>
                         
                         </ul>
                     </a>
@@ -146,7 +146,7 @@ get_header('ir');
                     <div class="accordion-body">
                         <p>A1.   機器製造から、メーカー取扱製品の販売まで総合的な産業サービスを提供しています。
                         事業内容や理念等について、詳しくは「企業案内」ページをご覧ください。</p>
-                        <a href="/company/index.html"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20" height="20">企業案内</a>
+                        <a href="<?php echo esc_url(home_url()); ?>/company/"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20" height="20">企業案内</a>
                     </div>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ get_header('ir');
                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>A2.	設立は1949年4月です。当社沿革については、「沿革」ページをご覧ください。</p>
-                      <a href="/company/#history"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.png" alt="" width="20" height="20"> 沿革</a>
+                      <a href="<?php echo esc_url(home_url()); ?>/company/#history"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.png" alt="" width="20" height="20"> 沿革</a>
                     </div>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ get_header('ir');
                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>コーポレートガバナンスページをご覧ください。</p>
-                      <a href="/company/#history"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.png" alt="" width="20" height="20">コーポレートガバナンス</a>
+                      <a href="<?php echo esc_url(home_url()); ?>/company/#history"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.png" alt="" width="20" height="20">コーポレートガバナンス</a>
                     </div>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ get_header('ir');
         </section>
 
         <!-- お問い合わせ -->
-        <div id="commonFormContact"></div>
+        <?php get_template_part('component', 'formcontact'); ?>
     </main>
 <?php
     get_footer(); 
