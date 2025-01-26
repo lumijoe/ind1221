@@ -10,7 +10,7 @@ get_header('ir');
 ?>
 <main>
     <!-- ニュースセクション -->
-    <section class="news-section" style="margin-top:0px; margin-bottom:0px;">
+    <section class="news-section" style="margin-top:0px; margin-bottom:0px;" id="irnews">
             <div class="container news-container">
                 <div class="news-grid">
                     <div class="news-main" style="width:80%!important; padding-left:0px; padding-right:0px; max-width:600px;">
