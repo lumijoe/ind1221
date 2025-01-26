@@ -1,44 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サステナビリティ | 会社名</title>
+<!-- sustainability -->
+<?php
 
-     <!-- Swiperのスタイルシートを追加 -->
-     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
- 
-     <!-- 自サイトのスタイルシート -->
-     <link href="../assets/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/megamenu.css">
-    <link rel="stylesheet" href="../assets/css/breadcrumb.css">
-    <link rel="stylesheet" href="../assets/css2/sustainability.css">
-    <link rel="stylesheet" href="../assets/css/top.css">
-    <link rel="stylesheet" href="../assets/css/products.css">
-    <link rel="stylesheet" href="../assets/css2/ir2.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+/**
+ * Template Name: page-sustainability
+ * Description: This is the template
+ */
 
-    <!-- JS  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-</head>
-<div>
-    <div id="commonHeader"></div>
-    <div class="wrapper-pageherobread">
-        <div class="main-visual-products mvp-sus">
-            <h2>サステナビリティ</h2>
-        </div>
-
-        <nav class="breadcrumb" aria-label="パンくずリスト">
-            <ol class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="/">ホーム</a></li>
-                <li class="breadcrumb-item current">サステナビリティ</li>
-            </ol>
-        </nav>
-    </div>
-
-    <main>
+get_header('sustainability');
+?>
+<main>
         <!-- サステナビリティの考え方と取り組み -->
         <section class="sustainability-intro">
             <div class="container">
@@ -56,7 +26,7 @@
                             <h2 style="width:auto">サステナビリティニュース</h2>
                             <!-- <span>
                                 <a href="/news/" class="more-link animationbutton">
-                                    <img src="../assets/images/icon_right_blue.svg" alt="" width="40px" height="40px" >
+                                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="40px" height="40px" >
                                     一覧を見る
                                 </a>
                             </span> -->
@@ -64,7 +34,7 @@
                         <p class="news-toppage-ttl-en">SUSTAINABILITY NEWS</p>
                         <div class="news-list">
                             <div class="news-list-wrapper">
-                                <img src="../assets/images/img_news_sus_01.png" alt="" class="news-cap">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_news_sus_01.png" alt="" class="news-cap">
                                 <article class="news-item product" style="align-items:flex-start;">
                                     <div class="news-item-level1">
                                         <time>2024.03.20</time>
@@ -107,33 +77,24 @@
                 <h2>ESG（環境・社会・ガバナンス）への取り組み</h2>
                 <div class="sustainability-grid" style="grid-template-columns: 1fr 1fr 1fr!important;">
                     <div class="sustainability-content" id="environment">
-                        <img src="../assets/images/img_sus_e.png" alt="環境" loading="lazy" width="213" height="319">
+                        <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_sus_e.png" alt="環境" loading="lazy" width="213" height="319">
                         <h3>環境</h3>
                         <p>環境保護に向けた取り組みとして、エネルギー効率の向上や廃棄物の削減に努めています。</p>
                     </div>
                     <div class="sustainability-content" id="society">
-                        <img src="../assets/images/img_sus_s.png" alt="社会" loading="lazy">
+                        <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_sus_s.png" alt="社会" loading="lazy">
                         <h3>社会</h3>
                         <p>地域社会への貢献や多様性の尊重を通じて、持続可能な社会の実現を目指しています。</p>
                     </div>
                     <div class="sustainability-content" id="governance">
-                        <img src="../assets/images/img_sus_g.png" alt="ガバナンス" loading="lazy">
+                        <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_sus_g.png" alt="ガバナンス" loading="lazy">
                         <h3>ガバナンス</h3>
                         <p>透明性のある経営と倫理的なビジネス慣行を通じて、信頼される企業を目指します。</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        
-    </main>
-
-    <div id="commonFooter"></div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/js/loadCommonParts.js"></script>
-    <script src="/assets/js/megamenu.js"></script>
-    <script src="/assets/js/top.js"></script>
-    <script src="/assets/js/common.js"></script>
-
-</body>
-</html>
+</main>
+<?php
+    get_footer(); 
+?>

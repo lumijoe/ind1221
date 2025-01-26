@@ -1,26 +1,58 @@
+<?php
+//====================================================
+//  Template Name: header-ir
+//====================================================
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR情報 | 会社名</title>
+    <!-- Swiperのスタイルシートを追加 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ 
+    <!-- 自サイトのスタイルシート -->
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/custom.css" rel="stylesheet">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/megamenu.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/breadcrumb.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/sustainability.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/top.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/products.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/ir2.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/footer.css">  
+   
+   <!-- JS  -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   
+</head>
+<div>
 <header class="header">
     <div class="header-inner" id="header-inner">
         <div class="header-top">
             <a href="/" class="logo">
-                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/logo.png" alt="会社名">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="会社名">
             </a>
             <nav class="mega-menu">
                 <ul class="menu-list header-levelOne">
                     <!-- お知らせ -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="/news/" class="item-level0ne">お知らせ</a>
+                        <a href="<?php echo get_template_directory_uri(); ?>/news/" class="item-level0ne">お知らせ</a>
                     </li>
     
                     <!-- 企業案内 -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="/company/" class="item-level0ne">企業情報</a>
+                        <a href="<?php echo get_template_directory_uri('/company'); ?>" class="item-level0ne">企業情報</a>
                         <div class="mega-content-level1">
                             <div class="mega-inner">
                                 <div class="mega-category">
                                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" alt="企業案内" loading="lazy">
-                                    <a href="/company/"><h3>企業情報トップ</h3></a>
+                                    <a href="<?php echo get_template_directory_uri('/company'); ?>"><h3>企業情報トップ</h3></a>
                                     <ul>
                                         <li><a href="/company/#message">メッセージ</a></li>
                                         <li><a href="/company/#about">会社概要</a></li>
@@ -34,12 +66,12 @@
                     <!-- IR情報 -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="/ir/" class="item-level0ne">IR情報</a>
+                        <a href="<?php echo get_template_directory_uri('/ir'); ?>" class="item-level0ne">IR情報</a>
                         <div class="mega-content-level1">
                             <div class="mega-inner">
                                 <div class="mega-category">
                                     <img src="https://images.unsplash.com/photo-1531972111231-7482a960e109?auto=format&fit=crop&q=80" alt="IR情報" loading="lazy">
-                                    <h3><a href="/ir/">IRトップ</a></h3>
+                                    <h3><a href="<?php echo get_template_directory_uri('/ir'); ?>">IRトップ</a></h3>
                                     <ul>
                                         <li><a href="/ir/#irnews">IRニュース</a></li>
                                         <li><a href="/ir/#irlibrary">IRライブラリー</a></li>
@@ -179,3 +211,15 @@
         </nav>
     </div>
 </header>
+<div class="wrapper-pageherobread">
+    <div class="main-visual-products2 mvp-ir">
+        <h2>IR情報</h2>
+    </div>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+            <li class="breadcrumb-item current">IR情報</li>
+        </ol>
+    </nav>
+</div>
+<main>

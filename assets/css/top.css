@@ -88,7 +88,7 @@
   right: -100px;
   width: 350px; /* 画像の幅を設定（必要に応じて調整） */
   height: 350px; /* 画像の高さを設定（必要に応じて調整） */
-  background-image: url("/assets/images/podcast.png"); /* 背景画像を指定 */
+  background-image: url("https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/podcast.png"); /* 背景画像を指定 */
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
@@ -100,7 +100,7 @@
   left: -180px;
   width: 280px;
   height: 280px;
-  background-image: url("/assets/images/podcast02.png"); /* 背景画像を指定 */
+  background-image: url("https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/podcast02.png"); /* 背景画像を指定 */
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;

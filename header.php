@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- 自サイトのスタイルシート -->
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/megamenu.css">
-    <link rel="stylesheet" href="/assets/css/top.css">
-    <link rel="stylesheet" href="/assets/css2/ir2.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link href="<?php echo get_template_directory_uri(); ?>assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/megamenu.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/top.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/ir2.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/footer.css">
 
     <!-- Bootstrap JS (必要に応じて) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -41,7 +41,7 @@
     <div class="header-inner" id="header-inner">
         <div class="header-top">
             <a href="<?php echo esc_url(home_url()); ?>" class="logo">
-                <img src="/assets/images/logo.png" alt="会社名">
+                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/logo.png" alt="会社名">
             </a>
             <nav class="mega-menu">
                 <ul class="menu-list header-levelOne">
@@ -127,7 +127,7 @@
                     <!-- icon -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="https://ikkosha-co-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp" target="_blank" rel="noopener noreferrer" class="item-level0ne"><img src="../../assets/images/icon_language.svg" width="20" height="20"></a>
+                        <a href="https://ikkosha-co-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp" target="_blank" rel="noopener noreferrer" class="item-level0ne"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_language.svg" width="20" height="20"></a>
                     </li>
                     <!-- ボタン -->
                     <!-- <li class="menu-item menu-item-button">
@@ -151,11 +151,11 @@
                 <!-- 検査装置・設備 -->
                 <span class="navpanel-line"></span>
                 <li class="menu-item">
-                    <a href="<?php echo esc_url(home_url('/products/category-a/')); ?>" style="display: flex; align-items:center;"><img src="../../assets/images/icon_01.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">検査装置・設備</a>
+                    <a href="<?php echo esc_url(home_url('/products/category-a/')); ?>" style="display: flex; align-items:center;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_01.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">検査装置・設備</a>
                     <div class="mega-content">
                         <div class="mega-inner">
                             <!-- <div class="mega-category">
-                                <img src="../../assets/images/img_product_top.png" alt="製品分野A" loading="lazy">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_product_top.png" alt="製品分野A" loading="lazy">
                                 <h3><a href="/products/">製品情報トップ</a></h3>
                             </div> -->
                             <div class="mega-category">
@@ -174,7 +174,7 @@
                 <!-- 工具・周辺機器 -->
                 <span class="navpanel-line"></span>
                 <li class="menu-item">
-                    <a href="/products/category-b/" style="display: flex; align-items:center;"><img src="../../assets/images/icon_02.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工具・周辺機器</a>
+                    <a href="/products/category-b/" style="display: flex; align-items:center;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_02.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工具・周辺機器</a>
                     <div class="mega-content">
                         <div class="mega-inner">
                             <div class="mega-category">
@@ -193,7 +193,7 @@
                 <!-- 工業炉 -->
                 <span class="navpanel-line"></span>
                 <li class="menu-item">
-                    <a href="/products/category-c/" style="display: flex; align-items:center;"><img src="../../assets/images/icon_031.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工業炉</a>
+                    <a href="/products/category-c/" style="display: flex; align-items:center;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_031.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工業炉</a>
                     <div class="mega-content">
                         <div class="mega-inner">
                             <div class="mega-category">
@@ -209,10 +209,10 @@
 
                 <!-- ボタン -->
                 <li class="menu-item menu-item-button">
-                    <a href="#" class="button item-level0ne" style="color: #fff !important;"><img src="../../assets/images/icon_book_white.svg" alt="" width="30" height="30">カタログ一覧</a>
+                    <a href="#" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_book_white.svg" alt="" width="30" height="30">カタログ一覧</a>
                 </li>
                 <li class="menu-item menu-item-button">
-                    <a href="https://atrail.co.jp/contact" class="button item-level0ne" style="color: #fff !important;"><img src="../../assets/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
+                    <a href="https://atrail.co.jp/contact" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
                 </li>
             </ul>
         </nav>

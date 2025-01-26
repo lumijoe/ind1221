@@ -1,45 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IR情報 | 会社名</title>
-    <!-- Swiperのスタイルシートを追加 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
- 
-    <!-- 自サイトのスタイルシート -->
-    <link href="../assets/css/custom.css" rel="stylesheet">
-   <link rel="stylesheet" href="../assets/css/style.css">
-   <link rel="stylesheet" href="../assets/css/megamenu.css">
-   <link rel="stylesheet" href="../assets/css/breadcrumb.css">
-   <link rel="stylesheet" href="../assets/css2/sustainability.css">
-   <link rel="stylesheet" href="../assets/css/top.css">
-   <link rel="stylesheet" href="../assets/css/products.css">
-   <link rel="stylesheet" href="../assets/css2/ir2.css">
-   <link rel="stylesheet" href="../assets/css/footer.css">  
-   
-   <!-- JS  -->
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-   
-</head>
-<body>
-    <div id="commonHeader"></div>
-    <div class="wrapper-pageherobread">
-        <div class="main-visual-products2 mvp-ir">
-            <h2>IR情報</h2>
-        </div>
-        <nav class="breadcrumb" aria-label="パンくずリスト">
-            <ol class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="/">ホーム</a></li>
-                <li class="breadcrumb-item current">IR情報</li>
-            </ol>
-        </nav>
-    </div>
-    <main>
-        <!-- ニュースセクション -->
-        <section class="news-section" style="margin-top:0px; margin-bottom:0px;">
+<!-- ir -->
+<?php
+
+/**
+ * Template Name: page-ir
+ * Description: This is the template
+ */
+
+get_header('ir');
+?>
+<main>
+    <!-- ニュースセクション -->
+    <section class="news-section" style="margin-top:0px; margin-bottom:0px;">
             <div class="container news-container">
                 <div class="news-grid">
                     <div class="news-main" style="width:80%!important; padding-left:0px; padding-right:0px; max-width:600px;">
@@ -211,13 +182,6 @@
         <!-- お問い合わせ -->
         <div id="commonFormContact"></div>
     </main>
-
-    <div id="commonFooter"></div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/js/loadCommonParts.js"></script>
-    <script src="/assets/js/megamenu.js"></script>
-    <script src="/assets/js/top.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="/assets/js/common.js"></script>
-</body>
-</html>
+<?php
+    get_footer(); 
+?>

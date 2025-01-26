@@ -56,7 +56,7 @@ get_header();
                             <h2>ニュース</h2>
                             <span>
                                 <a href="/news/" class="more-link animationbutton">
-                                    <img src="./assets/images/icon_right_blue.svg" alt="" width="20px" height="20px">
+                                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px">
                                     一覧を見る
                                 </a>
                             </span>
@@ -101,7 +101,7 @@ get_header();
                                         <time>2024.03.10</time>
                                         <span class="news-category">製品B</span>
                                     </div>
-                                    <a href="#" class="news-item-txt">新製品が記事に掲載されました<img src="./assets/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                                    <a href="#" class="news-item-txt">新製品が記事に掲載されました<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
                                 </article>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ get_header();
                             <h2>IRニュース</h2>
                             <span>
                                 <a href="/ir/news/" class="more-link animationbutton">
-                                    <img src="./assets/images/icon_right_blue.svg" alt="" width="20px" height="20px" style="fill: #007bff;">
+                                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" style="fill: #007bff;">
                                     一覧を見る
                                 </a>
                             </span>
@@ -122,7 +122,7 @@ get_header();
                         <div class="news-list">
                             <div class="news-list-wrapper">
                                 <div class="news-img-area">
-                                    <img src="./assets/images/img_ir_mtg.png" class="news-cap">
+                                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_mtg.png" class="news-cap">
                                     <p class="mark-newsarrival text80">NEW</p>
                                 </div>
                                 <article class="news-item ir">
@@ -130,13 +130,13 @@ get_header();
                                         <time>2024.03.15</time>
                                         <span class="news-category">IR</span>
                                     </div>
-                                    <a href="#" class="news-item-txt">2024年度第3四半期決算発表<img src="./assets/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                                    <a href="#" class="news-item-txt">2024年度第3四半期決算発表<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
                                 </article>
                             </div>
 
                             <div class="news-list-wrapper">
                                 <div class="news-img-area">
-                                    <img src="./assets/images/img_ir_data.png" alt="" class="news-cap">
+                                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_data.png" alt="" class="news-cap">
                                     <!-- <p class="mark-newsarrival">NEW</p> -->
                                 </div>
                                 <article class="news-item ir">
@@ -144,12 +144,12 @@ get_header();
                                         <time>2024.03.08</time>
                                         <span class="news-category">IR</span>
                                     </div>
-                                    <a href="#" class="news-item-txt">人事異動のお知らせ「海外拠点グループ会社の役員人事について決定いたしました」<img src="./assets/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                                    <a href="#" class="news-item-txt">人事異動のお知らせ「海外拠点グループ会社の役員人事について決定いたしました」<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
                                 </article>
                                 </div>
                            <div class="news-list-wrapper">
                                 <div class="news-img-area">
-                                    <img src="./assets/images/img_ir_library.png" alt="" class="news-cap">
+                                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_library.png" alt="" class="news-cap">
                                     <!-- <p class="mark-newsarrival">NEW</p> -->
                                 </div>
                                 <article class="news-item ir">
@@ -157,7 +157,7 @@ get_header();
                                         <time>2024.01.01</time>
                                         <span class="news-category">IR</span>
                                     </div>
-                                    <a href="#" class="news-item-txt">株主総会のお知らせ<img src="./assets/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                                    <a href="#" class="news-item-txt">株主総会のお知らせ<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
                                 </article>
                             </div>
                         </div>
@@ -193,7 +193,7 @@ get_header();
                 <p style="padding-right:5%; padding-left:5%; font-size:14px; padding-top:35px;" class="text">検査用装置や設備、工具や工具周辺機器、工業路など生産現場のあらゆる工程にわたる50以上の製品・技術を保有しています。
                     高度な技術とエンジニアリングを活かしたソリューションを提供し、パートナーとともに世界の躍進のために貢献していきます。</p>
                 <a href="/products/index.html" class="more-link animationbutton" style="color:#007bff; justify-content:center;">
-                    <img src="./assets/images/icon_right_blue.svg" alt="" width="40px" height="40px" style="fill: #007bff;">
+                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="40px" height="40px" style="fill: #007bff;">
                     製品情報をもっと見る
                 </a>
                 
@@ -209,7 +209,7 @@ get_header();
                         <h3>持続可能な社会の実現に向けて</h3>
                         <p style="font-size:14px; margin-top:0px;" class="text">ソリューションの提供だけでなく<br>当社の考え方や取り組みについて紹介しています。</p>
                         <a href="/sustainability/" class="more-link animationbutton" style="color:#007bff;/* justify-content:center; */">
-                            <img src="./assets/images/icon_right_blue.svg" alt="" width="40px" height="40px" style="fill: #007bff;">
+                            <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="40px" height="40px" style="fill: #007bff;">
                             もっと見る
                         </a>
                     </div>

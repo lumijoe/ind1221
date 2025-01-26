@@ -14,15 +14,15 @@
      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
  
      <!-- 自サイトのスタイルシート -->
-     <link href="../assets/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/megamenu.css">
-    <link rel="stylesheet" href="../assets/css/breadcrumb.css">
-    <link rel="stylesheet" href="../assets/css2/sustainability.css">
-    <link rel="stylesheet" href="../assets/css/top.css">
-    <link rel="stylesheet" href="../assets/css/products.css">
-    <link rel="stylesheet" href="../assets/css2/ir2.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/megamenu.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/breadcrumb.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/sustainability.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/top.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/products.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/ir2.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/footer.css">
 
     <!-- JS  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -33,25 +33,25 @@
     <div class="header-inner" id="header-inner">
         <div class="header-top">
             <a href="/" class="logo">
-                <img src="/assets/images/logo.png" alt="会社名">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="会社名">
             </a>
             <nav class="mega-menu">
                 <ul class="menu-list header-levelOne">
                     <!-- お知らせ -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="/news/" class="item-level0ne">お知らせ</a>
+                        <a href="<?php echo get_template_directory_uri(); ?>/news/" class="item-level0ne">お知らせ</a>
                     </li>
     
                     <!-- 企業案内 -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="/company/" class="item-level0ne">企業情報</a>
+                        <a href="<?php echo get_template_directory_uri('/company'); ?>" class="item-level0ne">企業情報</a>
                         <div class="mega-content-level1">
                             <div class="mega-inner">
                                 <div class="mega-category">
                                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" alt="企業案内" loading="lazy">
-                                    <a href="/company/"><h3>企業情報トップ</h3></a>
+                                    <a href="<?php echo get_template_directory_uri('/company'); ?>"><h3>企業情報トップ</h3></a>
                                     <ul>
                                         <li><a href="/company/#message">メッセージ</a></li>
                                         <li><a href="/company/#about">会社概要</a></li>
@@ -65,12 +65,12 @@
                     <!-- IR情報 -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="/ir/" class="item-level0ne">IR情報</a>
+                        <a href="<?php echo get_template_directory_uri('/ir'); ?>" class="item-level0ne">IR情報</a>
                         <div class="mega-content-level1">
                             <div class="mega-inner">
                                 <div class="mega-category">
                                     <img src="https://images.unsplash.com/photo-1531972111231-7482a960e109?auto=format&fit=crop&q=80" alt="IR情報" loading="lazy">
-                                    <h3><a href="/ir/">IRトップ</a></h3>
+                                    <h3><a href="<?php echo get_template_directory_uri('/ir'); ?>">IRトップ</a></h3>
                                     <ul>
                                         <li><a href="/ir/#irnews">IRニュース</a></li>
                                         <li><a href="/ir/#irlibrary">IRライブラリー</a></li>
@@ -119,7 +119,7 @@
                     <!-- icon -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="https://ikkosha-co-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp" target="_blank" rel="noopener noreferrer" class="item-level0ne"><img src="../../assets/images/icon_language.svg" width="20" height="20"></a>
+                        <a href="https://ikkosha-co-jp.translate.goog/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp" target="_blank" rel="noopener noreferrer" class="item-level0ne"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_language.svg" width="20" height="20"></a>
                     </li>
                     <!-- ボタン -->
                     <!-- <li class="menu-item menu-item-button">
@@ -143,11 +143,11 @@
                 <!-- 検査装置・設備 -->
                 <span class="navpanel-line"></span>
                 <li class="menu-item">
-                    <a href="/products/category-a/" style="display: flex; align-items:center;"><img src="../../assets/images/icon_01.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">検査装置・設備</a>
+                    <a href="/products/category-a/" style="display: flex; align-items:center;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_01.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">検査装置・設備</a>
                     <div class="mega-content">
                         <div class="mega-inner">
                             <!-- <div class="mega-category">
-                                <img src="../../assets/images/img_product_top.png" alt="製品分野A" loading="lazy">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_product_top.png" alt="製品分野A" loading="lazy">
                                 <h3><a href="/products/">製品情報トップ</a></h3>
                             </div> -->
                             <div class="mega-category">
@@ -166,7 +166,7 @@
                 <!-- 工具・周辺機器 -->
                 <span class="navpanel-line"></span>
                 <li class="menu-item">
-                    <a href="/products/category-b/" style="display: flex; align-items:center;"><img src="../../assets/images/icon_02.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工具・周辺機器</a>
+                    <a href="/products/category-b/" style="display: flex; align-items:center;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_02.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工具・周辺機器</a>
                     <div class="mega-content">
                         <div class="mega-inner">
                             <div class="mega-category">
@@ -185,7 +185,7 @@
                 <!-- 工業炉 -->
                 <span class="navpanel-line"></span>
                 <li class="menu-item">
-                    <a href="/products/category-c/" style="display: flex; align-items:center;"><img src="../../assets/images/icon_031.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工業炉</a>
+                    <a href="/products/category-c/" style="display: flex; align-items:center;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_031.svg" alt="" style="margin-right:3px; background-color: #e6ebf0;">工業炉</a>
                     <div class="mega-content">
                         <div class="mega-inner">
                             <div class="mega-category">
@@ -201,26 +201,26 @@
 
                 <!-- ボタン -->
                 <li class="menu-item menu-item-button">
-                    <a href="#" class="button item-level0ne" style="color: #fff !important;"><img src="../../assets/images/icon_book_white.svg" alt="" width="30" height="30">カタログ一覧</a>
+                    <a href="#" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_book_white.svg" alt="" width="30" height="30">カタログ一覧</a>
                 </li>
                 <li class="menu-item menu-item-button">
-                    <a href="https://atrail.co.jp/contact" class="button item-level0ne" style="color: #fff !important;"><img src="../../assets/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
+                    <a href="https://atrail.co.jp/contact" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
 <div class="wrapper-pageherobread">
-        <div class="main-visual-products mvp-sus">
-            <h2>サステナビリティ</h2>
-        </div>
-
-        <nav class="breadcrumb" aria-label="パンくずリスト">
-            <ol class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="/">ホーム</a></li>
-                <li class="breadcrumb-item current">サステナビリティ</li>
-            </ol>
-        </nav>
+    <div class="main-visual-products mvp-sus">
+        <h2>サステナビリティ</h2>
     </div>
 
-    <main>
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+            <li class="breadcrumb-item current">サステナビリティ</li>
+        </ol>
+    </nav>
+</div>
+
+<main>
