@@ -1,40 +1,16 @@
-<!-- <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会社名 | 工業製品メーカー</title> -->
-    <!-- noindex, nofollowを追加 -->
-    <!-- <meta name="robots" content="noindex, nofollow"> -->
+<?php
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+/**
+ * Template Name: Front Page
+ * Description: This is the template for the front page.
+ */
 
-    <!-- Swiperのスタイルシートを追加 -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+get_header();
+?>
+<main>
 
-    <!-- 自サイトのスタイルシート -->
-    <!-- <link href="assets/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/megamenu.css">
-    <link rel="stylesheet" href="/assets/css/top.css">
-    <link rel="stylesheet" href="/assets/css2/ir2.css">
-    <link rel="stylesheet" href="/assets/css/footer.css"> -->
-
-    <!-- Bootstrap JS (必要に応じて) -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-
-    <!-- プリロード -->
-    <!-- <link rel="preload" href="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" as="image">
-</head>
-<body>
-    <div id="commonHeader"></div>
-
-    <main> -->
-        <!-- メインビジュアル -->
-        <!-- <div class="main-visual">
+ <!-- メインビジュアル -->
+ <div class="main-visual">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -68,14 +44,14 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </div> -->
+        </div>
 
         <!-- ニュース -->
-        <!-- <section class="news-section">
+        <section class="news-section">
             <div class="container news-container">
-                <div class="news-grid"> -->
+                <div class="news-grid">
                     <!-- 左側: 全て/製品/サステナビリティ -->
-                    <!-- <div class="news-main">
+                    <div class="news-main">
                         <div class="news-toppage-ttl">
                             <h2>ニュース</h2>
                             <span>
@@ -117,9 +93,9 @@
 
                             <div class="news-list-wrapper">
                                 <div class="news-img-area">
-                                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80" alt="" class="news-cap"> -->
+                                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80" alt="" class="news-cap">
                                     <!-- <p class="mark-newsarrival">NEW</p> -->
-                                <!-- </div>
+                                </div>
                                 <article class="news-item product">
                                     <div class="news-item-level1">
                                         <time>2024.03.10</time>
@@ -129,10 +105,10 @@
                                 </article>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                     <!-- 右側: IR情報 -->
-                    <!-- <div class="news-ir">
+                    <div class="news-ir">
                         <div class="news-toppage-ttl">
                             <h2>IRニュース</h2>
                             <span>
@@ -160,9 +136,9 @@
 
                             <div class="news-list-wrapper">
                                 <div class="news-img-area">
-                                    <img src="./assets/images/img_ir_data.png" alt="" class="news-cap"> -->
+                                    <img src="./assets/images/img_ir_data.png" alt="" class="news-cap">
                                     <!-- <p class="mark-newsarrival">NEW</p> -->
-                                <!-- </div>
+                                </div>
                                 <article class="news-item ir">
                                     <div class="news-item-level1">
                                         <time>2024.03.08</time>
@@ -173,9 +149,9 @@
                                 </div>
                            <div class="news-list-wrapper">
                                 <div class="news-img-area">
-                                    <img src="./assets/images/img_ir_library.png" alt="" class="news-cap"> -->
+                                    <img src="./assets/images/img_ir_library.png" alt="" class="news-cap">
                                     <!-- <p class="mark-newsarrival">NEW</p> -->
-                                <!-- </div>
+                                </div>
                                 <article class="news-item ir">
                                     <div class="news-item-level1">
                                         <time>2024.01.01</time>
@@ -188,10 +164,10 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- 製品分野 -->
-        <!-- <section class="products-section">
+        <section class="products-section">
             <div class="container" style="max-width:1000px!important;">
                 <h2 class="text80">3つの事業分野</h2>
                 <div class="product-categories text">
@@ -222,10 +198,10 @@
                 </a>
                 
             </div>
-        </section> -->
+        </section>
 
         <!-- サステナビリティ -->
-        <!-- <section class="sustainability-section">
+        <section class="sustainability-section">
             <div class="container">
                 <h2 class=text80>サステナビリティ</h2>
                 <div class="sus-grid">
@@ -242,19 +218,10 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- お問い合わせ -->
-        <!-- <div id="commonFormContact"></div>
-    </main> -->
-
-    
-    <!-- フッター -->
-    <!-- <div id="commonFooter"></div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/js/loadCommonParts.js"></script>
-    <script src="/assets/js/megamenu.js"></script>
-    <script src="/assets/js/top.js"></script>
-    <script src="/assets/js/common.js"></script>
-</body>
-</html> -->
+        <div id="commonFormContact"></div>
+    </main> 
+    <?php
+    get_footer(); // footer.php を読み込む
+    ?>
