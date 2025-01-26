@@ -35,26 +35,28 @@
 </head>
 <body>
     <div id="commonHeader"></div>
-    <div class="main-visual-products mvp-p">
-        <h2>製品情報</h2>
-    </div>
-    <nav class="breadcrumb" aria-label="パンくずリスト">
-        <ol class="breadcrumb-list">
-            <li class="breadcrumb-item"><a href="/">ホーム</a></li>
-            <li class="breadcrumb-item current">製品情報</li>
-        </ol>
-    </nav>
+    <div class="wrapper-pageherobread">
+        <div class="main-visual-products mvp-p">
+            <h2>製品情報</h2>
+        </div>
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+                <li class="breadcrumb-item current">製品情報</li>
+            </ol>
+        </nav>
+    </div>  
 
     <main class="products-top">
         <div style="display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between;" >
             <h1 style="font-size:60px; margin:0px;">PRODUCTS</h1>
-            <ul style="display: flex; flex-direction:row; gap: 20px;">
-                <a href="/products/index.html#topics"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;"> TOPICS<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
+            <!-- <ul style="display: flex; flex-direction:row; gap: 20px;">
+                <a href="/products/#topics"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;"> TOPICS<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
 
-                <a href="/products/index.html#issue"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;">課題タグ<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
+                <a href="/products/#issue"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;">課題タグ<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
 
-                <a href="/products/index.html#category"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;">分野別<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
-            </ul>   
+                <a href="/products/#category"><li style="display: flex; flex-direction:row; align-items: center; gap:6px;">分野別<img src="../assets/images/icon_right_blue.png" alt="" srcset="" width="25" height="auto" style="transform: rotate(90deg);"></li></a>
+            </ul>    -->
         </div>
         <h2 style="margin:0px;" id="topics">TOPICS</h2>
         <!-- カルーセル -->
@@ -85,20 +87,9 @@
             </div>
         </div>
 
-        <!-- トピックス＆製品ニュース -->
-        <!-- <div class="news-section">
-            <h2>製品ニュース</h2>
-            <div class="news-list">
-                <article class="news-item">
-                    <time>2024.03.20</time>
-                    <span class="category">新製品</span>
-                    <a href="#">新製品Aシリーズを発売開始しました</a>
-                </article>
-            </div>
-        </div> -->
-
         <!-- 課題から探す -->
-        <section class="search-by-issue" id="issue" style="padding-top:20px;">
+         <!-- <div id="issue"></div>
+        <section class="search-by-issue" style="padding-top:20px;">
             <h2>課題タグから探す</h2>
             <div class="search-wrapper-tag-all">
                 <ul>
@@ -120,11 +111,11 @@
                 </ul>
             </div>
 
-            <div class="product-results">
+            <div class="product-results"> -->
                 <!-- 製品一覧（初期状態では非表示） -->
-                <div class="product-grid"></div>
+                <!-- <div class="product-grid"></div>
             </div>
-        </section>
+        </section> -->
 
         <!-- 製品分野バナー -->
         <section class="category-banners" id="category">
