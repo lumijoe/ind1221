@@ -1,12 +1,12 @@
-<!-- page-product.php -->
+<!-- page-products.php -->
 <?php
 
 /**
- * Template Name: page-ir
+ * Template Name: page-products
  * Description: This is the template
  */
 
-get_header('product');
+get_header('products');
 ?>
 <main class="products-top">
     <div style="display: flex; flex-direction: row; align-items: flex-end; justify-content: space-between;" >
@@ -75,19 +75,19 @@ get_header('product');
     <section class="category-banners" id="category">
         <h2>分野別から探す</h2>
         <div class="banner-grid">
-            <a href="/products/category-a/" class="category-banner">
+            <a href="<?php echo get_template_directory_uri(); ?>/products/category-a/" class="category-banner">
                 <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="製品分野A">
                 <div class="banner-content">
                     <h3>検査装置・設備</h3>
                 </div>
             </a>
-            <a href="/products/category-b/" class="category-banner">
+            <a href="<?php echo get_template_directory_uri(); ?>/products/category-b/" class="category-banner">
                 <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80" alt="製品分野B">
                 <div class="banner-content">
                     <h3>工具・周辺機器</h3>
                 </div>
             </a>
-            <a href="/products/category-c/" class="category-banner">
+            <a href="<?php echo get_template_directory_uri(); ?>/products/category-c/" class="category-banner">
                 <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80" alt="製品分野C">
                 <div class="banner-content">
                     <h3>工業炉</h3>
