@@ -335,5 +335,5 @@ get_header('product-cat-a');
     </main>
 </div>
 <?php
-    get_footer(); 
+    get_footer('products'); 
 ?>
