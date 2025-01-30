@@ -36,7 +36,7 @@
         <div class="footer-section">
             <a href="<?php echo esc_url(home_url()); ?>/sustainability/"><h3 class="footer-nav-title">サステナビリティ</h3></a>
             <ul>
-                <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#sustainabilitynews">サステナニュース</a></li>
+                <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#sustainabilitynews">サステナビリティニュース</a></li>
                 <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#initiatives">取り組み</a></li>
                 <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#environment">環境(E)</a></li>
                 <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#society">社会(S)</a></li>
