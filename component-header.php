@@ -89,6 +89,7 @@
                     <!-- icon -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
+                        <!-- 英語翻訳googleTranslate -->
                         <a href="https://lkcodetest-sakura-ne-jp.translate.goog/ind1221/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp" target="_blank" rel="noopener noreferrer" class="item-level0ne"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_language.svg" width="20" height="20"></a>
                     </li>
                     <!-- ボタン -->
