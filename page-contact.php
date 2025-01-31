@@ -6,7 +6,7 @@
  * Description: This is the template
  */
 
-get_header('ir');
+get_header('contact');
 ?>
 <main>
 <form>
@@ -68,6 +68,6 @@ get_header('ir');
   </div>
 
 </main>
-  <?php
+<?php
     get_footer(); 
 ?>
