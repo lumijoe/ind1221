@@ -175,7 +175,7 @@
                     <a href="#" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_book_white.svg" alt="" width="30" height="30">カタログ一覧</a>
                 </li>
                 <li class="menu-item menu-item-button">
-                    <a href="https://atrail.co.jp/contact" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
+                    <a href="<?php echo esc_url(home_url()); ?>/contact/" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
                 </li>
             </ul>
         </nav>
