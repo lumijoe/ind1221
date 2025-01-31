@@ -48,7 +48,7 @@
             <!-- <a href="/recruit/" ><h3 class="h3borderbottomnone footer-nav-title">採用情報</h3></a> -->
             <a href="https://ikkosha.co.jp/staff/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;"><h3 class="h3borderbottomnone footer-nav-title">採用情報</h3><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_newopen.svg" alt="" width="25" height="25" style="padding-bottom:10px;"></a>
             <a href="<?php echo esc_url(home_url()); ?>/ir/#iffaq" ><h3 class="h3borderbottomnone footer-nav-title">よくあるご質問</h3></a>
-            <a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer"><h3 class="h3borderbottomnone footer-nav-title">お問い合わせ</h3></a>
+            <a href="<?php echo esc_url(home_url()); ?>/contact/" target="_blank" rel="noopener noreferrer"><h3 class="h3borderbottomnone footer-nav-title">お問い合わせ</h3></a>
         </div>
     </div>
     <div class="footer-level-two">
@@ -85,7 +85,7 @@
             <a href="#" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_book_white.svg" alt="" width="30" height="30">カタログ一覧</a>
         </li>
         <li class="menu-item menu-item-button" style="padding-right:20px;">
-            <a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
+            <a href="<?php echo esc_url(home_url()); ?>/contact/" target="_blank" rel="noopener noreferrer" class="button item-level0ne" style="color: #fff !important;"><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_mail_white.svg" alt="" width="30" height="30">お問い合わせ</a>
         </li>
     </ul>
     <div id="footer" class="footer-bottom hidden">
