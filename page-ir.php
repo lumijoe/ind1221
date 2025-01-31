@@ -178,6 +178,7 @@ get_header('ir');
                 </div>
               </div>
         </section>
+        
 
         <!-- お問い合わせ -->
         <?php get_template_part('component', 'formcontact'); ?>
