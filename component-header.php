@@ -123,7 +123,7 @@
                             </div> -->
                             <div class="mega-category">
                                 <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="製品分野A" loading="lazy">
-                                <h3><a href="/products/category-a/">検査装置・設備</a></h3>
+                                <h3><a href="<?php echo esc_url(home_url()); ?>/products/category-a/">検査装置・設備</a></h3>
                                 <ul>
                                     <li><a href="<?php echo esc_url(home_url()); ?>/products/category-a/a1/">A-1製品群</a></li>
                                     <li><a href="<?php echo esc_url(home_url()); ?>/products/category-a/a2/">A-2製品群</a></li>
