@@ -9,42 +9,53 @@
 get_header('contact');
 ?>
 <main>
-  <section style="height:60vh; display:flex; flex-direction:row; margin:0 auto; justify-content:center; align-items:center;">
-  <p><a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer" style="color:blue;">こちらの(前回ゼロイチ)</a>お問い合わせフォーム構築をご参考ください<br>遷移先で<span style="color:red;">お伝え済みのパス</span>をご入力ください
+  <section style="height:40vh; display:flex; flex-direction:row; margin:0 auto; justify-content:center; align-items:center;">
+  <p>お問い合わせフォーム構築は、<br><a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer" style="color:blue;">こちら(前回ゼロイチ)</a>をご参考ください。<br>遷移先で<span style="color:red;">お伝え済みのパス</span>の入力が必要です
   </p></section>
 
-<!-- <form>
+  <section style="background-color:#f5f5f5;">
+  <div style="padding-right:20%; padding-left:20%;"><p>下記のようなフォームも可能です<br>（下記は動的未処理、ご参考まで）</p>
+  <form>
     <div class="row mb-3">
-      <label for="inputEmail3" class="col-sm-2 col-form-label-sm">Email</label>
+      <label for="inputEmail3" class="col-sm-2 col-form-label-sm">メール</label>
       <div class="col-sm-10">
         <input type="email" class="form-control" id="inputEmail3">
       </div>
     </div>
     <div class="row mb-3">
-      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <label for="inputPassword3" class="col-sm-2 col-form-label-sm">パスワード</label>
       <div class="col-sm-10">
         <input type="password" class="form-control" id="inputPassword3">
       </div>
     </div>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">メール</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">パスワード</label>
+    </div>
+
     <fieldset class="row mb-3">
-      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <legend class="col-form-label col-sm-2 pt-0">ご質問内容</legend>
       <div class="col-sm-10">
         <div class="form-check">
           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
           <label class="form-check-label" for="gridRadios1">
-            First radio
+            資料請求
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
           <label class="form-check-label" for="gridRadios2">
-            Second radio
+            お問い合わせ
           </label>
         </div>
         <div class="form-check disabled">
           <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
           <label class="form-check-label" for="gridRadios3">
-            Third disabled radio
+            サイトに関してのご質問
           </label>
         </div>
       </div>
@@ -54,61 +65,17 @@ get_header('contact');
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck1">
           <label class="form-check-label" for="gridCheck1">
-            Example checkbox
+            至急対応希望
           </label>
         </div>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" class="btn btn-primary">送信</button>
   </form>
 
-  <div class="form-floating mb-3">
-    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-    <label for="floatingInput">Email address</label>
-  </div>
-  <div class="form-floating">
-    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-    <label for="floatingPassword">Password</label>
-  </div>
-
-  <div class="accordion" id="accordionBasic">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionBasic">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionBasic">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionBasic">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div> -->
+  
+  
+</div></section>
 
 </main>
 <?php
