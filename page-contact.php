@@ -9,8 +9,8 @@
 get_header('contact');
 ?>
 <main>
-  <section style="height:60vh; display:flex; flex-direction:row; margin:0 auto; justify-content:center;">
-  <p><a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer" style="color:blue;">こちらの(前回ゼロイチ)</a>お問い合わせフォーム構築をご参考ください<br><span style="color:red;">（遷移先でお伝え済みのパスを入力してください）</span>  
+  <section style="height:60vh; display:flex; flex-direction:row; margin:0 auto; justify-content:center; align-items:center;">
+  <p><a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer" style="color:blue;">こちらの(前回ゼロイチ)</a>お問い合わせフォーム構築をご参考ください<br>遷移先で<span style="color:red;">お伝え済みのパス</span>をご入力ください
   </p></section>
 
 <!-- <form>
