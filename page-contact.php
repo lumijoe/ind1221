@@ -9,7 +9,11 @@
 get_header('contact');
 ?>
 <main>
-<form>
+  <p><a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer">こちら</a>のお問い合わせフォーム構築をご参考ください<span style="color:red;"></span>（遷移先でお伝え済みのパスを入力してください）  
+  </p>
+
+
+<!-- <form>
     <div class="row mb-3">
       <label for="inputEmail3" class="col-sm-2 col-form-label-sm">Email</label>
       <div class="col-sm-10">
@@ -104,7 +108,7 @@ get_header('contact');
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 </main>
 <?php
