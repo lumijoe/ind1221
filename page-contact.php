@@ -9,9 +9,9 @@
 get_header('contact');
 ?>
 <main>
+  <section style="height:60vh; display:flex; flex-direction:row; margin:0 auto; justify-content:center;">
   <p><a href="https://atrail.co.jp/contact" target="_blank" rel="noopener noreferrer">こちら</a>のお問い合わせフォーム構築をご参考ください<span style="color:red;"></span>（遷移先でお伝え済みのパスを入力してください）  
-  </p>
-
+  </p></section>
 
 <!-- <form>
     <div class="row mb-3">
