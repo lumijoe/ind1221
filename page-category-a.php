@@ -307,6 +307,8 @@ get_header('product-cat-a');
             ?>
 
             <ul class="product-grid_2test">
+            $product_image = get_field('product_image');
+            var_dump($product_image); // ここで取得した値を確認
                 <?php
                 while ($the_query->have_posts()) {
                    $the_query->the_post();
