@@ -60,7 +60,7 @@
                     <h2>yCOMPANY</h2> 
                 </div>
             </div>
-            <copy class="copyright">&copy; 2025 yCompany All rights reserved.</copy>
+            <copy class="copyright">&copy;yCompany All rights reserved.</copy>
         </div>
         <ul class="footer-attention">
             <li><a href="/sitemap/" target="_blank" rel="noopener noreferrer">サイトマップ</a></li>
