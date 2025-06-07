@@ -1,6 +1,32 @@
 <!-- functions.php -->
 <?php
-function enqueue_custom_scripts() {
+
+/**
+ * custom_theme functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package custom_theme
+ */
+
+// ========================
+// スタイル設定
+// ========================
+function custom_theme_enqueue_styles()
+{
+    wp_enqueue_style(
+        'home-style',
+        get_template_directory_uri() . '/assets/css/top.css',
+        array(),
+        filemtime(get_template_directory() . '/assets/css/top.css')
+    );
+}
+add_action('wp_enqueue_scripts', 'custom_theme_enqueue_styles');
+
+
+
+function enqueue_custom_scripts()
+{
     $uri = get_template_directory_uri(); // $uriを定義
 
     // jQueryを読み込み
@@ -8,24 +34,32 @@ function enqueue_custom_scripts() {
 
     // Bootstrap JSの読み込み
     wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js', array('jquery'), null, true);
-
-    // CSS（home.css）を読み込み
-    wp_enqueue_style(
-        'home-style',
-        $uri . '/assets/css/top.css',
-        array(), // 依存関係なし
-        filemtime(get_template_directory() . '/assets/css/top.css') // キャッシュバスターを追加
-    );
-
-    // page-products01.php ページの場合に products.css を読み込む
-    // if (is_page_template('page-products01.php')) {
-    //     wp_enqueue_style(
-    //         'products-style',
-    //         $uri . '/assets/scss/products.css',
-    //         array(), 
-    //         filemtime(get_template_directory() . '/assets/scss/products.css') 
-    //     );
-    // }
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+
+
+// ========================
+// 管理画面：投稿タイプ
+// ========================
+function create_post_type_news()
+{
+    register_post_type(
+        'news',
+        array(
+            'labels' => array(
+                'name'          => 'お知らせ',
+                'singular_name' => 'お知らせ',
+                'all_items'     => 'お知らせ一覧',
+            ),
+            'public'       => true,
+            'has_archive'  => true, // アーカイブページを有効にする
+            'menu_position' => 5,
+            'menu_icon'    => 'dashicons-edit',
+            'supports'     => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+            'rewrite'      => array('slug' => 'news'), // URLを '/news/' にする
+        )
+    );
+}
+add_action('init', 'create_post_type_news');
+
 ?>
