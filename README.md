@@ -267,3 +267,9 @@ get_header();
 <?php
 get_footer(); // footer.php を読み込む
 ?>
+
+
+## pdf-icon
+<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px">
+記事のロゴ画像
+    https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/logo_news.png

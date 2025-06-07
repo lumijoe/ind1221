@@ -59,6 +59,22 @@ function create_post_type_news()
             'rewrite'      => array('slug' => 'news'), // URLを '/news/' にする
         )
     );
+    register_post_type(
+        'irnews',
+        array(
+            'labels' => array(
+                'name'          => 'IRお知らせ',
+                'singular_name' => 'IRお知らせ',
+                'all_items'     => 'IRお知らせ一覧',
+            ),
+            'public'       => true,
+            'has_archive'  => true, // アーカイブページを有効にする
+            'menu_position' => 5,
+            'menu_icon'    => 'dashicons-edit',
+            'supports'     => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+            'rewrite'      => array('slug' => 'irnews'), // URLを '/irnews/' にする
+        )
+    );
 }
 add_action('init', 'create_post_type_news');
 
