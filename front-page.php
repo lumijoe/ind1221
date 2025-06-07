@@ -252,7 +252,7 @@ get_header();
                                         }
                                         ?>
                                     </div>
-                                    <article class="news-item product">
+                                    <article class="news-item">
                                         <div class="news-item-level1">
                                             <!-- 日付 -->
                                             <time><?php echo get_the_date('Y.m.d'); ?></time>
