@@ -1,15 +1,17 @@
 ## ind1221
+
 https://lkcodetest.sakura.ne.jp/ind1221/
 root:~themes/ind1221
 Github:ind1221
-最新meldチェック0607
-
+最新 meld チェック 0607
 
 ## 0607 code
+
 <!-- functions.php -->
+
 function enqueue_custom_scripts()
 {
-    $uri = get_template_directory_uri(); // $uriを定義
+$uri = get_template_directory_uri(); // $uri を定義
 
     // jQueryを読み込み
     wp_enqueue_script('jquery');
@@ -30,10 +32,11 @@ function enqueue_custom_scripts()
     //     wp_enqueue_style(
     //         'products-style',
     //         $uri . '/assets/scss/products.css',
-    //         array(), 
-    //         filemtime(get_template_directory() . '/assets/scss/products.css') 
+    //         array(),
+    //         filemtime(get_template_directory() . '/assets/scss/products.css')
     //     );
     // }
+
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 ?>
@@ -263,13 +266,18 @@ get_header();
     </section>
     <!-- お問い合わせ -->
     <?php get_template_part('component', 'formcontact'); ?>
+
 </main>
 <?php
 get_footer(); // footer.php を読み込む
 ?>
 
-
 ## pdf-icon
+
 <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px">
 記事のロゴ画像
     https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/logo_news.png
+
+## issue
+
+slider の挙動、デバイス width 変動時の挙動デバッグ

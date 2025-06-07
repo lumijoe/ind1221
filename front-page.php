@@ -7,21 +7,34 @@
 
 get_header();
 ?>
+<style>
+    .bg-slide1 {
+        background-image: url(https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/1.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bg-slide2 {
+        background-image: url(https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+    
+</style>
 <main>
 
     <!-- メインビジュアル -->
     <div class="main-visual">
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="工場設備">
+                <div class="swiper-slide bg-slide1">
+                    <!-- <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="工場設備"> -->
                     <div class="slide-content">
                         <h2>未来を創る技術</h2>
                         <p>最先端の工業製品で社会に貢献</p>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80" alt="自動化設備" loading="lazy">
+                <div class="swiper-slide bg-slide2">
+                    <!-- <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/1.jpeg" alt="自動化設備" loading="lazy"> -->
                     <div class="slide-content">
                         <h2>革新的なソリューション</h2>
                         <p>自動化技術で産業の発展に貢献</p>
