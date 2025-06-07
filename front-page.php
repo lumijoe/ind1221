@@ -196,6 +196,314 @@ get_header();
         </div>
     </section>
 
+
+
+
+    <!-- ニュース -->
+    <section class="news-section">
+        <div class="container news-container">
+            <div class="news-grid">
+                <!-- 左側: 全て/製品/サステナビリティ -->
+                <div class="news-main">
+                    <div class="news-toppage-ttl">
+                        <h2>ニュース</h2>
+                        <span>
+                            <a href="<?php echo get_post_type_archive_link('news'); ?>" class="more-link animationbutton">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px">
+                                一覧を見る
+                            </a>
+                        </span>
+                    </div>
+                    <p class="news-toppage-ttl-en">NEWS</p>
+                    <?php
+                    $args = array(
+                        'post_type'      => 'news',
+                        'posts_per_page' => 4,
+                        'post_status'    => 'publish',
+                    );
+
+                    $news_query = new WP_Query($args);
+
+                    if ($news_query->have_posts()) : ?>
+                        <div class="news-list">
+                            <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+                                <!-- ニュース -->
+                                <div class="news-list-wrapper">
+                                    <div class="news-img-area">
+                                        <img src="<?php the_field('post_imageurl'); ?>" alt="" class="news-cap">
+                                        <!-- <img src="https://images.unsplash.com/photo-1542274368-443d694d79aa?auto=format&fit=crop&q=80" alt="" class="news-cap"> -->
+                                        <!-- span新着タグ -->
+                                        <?php
+                                        // 投稿日と現在の日付を取得
+                                        $post_date = get_the_date('Y-m-d');
+                                        $post_datetime = new DateTime($post_date);
+                                        $now = new DateTime();
+
+                                        // 投稿が過去の日付かチェック（未来記事を除外）
+                                        if ($post_datetime <= $now) {
+                                            $interval = $now->diff($post_datetime)->days;
+
+                                            // 7日以内ならNEWを表示
+                                            if ($interval < 7) :
+                                        ?>
+                                                <span class="mark-newsarrival text80">NEW</span>
+                                        <?php
+                                            endif;
+                                        }
+                                        ?>
+                                    </div>
+                                    <article class="news-item product">
+                                        <div class="news-item-level1">
+                                            <!-- 日付 -->
+                                            <time><?php echo get_the_date('Y.m.d'); ?></time>
+                                            <!-- カテゴリ -->
+                                            <?php
+                                            $terms = get_the_terms(get_the_ID(), 'newscategory');
+                                            if ($terms && !is_wp_error($terms)) :
+                                                $first_term = $terms[0];
+                                                $category_output = $first_term->name;
+                                            else :
+                                                $category_output = 'カテゴリなし';
+                                            endif;
+                                            ?>
+
+                                            <span class="news-category"><?php echo esc_html($category_output); ?></span>
+                                        </div>
+                                        <!-- タイトル -->
+                                        <a href="<?php the_permalink(); ?>" class="news-item-txt"><?php the_field('post_title'); ?></a>
+                                    </article>
+                                </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        <?php else : ?>
+                            <p>お知らせはまだありません。</p>
+                        <?php endif; ?>
+                        </div>
+                </div>
+
+                <!-- 右側: IR情報 -->
+                <div class="news-ir">
+                    <div class="news-toppage-ttl">
+                        <h2>IRニュース</h2>
+                        <span>
+                            <a href="<?php echo esc_url(home_url()); ?>/ir/#irnews/" class="more-link animationbutton">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" style="fill: #007bff;">
+                                一覧を見る
+                            </a>
+                        </span>
+                    </div>
+                    <p class="news-toppage-ttl-en">IR NEWS</p>
+                    <div class="news-list">
+                        <div class="news-list-wrapper">
+                            <div class="news-img-area">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_mtg.png" class="news-cap">
+                                <p class="mark-newsarrival text80">NEW</p>
+                            </div>
+                            <article class="news-item ir">
+                                <div class="news-item-level1">
+                                    <time>2024.03.15</time>
+                                    <span class="news-category">IR</span>
+                                </div>
+                                <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">2024年度第3四半期決算発表<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                            </article>
+                        </div>
+
+                        <div class="news-list-wrapper">
+                            <div class="news-img-area">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_data.png" alt="" class="news-cap">
+                                <!-- <p class="mark-newsarrival">NEW</p> -->
+                            </div>
+                            <article class="news-item ir">
+                                <div class="news-item-level1">
+                                    <time>2024.03.08</time>
+                                    <span class="news-category">IR</span>
+                                </div>
+                                <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">人事異動のお知らせ「海外拠点グループ会社の役員人事について決定いたしました」<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                            </article>
+                        </div>
+
+                        <div class="news-list-wrapper">
+                            <div class="news-img-area">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_library.png" alt="" class="news-cap">
+                                <!-- <p class="mark-newsarrival">NEW</p> -->
+                            </div>
+                            <article class="news-item ir">
+                                <div class="news-item-level1">
+                                    <time>2024.01.01</time>
+                                    <span class="news-category">IR</span>
+                                </div>
+                                <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">株主総会のお知らせ<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                            </article>
+                        </div>
+
+                        <div class="news-list-wrapper">
+                            <div class="news-img-area">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_library.png" alt="" class="news-cap">
+                                <!-- <p class="mark-newsarrival">NEW</p> -->
+                            </div>
+                            <article class="news-item ir">
+                                <div class="news-item-level1">
+                                    <time>2024.01.01</time>
+                                    <span class="news-category">IR</span>
+                                </div>
+                                <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">株主総会のお知らせ<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お知らせ新着 -->
+    <section class="l-news-latest l-article">
+        <div class="l-news-latest-wrapper">
+            <h2>お知らせ 新着</h2>
+            <?php
+            $args = array(
+                'post_type'      => 'news',
+                'posts_per_page' => 4,
+                'post_status'    => 'publish',
+            );
+
+            $news_query = new WP_Query($args);
+
+            if ($news_query->have_posts()) : ?>
+                <ul>
+                    <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+                        <div class="news-list-wrapper">
+                            <div class="news-img-area">
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80" alt="" class="news-cap">
+                                <!-- 新着判定 -->
+                                <?php
+                                $terms = get_the_terms(get_the_ID(), 'newscategory');
+                                if ($terms && !is_wp_error($terms)) :
+                                    $first_term = $terms[0];
+                                    $category_output = $first_term->name;
+                                else :
+                                    $category_output = 'カテゴリなし';
+                                endif;
+                                ?>
+                                <!-- span新着タグ -->
+                                <?php
+                                // 投稿日と現在の日付を取得
+                                $post_date = get_the_date('Y-m-d');
+                                $post_datetime = new DateTime($post_date);
+                                $now = new DateTime();
+
+                                // 投稿が過去の日付かチェック（未来記事を除外）
+                                if ($post_datetime <= $now) {
+                                    $interval = $now->diff($post_datetime)->days;
+
+                                    // 7日以内ならNEWを表示
+                                    if ($interval < 7) :
+                                ?>
+                                        <p class="mark-newsarrival">NEW</p>
+                                <?php
+                                    endif;
+                                }
+                                ?>
+                            </div>
+                            <article class="news-item product">
+                                <div class="news-item-level1">
+                                    <time><?php echo get_the_date('Y.m.d'); ?></time>
+                                    <span class="news-category">
+                                        <?php
+                                        $terms = get_the_terms(get_the_ID(), 'newscategory');
+                                        if ($terms && !is_wp_error($terms)) :
+                                            $first_term = $terms[0];
+                                            $category_output = $first_term->name;
+                                        else :
+                                            $category_output = 'カテゴリなし';
+                                        endif;
+                                        ?>
+                                        <!-- span新着タグ -->
+                                        <?php
+                                        // 投稿日と現在の日付を取得
+                                        $post_date = get_the_date('Y-m-d');
+                                        $post_datetime = new DateTime($post_date);
+                                        $now = new DateTime();
+
+                                        // 投稿が過去の日付かチェック（未来記事を除外）
+                                        if ($post_datetime <= $now) {
+                                            $interval = $now->diff($post_datetime)->days;
+
+                                            // 7日以内ならNEWを表示
+                                            if ($interval < 7) :
+                                        ?>
+                                                <span class="mark-newsarrival">NEW</span>
+                                        <?php
+                                            endif;
+                                        }
+                                        ?>
+                                        <?php echo esc_html($category_output); ?>
+                                    </span>
+                                </div>
+                                <?php if (get_field('post_title')) : ?>
+                                    <p><a href="<?php the_permalink(); ?>"><?php the_field('post_title'); ?></a></p>
+                                <?php else : ?>
+                                    <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                                <?php endif; ?>
+                                <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">新製品が記事に掲載されました<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                            </article>
+                        </div>
+                        <li class="sp-article-wrapper">
+                            <div class="sp-article">
+                                <!-- 日付 -->
+                                <date class="post-date"><?php echo get_the_date('Y.m.d'); ?></date>
+
+                                <!-- カテゴリ -->
+                                <?php
+                                $terms = get_the_terms(get_the_ID(), 'newscategory');
+                                if ($terms && !is_wp_error($terms)) :
+                                    $first_term = $terms[0];
+                                    $category_output = $first_term->name;
+                                else :
+                                    $category_output = 'カテゴリなし';
+                                endif;
+                                ?>
+                                <!-- span新着タグ -->
+                                <?php
+                                // 投稿日と現在の日付を取得
+                                $post_date = get_the_date('Y-m-d');
+                                $post_datetime = new DateTime($post_date);
+                                $now = new DateTime();
+
+                                // 投稿が過去の日付かチェック（未来記事を除外）
+                                if ($post_datetime <= $now) {
+                                    $interval = $now->diff($post_datetime)->days;
+
+                                    // 7日以内ならNEWを表示
+                                    if ($interval < 7) :
+                                ?>
+                                        <span class="tag_new">NEW</span>
+                                <?php
+                                    endif;
+                                }
+                                ?>
+                                <p class="item-category"><?php echo esc_html($category_output); ?></p>
+                            </div>
+                            <!-- タイトル（ACF post_title） -->
+                            <?php if (get_field('post_title')) : ?>
+                                <p><a href="<?php the_permalink(); ?>"><?php the_field('post_title'); ?></a></p>
+                            <?php else : ?>
+                                <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                            <?php endif; ?>
+                        </li>
+                        <hr>
+                    <?php endwhile; ?>
+                </ul>
+                <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <p>お知らせはまだありません。</p>
+            <?php endif; ?>
+        </div>
+        <button class="btn btn-primay add-icon"><a href="<?php echo get_post_type_archive_link('news'); ?>">お知らせ一覧へ</a></button>
+    </section>
+
+
+
+
     <!-- 製品分野 -->
     <section class="products-section">
         <div class="container" style="max-width:1000px!important;">
