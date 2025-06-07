@@ -105,6 +105,20 @@ get_header();
                                 <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">新製品が記事に掲載されました<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
                             </article>
                         </div>
+
+                        <div class="news-list-wrapper">
+                            <div class="news-img-area">
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80" alt="" class="news-cap">
+                                <!-- <p class="mark-newsarrival">NEW</p> -->
+                            </div>
+                            <article class="news-item product">
+                                <div class="news-item-level1">
+                                    <time>2024.03.10</time>
+                                    <span class="news-category">製品B</span>
+                                </div>
+                                <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">新製品が記事に掲載されました<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                            </article>
+                        </div>
                     </div>
                 </div>
 
@@ -148,6 +162,21 @@ get_header();
                                 <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">人事異動のお知らせ「海外拠点グループ会社の役員人事について決定いたしました」<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
                             </article>
                         </div>
+
+                        <div class="news-list-wrapper">
+                            <div class="news-img-area">
+                                <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_library.png" alt="" class="news-cap">
+                                <!-- <p class="mark-newsarrival">NEW</p> -->
+                            </div>
+                            <article class="news-item ir">
+                                <div class="news-item-level1">
+                                    <time>2024.01.01</time>
+                                    <span class="news-category">IR</span>
+                                </div>
+                                <a href="<?php echo esc_url(home_url()); ?>" class="news-item-txt">株主総会のお知らせ<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px"></a>
+                            </article>
+                        </div>
+
                         <div class="news-list-wrapper">
                             <div class="news-img-area">
                                 <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_ir_library.png" alt="" class="news-cap">
