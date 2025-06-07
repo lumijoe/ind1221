@@ -231,7 +231,6 @@ get_header();
                                 <div class="news-list-wrapper">
                                     <div class="news-img-area">
                                         <img src="<?php the_field('post_imageurl'); ?>" alt="" class="news-cap">
-                                        <!-- <img src="https://images.unsplash.com/photo-1542274368-443d694d79aa?auto=format&fit=crop&q=80" alt="" class="news-cap"> -->
                                         <!-- span新着タグ -->
                                         <?php
                                         // 投稿日と現在の日付を取得
@@ -270,7 +269,8 @@ get_header();
                                             <span class="news-category"><?php echo esc_html($category_output); ?></span>
                                         </div>
                                         <!-- タイトル -->
-                                        <a href="<?php the_permalink(); ?>" class="news-item-txt"><?php the_field('post_title'); ?></a>
+                                        <a href="<?php the_permalink(); ?>" class="news-item-txt" style="overflow:hidden; display:-webkit-box; -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;"><?php the_field('post_title'); ?></a>
                                     </article>
                                 </div>
                             <?php endwhile; ?>
