@@ -4,6 +4,7 @@ https://lkcodetest.sakura.ne.jp/ind1221/
 root:~themes/ind1221
 Github:ind1221
 最新 meld チェック 0607
+メンテ：issue①〜⑦
 
 ## 0607 code
 
