@@ -24,7 +24,7 @@ get_header('sustainability');
                 <div class="news-toppage-ttl">
                     <h2 style="width: 100%;">サステナビリティニュース</h2>
                     <span>
-                        <a href="<?php echo esc_url(home_url()); ?>/archives/news#newsNavtag-ir" class="more-link animationbutton">
+                        <a href="<?php echo esc_url(home_url()); ?>/archives/news#newsNavtag-sustainability" class="more-link animationbutton">
                             <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" style="fill: #007bff;">
                             一覧を見る
                         </a>
