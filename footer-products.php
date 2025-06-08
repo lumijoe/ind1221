@@ -53,7 +53,7 @@
         </div>
         <div class="footer-section">
             <a href="<?php echo esc_url(home_url()); ?>/archives/news/">
-                <h3 class="h3borderbottomnone footer-nav-title">お知らせ</h3>
+                <h3 class="h3borderbottomnone footer-nav-title">ニュースリリース</h3>
             </a>
             <!-- <a href="/recruit/" ><h3 class="h3borderbottomnone footer-nav-title">採用情報</h3></a> -->
             <a href="https://ikkosha.co.jp/staff/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;">

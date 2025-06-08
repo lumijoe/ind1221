@@ -1,6 +1,6 @@
 <!-- ニュースリリース/製品情報 -->
 <section class="news-archive-section">
-    <div class="container">
+    <div class="container archive-container">
         <div class="news-toppage-ttl">
             <h2 style="width: 100%;">製品情報</h2>
         </div>

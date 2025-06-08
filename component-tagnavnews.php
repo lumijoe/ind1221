@@ -94,7 +94,8 @@
             role="tabpanel"
             aria-labelledby="newsNavtag-sustainability"
             tabindex="0">
-            サステナビリティに関しての文章が入ります
+            <!-- カテゴリタブ component-tagnavnews-sustainability.php -->
+            <?php get_template_part('component', 'tagnavnews-sustainability'); ?>
         </div>
         <div
             class="tab-pane fade"
@@ -102,7 +103,8 @@
             role="tabpanel"
             aria-labelledby="newsNavtag-ir"
             tabindex="0">
-            IRに関しての文章が入ります
+            <!-- カテゴリタブ component-tagnavnews-ir.php -->
+            <?php get_template_part('component', 'tagnavnews-ir'); ?>
         </div>
         <!-- <div
                     class="tab-pane fade"

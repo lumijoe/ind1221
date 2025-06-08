@@ -10,7 +10,7 @@
                     <!-- お知らせ -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="<?php echo esc_url(home_url()); ?>/archives/news/" class="item-level0ne">お知らせ</a>
+                        <a href="<?php echo esc_url(home_url()); ?>/archives/news/" class="item-level0ne">ニュースリリース</a>
                     </li>
 
                     <!-- 企業案内 -->

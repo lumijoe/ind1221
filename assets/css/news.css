@@ -31,3 +31,7 @@
 .news-category-wide:hover {
   border-bottom: 2px solid #007aff !important;
 }
+.archive-container {
+  max-width: 780px !important;
+  width: 80vw !important;
+}

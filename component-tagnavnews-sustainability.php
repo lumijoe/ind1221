@@ -1,10 +1,10 @@
-<!-- ニュースリリース/すべて -->
+<!-- ニュースリリース/サステナビリティ -->
 <section class="news-archive-section">
     <div class="container archive-container">
         <div class="news-toppage-ttl">
-            <h2 style="width: 100%;">お知らせ</h2>
+            <h2 style="width: 100%;">サステナビリティ</h2>
         </div>
-        <p class="news-toppage-ttl-en">NEWS</p>
+        <p class="news-toppage-ttl-en">SUSTAINABILITY</p>
         <?php
         $args = array(
             'post_type'      => array('news', 'irnews'), // 両方を指定
@@ -18,12 +18,12 @@
                 array(
                     'taxonomy' => 'newscategory',
                     'field'    => 'slug',
-                    'terms'    => array('news'),
+                    'terms'    => array('sustainability'),
                 ),
                 array(
                     'taxonomy' => 'irnewscategory',
                     'field'    => 'slug',
-                    'terms'    => array('news'),
+                    'terms'    => array('sustainability'),
                 ),
             ),
         );

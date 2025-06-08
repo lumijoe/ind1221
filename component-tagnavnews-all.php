@@ -1,6 +1,6 @@
 <!-- ニュースリリース/すべて -->
 <section class="news-archive-section">
-    <div class="container">
+    <div class="container archive-container">
         <div class="news-toppage-ttl">
             <h2 style="width: 100%;">すべて</h2>
         </div>
