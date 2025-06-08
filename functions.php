@@ -56,7 +56,7 @@ function create_post_type_news()
             'menu_position' => 5,
             'menu_icon'    => 'dashicons-edit',
             'supports'     => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-            'rewrite'      => array('slug' => 'news'), // URLを '/news/' にする
+            'rewrite'      => array('slug' => 'news'), // URLを 'archives/news/' にする
         )
     );
     register_post_type(
@@ -72,7 +72,7 @@ function create_post_type_news()
             'menu_position' => 5,
             'menu_icon'    => 'dashicons-edit',
             'supports'     => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-            'rewrite'      => array('slug' => 'irnews'), // URLを '/irnews/' にする
+            'rewrite'      => array('slug' => 'irnews'), // URLを 'archives/irnews/' にする
         )
     );
 }

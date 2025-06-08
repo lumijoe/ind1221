@@ -286,3 +286,17 @@ https://images.unsplash.com/photo-1451847251646-8a6c0dd1510c?auto=format&fit=cro
 ## issue
 
 slider の挙動、デバイス width 変動時の挙動デバッグ
+
+## products.css
+レスポンシブヘッドライン画像位置制御
+.mvp-p {
+  background-image: url("https://images.unsplash.com/photo-1716194583732-0b9874234218?auto=format&amp;fit=crop&amp;q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top -280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+バックグラウンド画像をcenter centerへ
