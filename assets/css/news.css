@@ -35,3 +35,6 @@
   max-width: 780px !important;
   width: 80vw !important;
 }
+section.news-archive-section {
+  border: none;
+}

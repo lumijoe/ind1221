@@ -150,3 +150,29 @@
         });
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const section = document.getElementById("newsNavtag");
+        if (!section) return;
+
+        const tabButtons = section.querySelectorAll('[role="tab"]');
+        const tabContents = section.querySelectorAll('[role="tabpanel"]');
+
+        const hash = window.location.hash;
+        if (hash) {
+            const targetButton = [...tabButtons].find(btn => btn.getAttribute('data-bs-target') === hash);
+            const targetPanel = section.querySelector(hash);
+
+            if (targetButton && targetPanel) {
+                // タブボタンとパネルを一括切り替え
+                tabButtons.forEach(btn => btn.classList.remove("active"));
+                tabContents.forEach(panel => panel.classList.remove("active", "show"));
+
+                targetButton.classList.add("active");
+                targetPanel.classList.add("active", "show");
+                // 遷移後だけのフォーカスリング制御
+                targetButton.blur();
+            }
+        }
+    });
+</script>

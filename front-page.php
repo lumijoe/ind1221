@@ -13,12 +13,12 @@ get_header();
         background-size: cover;
         background-position: center;
     }
+
     .bg-slide2 {
         background-image: url(https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80);
         background-size: cover;
         background-position: center;
     }
-    
 </style>
 <main>
 
@@ -147,7 +147,7 @@ get_header();
                     <div class="news-toppage-ttl">
                         <h2>IRニュース</h2>
                         <span>
-                            <a href="<?php echo get_post_type_archive_link('irnews'); ?>" class="more-link animationbutton">
+                            <a href="<?php echo esc_url(home_url()); ?>/archives/news#newsNavtag-ir" class="more-link animationbutton">
                                 <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="20px" height="20px" style="fill: #007bff;">
                                 一覧を見る
                             </a>
