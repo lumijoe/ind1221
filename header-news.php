@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お知らせ一覧 | 会社名</title>
+    <title>ニュースリリース | 会社名</title>
 
     <!-- Swiperのスタイルシートを追加 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -36,13 +36,13 @@
 
     <div class="wrapper-pageherobread">
         <div class="main-visual-products mvp-news">
-            <h2>お知らせ一覧</h2>
+            <h2>ニュースリリース</h2>
         </div>
 
         <nav class="breadcrumb" aria-label="パンくずリスト">
             <ol class="breadcrumb-list">
                 <li class="breadcrumb-item"><a href="<?php echo esc_url(home_url()); ?>">ホーム</a></li>
-                <li class="breadcrumb-item current">お知らせ一覧</li>
+                <li class="breadcrumb-item current">ニュースリリース</li>
             </ol>
         </nav>
     </div>

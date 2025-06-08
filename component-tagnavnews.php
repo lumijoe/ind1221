@@ -66,15 +66,18 @@
             role="tabpanel"
             aria-labelledby="newsNavtag-all-tab"
             tabindex="0">
-            全てのニュースの情報が入ります
+            <!-- カテゴリタブ component-tagnavnews-all.php -->
+            <?php get_template_part('component', 'tagnavnews-all'); ?>
+
         </div>
         <div
             class="tab-pane fade"
             id="newsNavtag-news"
             role="tabpanel"
-            aria-labelledby="newsNavtag-profile-news"
+            aria-labelledby="newsNavtag-news-tab"
             tabindex="0">
-            お知らせの文章が入ります
+            <!-- カテゴリタブ component-tagnavnews-news.php -->
+            <?php get_template_part('component', 'tagnavnews-news'); ?>
         </div>
         <div
             class="tab-pane fade"
@@ -82,7 +85,8 @@
             role="tabpanel"
             aria-labelledby="newsNavtag-product"
             tabindex="0">
-            製品に関しての文章が入ります
+            <!-- カテゴリタブ component-tagnavnews-product.php -->
+            <?php get_template_part('component', 'tagnavnews-product'); ?>
         </div>
         <div
             class="tab-pane fade"
