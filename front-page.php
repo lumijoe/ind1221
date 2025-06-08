@@ -247,7 +247,7 @@ get_header();
             </div>
             <p style="padding-right:5%; padding-left:5%; font-size:14px; padding-top:35px;" class="text">検査用装置や設備、工具や工具周辺機器、工業路など生産現場のあらゆる工程にわたる50以上の製品・技術を保有しています。
                 高度な技術とエンジニアリングを活かしたソリューションを提供し、パートナーとともに世界の躍進のために貢献していきます。</p>
-            <a href="<?php echo esc_url(home_url()); ?>/products/index.html" class="more-link animationbutton" style="color:#007bff; justify-content:center;">
+            <a href="<?php echo esc_url(home_url()); ?>/products/category-b/" class="more-link animationbutton" style="color:#007bff; justify-content:center;">
                 <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_right_blue.svg" alt="" width="40px" height="40px" style="fill: #007bff;">
                 製品情報をもっと見る
             </a>

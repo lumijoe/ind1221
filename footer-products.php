@@ -18,7 +18,7 @@
             </ul>
         </div>
         <div class="footer-section">
-            <a href="<?php echo esc_url(home_url()); ?>/products/">
+            <a href="<?php echo esc_url(home_url()); ?>/products/category-b/">
                 <h3 class="footer-nav-title">製品情報</h3>
             </a>
             <ul>
@@ -56,7 +56,7 @@
                 <h3 class="h3borderbottomnone footer-nav-title">ニュースリリース</h3>
             </a>
             <!-- <a href="/recruit/" ><h3 class="h3borderbottomnone footer-nav-title">採用情報</h3></a> -->
-            <a href="https://ikkosha.co.jp/staff/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;">
+            <a href="<?php echo esc_url(home_url()); ?>/company/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;">
                 <h3 class="h3borderbottomnone footer-nav-title">採用情報</h3><img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_newopen.svg" alt="" width="25" height="25" style="padding-bottom:10px;">
             </a>
             <a href="<?php echo esc_url(home_url()); ?>/ir/#iffaq">
@@ -80,8 +80,8 @@
         </div>
         <ul class="footer-attention">
             <li><a href="/sitemap/" target="_blank" rel="noopener noreferrer">サイトマップ</a></li>
-            <li><a href="https://ikkosha.co.jp/privacy-policy/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;">ご利用規約<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_newopen.svg" alt="" width="15" height="15" style="padding-left:2px;"></a></li>
-            <li><a href="https://ikkosha.co.jp/privacy-policy/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;">プライバシーポリシー<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_newopen.svg" alt="" width="15" height="15" style="padding-left:2px;"></a></li>
+            <li><a href="<?php echo esc_url(home_url()); ?>/company/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;">ご利用規約<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_newopen.svg" alt="" width="15" height="15" style="padding-left:2px;"></a></li>
+            <li><a href="<?php echo esc_url(home_url()); ?>/company/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items: center;">プライバシーポリシー<img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_newopen.svg" alt="" width="15" height="15" style="padding-left:2px;"></a></li>
         </ul>
     </div>
 

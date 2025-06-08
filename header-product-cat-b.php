@@ -5,6 +5,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
     <!-- Swiperのスタイルシートを追加 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-     <!-- 自サイトのスタイルシート -->
+    <!-- 自サイトのスタイルシート -->
     <link href="assets/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/megamenu.css">
@@ -35,19 +36,17 @@
 </head>
 <div>
     <!-- component-header.php -->
-<?php get_template_part('component', 'header'); ?>
+    <?php get_template_part('component', 'header'); ?>
 
-<div class="wrapper-pageherobread">
-    <div class="main-visual-products mvp-b">
-        <h2>工具・周辺機器</h2>
+    <div class="wrapper-pageherobread">
+        <div class="main-visual-products mvp-b">
+            <h2>工具・周辺機器</h2>
+        </div>
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="<?php echo esc_url(home_url()); ?>">ホーム</a></li>
+                <li class="breadcrumb-item"><a href="<?php echo esc_url(home_url()); ?>/products/category-b/">製品情報</a></li>
+                <li class="breadcrumb-item current">工具・周辺機器</li>
+            </ol>
+        </nav>
     </div>
-    <nav class="breadcrumb" aria-label="パンくずリスト">
-        <ol class="breadcrumb-list">
-            <li class="breadcrumb-item"><a href="/">ホーム</a></li>
-            <li class="breadcrumb-item"><a href="/products/">製品情報</a></li>
-            <li class="breadcrumb-item current">工具・周辺機器</li>
-        </ol>
-    </nav>
-</div>
-
-

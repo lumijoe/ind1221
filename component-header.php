@@ -85,7 +85,7 @@
                     <!-- 採用情報 -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="https://ikkosha.co.jp/staff/" target="_blank" rel="noopener noreferrer" class="item-level0ne">採用情報</a>
+                        <a href="<?php echo esc_url(home_url()); ?>/company/" target="_blank" rel="noopener noreferrer" class="item-level0ne">採用情報</a>
                     </li>
 
                     <!-- icon -->
