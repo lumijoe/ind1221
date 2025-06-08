@@ -32,7 +32,7 @@
                 <h3 class="footer-nav-title">IR情報</h3>
             </a>
             <ul>
-                <li><a href="<?php echo esc_url(home_url()); ?>/ir/#irnews">IRニュース</a></li>
+                <!-- <li><a href="<?php echo esc_url(home_url()); ?>/ir/#irnews">IRニュース</a></li> -->
                 <li><a href="<?php echo esc_url(home_url()); ?>/ir/#irlibrary">IRライブラリー</a></li>
                 <li><a href="<?php echo esc_url(home_url()); ?>/ir/#irreport">統合報告書</a></li>
                 <li><a href="<?php echo esc_url(home_url()); ?>/ir/#irfinancial">財務情報</a></li>
@@ -44,7 +44,7 @@
                 <h3 class="footer-nav-title">サステナビリティ</h3>
             </a>
             <ul>
-                <li><a href="<?php echo esc_url(home_url()); ?>/archives/news#newsNavtag-sustainability">サステナビリティニュース</a></li>
+                <!-- <li><a href="<?php echo esc_url(home_url()); ?>/archives/news#newsNavtag-sustainability">サステナビリティニュース</a></li> -->
                 <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#initiatives">取り組み</a></li>
                 <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#environment">環境(E)</a></li>
                 <li><a href="<?php echo esc_url(home_url()); ?>/sustainability/#society">社会(S)</a></li>
