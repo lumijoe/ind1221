@@ -1,62 +1,65 @@
 <!-- component-tagnavnews.php -->
 <section id="newsNavtag" class="tag-news">
-    <nav>
+    <nav class="news-nav">
         <div class="nav nav-tabs tabs-wrapper" id="newsNavtag-tab" role="tablist">
-            <button
-                class="nav-link active news-category-wide"
-                id="newsNavtag-all-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#newsNavtag-all"
-                type="button"
-                role="tab"
-                aria-controls="newsNavtag-all"
-                aria-selected="true">
-                すべて
-            </button>
-            <button
-                class="nav-link news-category-wide"
-                id="newsNavtag-news-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#newsNavtag-news"
-                type="button"
-                role="tab"
-                aria-controls="newsNavtag-news"
-                aria-selected="false">
-                お知らせ
-            </button>
-            <button
-                class="nav-link news-category-wide"
-                id="newsNavtag-product-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#newsNavtag-product"
-                type="button"
-                role="tab"
-                aria-controls="newsNavtag-product"
-                aria-selected="false">
-                製品情報
-            </button>
-            <button
-                class="nav-link news-category-wide"
-                id="newsNavtag-sustainability-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#newsNavtag-sustainability"
-                type="button"
-                role="tab"
-                aria-controls="newsNavtag-sustainability"
-                aria-selected="false">
-                サステナビリティ
-            </button>
-            <button
-                class="nav-link news-category-wide"
-                id="newsNavtag-ir-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#newsNavtag-ir"
-                type="button"
-                role="tab"
-                aria-controls="newsNavtag-ir"
-                aria-selected="false">
-                IR
-            </button>
+            <h2 class="introduce-txt">カテゴリ別</h2>
+            <div class="cat-wrapper">
+                <button
+                    class="nav-link active news-category-wide"
+                    id="newsNavtag-all-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#newsNavtag-all"
+                    type="button"
+                    role="tab"
+                    aria-controls="newsNavtag-all"
+                    aria-selected="true">
+                    すべて
+                </button>
+                <button
+                    class="nav-link news-category-wide"
+                    id="newsNavtag-news-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#newsNavtag-news"
+                    type="button"
+                    role="tab"
+                    aria-controls="newsNavtag-news"
+                    aria-selected="false">
+                    お知らせ
+                </button>
+                <button
+                    class="nav-link news-category-wide"
+                    id="newsNavtag-product-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#newsNavtag-product"
+                    type="button"
+                    role="tab"
+                    aria-controls="newsNavtag-product"
+                    aria-selected="false">
+                    製品情報
+                </button>
+                <button
+                    class="nav-link news-category-wide"
+                    id="newsNavtag-sustainability-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#newsNavtag-sustainability"
+                    type="button"
+                    role="tab"
+                    aria-controls="newsNavtag-sustainability"
+                    aria-selected="false">
+                    サステナビリティ
+                </button>
+                <button
+                    class="nav-link news-category-wide"
+                    id="newsNavtag-ir-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#newsNavtag-ir"
+                    type="button"
+                    role="tab"
+                    aria-controls="newsNavtag-ir"
+                    aria-selected="false">
+                    IR
+                </button>
+            </div>
         </div>
     </nav>
     <div class="tab-content" id="newsNavtag-tabContent">
