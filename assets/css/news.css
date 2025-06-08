@@ -22,6 +22,12 @@
   align-items: center;
   gap: 10px;
 }
-.nav-link.active {
+.news-category-wide.active {
+  border-bottom: 2px solid #007aff !important;
+  background-color: #007aff;
+  color: white;
+  font-weight: 500 !important;
+}
+.news-category-wide:hover {
   border-bottom: 2px solid #007aff !important;
 }
