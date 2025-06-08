@@ -11,11 +11,11 @@ get_header('news');
 <main>
     <!-- カテゴリタブ -->
     <div class="l-category-tab">
-        <button class="is-current"><a href="<?php echo home_url('/news'); ?>">お知らせ一覧</a></button>
-        <button><a href="<?php echo home_url('/newscategory/allevent/'); ?>">全体行事</a></button>
-        <button><a href="<?php echo home_url('/newscategory/company/'); ?>">会社だより</a></button>
-        <button><a href="<?php echo home_url('/newscategory/obog/'); ?>">OBOG会だより</a></button>
-        <button><a href="<?php echo home_url('/newscategory/member/'); ?>">会員だより</a></button>
+        <button class="is-current"><a href="<?php echo home_url(''); ?>">すべて</a></button>
+        <button><a href="<?php echo home_url(''); ?>">製品情報</a></button>
+        <button><a href="<?php echo home_url(''); ?>">IR</a></button>
+        <button><a href="<?php echo home_url(''); ?>">サステナビリティ</a></button>
+        <button><a href="<?php echo home_url(''); ?>">お知らせ</a></button>
     </div>
 
     <!-- サイドバー -->
