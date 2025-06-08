@@ -84,8 +84,10 @@ get_header('news');
 
         <section class="news-archive-section">
             <div class="container">
-                <h1 class="archive-title">ニュース一覧</h1>
-
+                <div class="news-toppage-ttl">
+                    <h2 style="width: 100%;">お知らせ一覧</h2>
+                </div>
+                <p class="news-toppage-ttl-en">NEWS</p>
                 <?php
                 $args = array(
                     'post_type'      => array('news', 'irnews'), // 両方を指定
