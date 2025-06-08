@@ -276,8 +276,12 @@ get_footer(); // footer.php を読み込む
 ## pdf-icon
 
 <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px">
-記事のロゴ画像
+⭕️記事のロゴ画像
     https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/logo_news.png
+⭕️海の活動
+    https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_news_sus_01.png
+⭕️環境風車
+https://images.unsplash.com/photo-1451847251646-8a6c0dd1510c?auto=format&fit=crop&q=80
 
 ## issue
 
