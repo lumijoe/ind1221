@@ -422,3 +422,54 @@ get_header('news');
             <?php endif; ?>
         </div>
     </section>
+
+
+## page-sustainability.php
+ <!-- サステナビリティニュースセクション -->
+    <section class="news-section" style="padding-top:40px;" id="sustainabilitynews">
+        <div class="container news-container">
+            <div class="news-grid">
+                <!-- 左側: 全て/製品/サステナビリティ -->
+                <div class="news-main" style="width:70%!important; padding-left:0px; padding-right:0px;">
+                    <div class="news-toppage-ttl">
+                        <h2 style="width:auto">サステナビリティニュース</h2>
+                    </div>
+                    <p class="news-toppage-ttl-en">SUSTAINABILITY NEWS</p>
+                    <div class="news-list">
+                        <div class="news-list-wrapper">
+                            <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_news_sus_01.png" alt="" class="news-cap">
+                            <article class="news-item product" style="align-items:flex-start;">
+                                <div class="news-item-level1">
+                                    <time>2024.03.20</time>
+                                    <span class="news-category">サステナビリティ</span>
+                                </div>
+                                <a href="#" class="news-item-txt">地域の清掃活動支援について</a>
+                            </article>
+                        </div>
+
+                        <div class="news-list-wrapper">
+                            <img src="https://images.unsplash.com/photo-1451847251646-8a6c0dd1510c?auto=format&fit=crop&q=80" alt="サステナビリティ" class="news-cap">
+                            <article class="news-item product" style="align-items:flex-start;">
+                                <div class="news-item-level1">
+                                    <time>2024.03.10</time>
+                                    <span class="news-category">サステナビリティ</span>
+                                </div>
+                                <a href="#" class="news-item-txt">環境への取り組みについて</a>
+                            </article>
+                        </div>
+
+                        <div class="news-list-wrapper">
+                            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80" alt="" class="news-cap">
+                            <article class="news-item product" style="align-items:flex-start;">
+                                <div class="news-item-level1">
+                                    <time>2024.03.19</time>
+                                    <span class="news-category">サステナビリティ</span>
+                                </div>
+                                <a href="#" class="news-item-txt">当社の取り組みが新聞に掲載されました</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
