@@ -11,33 +11,15 @@ get_header('newssingle');
 
 <!-- titleview -->
 <section class="l-titleview">
-
+    <img src="<?php echo get_template_directory_uri(); ?>/images/common/img_page_news.png" alt="お知らせ画像">
     <div class="l-titleview-ttl">
-
         <p class="l-page-caption">
-            <?php the_field('post_title'); ?>
+            <?php
+            $title = get_field('post_title');
+            echo mb_strimwidth($title, 0, 50, '…', 'UTF-8');
+            ?>
         </p>
     </div>
-    <!-- 画像 -->
-    <?php if (get_field('post_image')) : ?>
-        <img src="<?php the_field('post_image'); ?>"
-            alt="ニュース画像"
-            width="300"
-            data-src="<?php the_field('post_image'); ?>"
-            decoding="async"
-            class="lazyloaded"
-            style="width:100%;">
-    <?php endif; ?>
-    <?php if (get_field('post_imageurl')) : ?>
-        <img src="<?php the_field('post_imageurl'); ?>"
-            alt="ニュース画像"
-            width="300"
-            data-src="<?php the_field('post_imageurl'); ?>"
-            decoding="async"
-            class="lazyloaded"
-            style="width:100%;">
-    <?php endif; ?>
-
 </section>
 
 <!-- 記事セクション -->
@@ -50,7 +32,7 @@ get_header('newssingle');
                         <date class="post-date"><?php echo get_the_date('Y.m.d'); ?></date>
                         <!-- ACFカテゴリ -->
                         <?php
-                        $terms = get_the_terms(get_the_ID(), 'newscategory');
+                        $terms = get_the_terms(get_the_ID(), 'irnewscategory');
                         if ($terms && !is_wp_error($terms)) :
                             $first_term = $terms[0];
                             $category_output = $first_term->name;
@@ -80,42 +62,34 @@ get_header('newssingle');
                         <p class="item-category"><?php echo esc_html($category_output); ?></p>
                     </div>
                     <!-- ACFタイトル -->
-                    <h2><?php the_field('post_title, irpost_title'); ?></h2>
+                    <h2><?php the_field('irpost_title'); ?></h2>
 
                     <hr>
                     <!-- ACF本文 -->
-                    <p><?php the_field('post_text, irpost_text'); ?></p>
-
+                    <p><?php the_field('irpost_text'); ?></p>
                     <!-- 画像 -->
-                    <?php if (get_field('post_image')) : ?>
-                        <img src="<?php the_field('post_image'); ?>"
+                    <!-- 画像 -->
+                    <?php if (get_field('irpost_image')) : ?>
+                        <img src="<?php the_field('irpost_image'); ?>"
                             alt="ニュース画像"
                             width="300"
-                            data-src="<?php the_field('post_image'); ?>"
-                            decoding="async"
-                            class="lazyloaded">
-                    <?php endif; ?>
-                    <?php if (get_field('post_imageurl')) : ?>
-                        <img src="<?php the_field('post_imageurl'); ?>"
-                            alt="ニュース画像"
-                            width="300"
-                            data-src="<?php the_field('post_imageurl'); ?>"
+                            data-src="<?php the_field('irpost_image'); ?>"
                             decoding="async"
                             class="lazyloaded">
                     <?php endif; ?>
                     <!-- PDF -->
-                    <?php if (get_field('post_pdf') && get_field('post_pdf_title')) : ?>
+                    <?php if (get_field('irpost_pdf') && get_field('irpost_pdf_title')) : ?>
                         <p class="pdf-title">
-                            <a href="<?php the_field('post_pdf'); ?>" target="_blank" rel="noopener noreferrer">
-                                <?php the_field('post_pdf_title'); ?>
+                            <a href="<?php the_field('irpost_pdf'); ?>" target="_blank" rel="noopener noreferrer">
+                                <?php the_field('irpost_pdf_title'); ?>
                             </a>
                         </p>
                     <?php endif; ?>
                     <!-- 外部リンク -->
-                    <?php if (get_field('post_url')) : ?>
+                    <?php if (get_field('irpost_url')) : ?>
                         <p class="post-url">
-                            <a href="<?php the_field('post_url'); ?>" target="_blank" rel="noopener noreferrer">
-                                <?php the_field('post_url'); ?>
+                            <a href="<?php the_field('irpost_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <?php the_field('irpost_url'); ?>
                             </a>
                         </p>
                     <?php endif; ?>
