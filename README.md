@@ -300,3 +300,4 @@ slider の挙動、デバイス width 変動時の挙動デバッグ
   align-items: center;
 }
 バックグラウンド画像をcenter centerへ
+
