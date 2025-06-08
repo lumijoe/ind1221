@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/top.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/products.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css2/ir2.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/news.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/footer.css">
 
     <!-- JS  -->

@@ -1,9 +1,9 @@
 <!-- component-tagnavnews.php -->
-<section id="newsNavtag">
+<section id="newsNavtag" class="tag-news">
     <nav>
-        <div class="nav nav-tabs" id="newsNavtag-tab" role="tablist">
+        <div class="nav nav-tabs tabs-wrapper" id="newsNavtag-tab" role="tablist">
             <button
-                class="nav-link active"
+                class="nav-link active news-category-wide"
                 id="newsNavtag-all-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#newsNavtag-all"
@@ -14,7 +14,7 @@
                 すべて
             </button>
             <button
-                class="nav-link"
+                class="nav-link news-category-wide"
                 id="newsNavtag-news-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#newsNavtag-news"
@@ -25,7 +25,7 @@
                 お知らせ
             </button>
             <button
-                class="nav-link"
+                class="nav-link news-category-wide"
                 id="newsNavtag-product-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#newsNavtag-product"
@@ -36,27 +36,25 @@
                 製品情報
             </button>
             <button
-                class="nav-link"
+                class="nav-link news-category-wide"
                 id="newsNavtag-sustainability-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#newsNavtag-sustainability"
                 type="button"
                 role="tab"
                 aria-controls="newsNavtag-sustainability"
-                aria-selected="false"
-                disabled>
+                aria-selected="false">
                 サステナビリティ
             </button>
             <button
-                class="nav-link"
+                class="nav-link news-category-wide"
                 id="newsNavtag-ir-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#newsNavtag-ir"
                 type="button"
                 role="tab"
                 aria-controls="newsNavtag-ir"
-                aria-selected="false"
-                disabled>
+                aria-selected="false">
                 IR
             </button>
         </div>
