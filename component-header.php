@@ -10,9 +10,9 @@
                     <!-- お知らせ -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
-                        <a href="<?php echo esc_url(home_url()); ?>/news/" class="item-level0ne">お知らせ</a>
+                        <a href="<?php echo esc_url(home_url()); ?>/archives/news/" class="item-level0ne">お知らせ</a>
                     </li>
-    
+
                     <!-- 企業案内 -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
@@ -21,7 +21,9 @@
                             <div class="mega-inner">
                                 <div class="mega-category">
                                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" alt="企業案内" loading="lazy">
-                                    <a href="<?php echo esc_url(home_url()); ?>/company/"><h3>企業情報トップ</h3></a>
+                                    <a href="<?php echo esc_url(home_url()); ?>/company/">
+                                        <h3>企業情報トップ</h3>
+                                    </a>
                                     <ul>
                                         <li><a href="<?php echo esc_url(home_url()); ?>/company/#message">メッセージ</a></li>
                                         <li><a href="<?php echo esc_url(home_url()); ?>/company/#about">会社概要</a></li>
@@ -31,7 +33,7 @@
                             </div>
                         </div>
                     </li>
-    
+
                     <!-- IR情報 -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
@@ -52,7 +54,7 @@
                             </div>
                         </div>
                     </li>
-    
+
                     <!-- サステナビリティ -->
                     <span class="navpanel-line"></span>
                     <li class="menu-item">
@@ -98,7 +100,7 @@
                     </li>
                     <li class="menu-item menu-item-button">
                         <a href="/contact/" class="button item-level0ne">お問い合わせ</a>
-                    </li> -->            
+                    </li> -->
                 </ul>
             </nav>
             <button class="hamburger">
