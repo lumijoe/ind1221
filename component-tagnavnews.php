@@ -98,18 +98,24 @@
             aria-labelledby="newsNavtag-sustainability"
             tabindex="0">
             <!-- カテゴリタブ component-tagnavnews-sustainability.php -->
-            <?php get_template_part('component', 'tagnavnews-sustainability'); ?>
-        </div>
-        <div
-            class="tab-pane fade"
-            id="newsNavtag-ir"
-            role="tabpanel"
-            aria-labelledby="newsNavtag-ir"
-            tabindex="0">
-            <!-- カテゴリタブ component-tagnavnews-ir.php -->
-            <?php get_template_part('component', 'tagnavnews-ir'); ?>
-        </div>
-        <!-- <div
+            <section class="news-archive-section">
+                <div class="container archive-container">
+                    <div class="news-toppage-ttl">
+                        <h2 style="width: 100%;">サステナビリティ</h2>
+                    </div>
+                    <p class="news-toppage-ttl-en">SUSTAINABILITY</p>
+                    <?php get_template_part('component', 'tagnavnews-sustainability'); ?>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="newsNavtag-ir"
+                    role="tabpanel"
+                    aria-labelledby="newsNavtag-ir"
+                    tabindex="0">
+                    <!-- カテゴリタブ component-tagnavnews-ir.php -->
+                    <?php get_template_part('component', 'tagnavnews-ir'); ?>
+                </div>
+                <!-- <div
                     class="tab-pane fade"
                     id="newsNavtag-disabled"
                     role="tabpanel"
@@ -117,7 +123,7 @@
                     tabindex="0">
                     disに関しての文章が入ります
                 </div> -->
-    </div>
+        </div>
 </section>
 
 
