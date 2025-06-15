@@ -73,10 +73,10 @@
                 <p class="footer-logo-caption">エネルギーで産業を支える。</p>
                 <div class="footer-logo">
                     <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/logo.png" alt="会社ロゴ" loading="lazy">
-                    <h2>yCOMPANY</h2>
+                    <h2>〇〇〇〇株式会社</h2>
                 </div>
             </div>
-            <copy class="copyright">&copy;yCompany All rights reserved.</copy>
+            <copy class="copyright">&copy;〇〇〇〇株式会社 All rights reserved.</copy>
         </div>
         <ul class="footer-attention">
             <li><a href="/sitemap/" target="_blank" rel="noopener noreferrer">サイトマップ</a></li>
