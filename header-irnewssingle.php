@@ -1,6 +1,6 @@
 <?php
 //====================================================
-//  Template Name: header-newssingle
+//  Template Name: header-irnewssingle
 //====================================================
 ?>
 <!DOCTYPE html>
@@ -37,7 +37,7 @@
     <div class="wrapper-pageherobread">
         <div class="main-visual-products mvp-news">
             <h2><?php
-                $title = get_field('post_title');
+                $title = get_field('irpost_title');
                 echo mb_strimwidth($title, 0, 50, '…', 'UTF-8');
                 ?></h2>
         </div>
@@ -48,7 +48,7 @@
                 <li class="breadcrumb-item"><a href="<?php echo esc_url(home_url()); ?>/archives/news/">ニュースリリース</a></li>
                 <li class="breadcrumb-item current" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;">
                     <?php
-                    $title = get_field('post_title');
+                    $title = get_field('irpost_title');
                     echo mb_strimwidth($title, 0, 50, '…', 'UTF-8');
                     ?>
                 </li>

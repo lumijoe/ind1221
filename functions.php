@@ -72,11 +72,13 @@ function create_post_type_news()
             'menu_position' => 5,
             'menu_icon'    => 'dashicons-edit',
             'supports'     => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-            'rewrite'      => array('slug' => 'news'), // URLを 'archives/news/' にする
+            'rewrite'      => array('slug' => 'irnews'), // URLを 'archives/news/' にする
         )
     );
 }
 add_action('init', 'create_post_type_news');
+
+
 
 
 // ========================

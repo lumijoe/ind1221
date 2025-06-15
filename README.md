@@ -278,6 +278,9 @@ get_footer(); // footer.php を読み込む
 <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/icon_pdf.svg" alt="" style="width:23px">
 ⭕️記事のロゴ画像
     https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/logo_news.png
+⭕️pdf画像
+    https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/pdf_1.pdf
+    https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/2025/06/pdf_4.pdf
 ⭕️海の活動
     https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/img_news_sus_01.png
 ⭕️環境風車
@@ -472,4 +475,130 @@ get_header('news');
                 </div>
             </div>
         </div>
+    </section>
+
+
+## single-news.php 別案
+<!-- titleview -->
+<section class="l-titleview">
+    <!-- タイトル -->
+    <div class="l-titleview-ttl">
+        <p class="l-page-caption">
+            <?php the_field('post_title'); ?>
+        </p>
+    </div>
+    <!-- 画像 -->
+    <?php if (get_field('post_image')) : ?>
+        <img src="<?php the_field('post_image'); ?>"
+            alt="ニュース画像"
+            width="300"
+            data-src="<?php the_field('post_image'); ?>"
+            decoding="async"
+            class="lazyloaded"
+            style="width:100%;">
+    <?php endif; ?>
+    <?php if (get_field('post_imageurl')) : ?>
+        <img src="<?php the_field('post_imageurl'); ?>"
+            alt="ニュース画像"
+            width="300"
+            data-src="<?php the_field('post_imageurl'); ?>"
+            decoding="async"
+            class="lazyloaded"
+            style="width:100%;">
+    <?php endif; ?>
+</section>
+
+<!-- 記事セクション2 -->
+<div class="l-side-grid single-wrapper">
+    <section class="l-article article-single-wrapper">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <article>
+                    <div class="date-category-wrapper">
+                        <!-- ACF投稿日時 -->
+                        <time><?php echo get_the_date('Y.m.d'); ?></time>
+                        <!-- ACFカテゴリ -->
+                        <?php
+                        $terms = get_the_terms(get_the_ID(), 'newscategory');
+                        if ($terms && !is_wp_error($terms)) :
+                            $first_term = $terms[0];
+                            $category_output = $first_term->name;
+                        else :
+                            $category_output = 'カテゴリなし';
+                        endif;
+                        ?>
+                        <!-- span新着タグ -->
+                        <?php
+                        // 投稿日と現在の日付を取得
+                        $post_date = get_the_date('Y-m-d');
+                        $post_datetime = new DateTime($post_date);
+                        $now = new DateTime();
+
+                        // 投稿が過去の日付かチェック（未来記事を除外）
+                        if ($post_datetime <= $now) {
+                            $interval = $now->diff($post_datetime)->days;
+
+                            // 7日以内ならNEWを表示
+                            if ($interval < 7) :
+                        ?>
+                                <span class="mark-newsarrival text80">NEW</span>
+                        <?php
+                            endif;
+                        }
+                        ?>
+                        <p class="item-category"><?php echo esc_html($category_output); ?></p>
+                    </div>
+                    <!-- ACFタイトル -->
+                    <h2><?php the_field('post_title, irpost_title'); ?></h2>
+
+                    <hr>
+                    <!-- ACF本文 -->
+                    <p><?php the_field('post_text, irpost_text'); ?></p>
+
+                    <!-- 画像 -->
+                    <?php if (get_field('post_image')) : ?>
+                        <img src="<?php the_field('post_image'); ?>"
+                            alt="ニュース画像"
+                            width="300"
+                            data-src="<?php the_field('post_image'); ?>"
+                            decoding="async"
+                            class="lazyloaded">
+                    <?php endif; ?>
+                    <?php if (get_field('post_imageurl')) : ?>
+                        <img src="<?php the_field('post_imageurl'); ?>"
+                            alt="ニュース画像"
+                            width="300"
+                            data-src="<?php the_field('post_imageurl'); ?>"
+                            decoding="async"
+                            class="lazyloaded">
+                    <?php endif; ?>
+                    <!-- PDF -->
+                    <?php if (get_field('post_pdf') && get_field('post_pdf_title')) : ?>
+                        <p class="pdf-title">
+                            <a href="<?php the_field('post_pdf'); ?>" target="_blank" rel="noopener noreferrer">
+                                <?php the_field('post_pdf_title'); ?>
+                            </a>
+                        </p>
+                    <?php endif; ?>
+                    <!-- 外部リンク -->
+                    <?php if (get_field('post_url')) : ?>
+                        <p class="post-url">
+                            <a href="<?php the_field('post_url'); ?>" target="_blank" rel="noopener noreferrer">
+                                <?php the_field('post_url'); ?>
+                            </a>
+                        </p>
+                    <?php endif; ?>
+                    <hr>
+                </article>
+
+                <!-- 前後の記事ナビゲーション -->
+                <nav>
+                    <p><?php previous_post_link('« %link'); ?></p>
+                    <p><a href="<?php echo get_post_type_archive_link('news'); ?>">一覧へ戻る</a></p>
+                    <p><?php next_post_link('%link »'); ?></p>
+                </nav>
+
+            <?php endwhile;
+        else : ?>
+            <p>お知らせはありません</p>
+        <?php endif; ?>
     </section>
