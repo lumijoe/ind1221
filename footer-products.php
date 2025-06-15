@@ -72,7 +72,7 @@
             <div class="container">
                 <p class="footer-logo-caption">エネルギーで産業を支える。</p>
                 <div class="footer-logo">
-                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/logo.png" alt="会社ロゴ" loading="lazy">
+                    <img src="https://lkcodetest.sakura.ne.jp/ind1221/wp-content/uploads/images/favicon.png" alt="会社ロゴ" loading="lazy" width="50" height="50">
                     <h2>〇〇〇〇株式会社</h2>
                 </div>
             </div>

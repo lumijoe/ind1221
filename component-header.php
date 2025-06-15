@@ -3,7 +3,7 @@
     <div class="header-inner" id="header-inner">
         <div class="header-top">
             <a href="<?php echo esc_url(home_url()); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="会社名">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" alt="会社名">
             </a>
             <nav class="mega-menu">
                 <ul class="menu-list header-levelOne">
