@@ -1,3 +1,93 @@
+<div class="border border-border rounded-lg bg-background p-6 shadow-sm"><div class="prose prose-sm md:prose-base lg:prose-lg max-w-none prose-headings:font-bold prose-a:text-blue-600" style="user-select: none;"><div id="top" class="">
+
+<div align="center" class="text-center">
+<h1>IND1221</h1>
+<p><em>Transforming Ideas Into Limitless Innovation</em></p>
+
+<img alt="last-commit" src="https://img.shields.io/github/last-commit/lumijoe/ind1221?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/lumijoe/ind1221?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/lumijoe/ind1221?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<p><em>Built with the tools and technologies:</em></p>
+<img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&amp;logo=Markdown&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4.svg?style=flat&amp;logo=PHP&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+</div>
+<br>
+<hr>
+<h2>Table of Contents</h2>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0"><a href="#overview">Overview</a></li>
+<li class="my-0"><a href="#getting-started">Getting Started</a>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0"><a href="#prerequisites">Prerequisites</a></li>
+<li class="my-0"><a href="#installation">Installation</a></li>
+<li class="my-0"><a href="#usage">Usage</a></li>
+<li class="my-0"><a href="#testing">Testing</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>Overview</h2>
+<p>ind1221 is a versatile developer toolset crafted to streamline the development of structured, content-rich websites. It offers a collection of reusable templates, dynamic components, and content organization features that ensure consistency and scalability across large sites.</p>
+<p><strong>Why ind1221?</strong></p>
+<p>This project simplifies maintaining a cohesive user experience and efficient content management. The core features include:</p>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0">🧩 <strong>Modular Components:</strong> Reusable headers, footers, and navigation elements for consistent branding.</li>
+<li class="my-0">📊 <strong>Dynamic Content:</strong> News, IR updates, and press releases with real-time querying and pagination.</li>
+<li class="my-0">🛠️ <strong>Custom Templates:</strong> Category-specific pages with filtering, breadcrumbs, and tailored layouts.</li>
+<li class="my-0">🌐 <strong>Responsive Design:</strong> Bootstrap integration ensures mobile-friendly, adaptable interfaces.</li>
+<li class="my-0">🔧 <strong>Content Management Support:</strong> Custom post types and structured content organization.</li>
+<li class="my-0">🚀 <strong>Scalable Architecture:</strong> Supports site expansion with flexible, maintainable templates.</li>
+</ul>
+<hr>
+<h2>Getting Started</h2>
+<h3>Prerequisites</h3>
+<p>This project requires the following dependencies:</p>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0"><strong>Programming Language:</strong> PHP</li>
+<li class="my-0"><strong>Package Manager:</strong> Composer</li>
+</ul>
+<h3>Installation</h3>
+<p>Build ind1221 from the source and install dependencies:</p>
+<ol>
+<li class="my-0">
+<p><strong>Clone the repository:</strong></p>
+<pre><code class="language-sh">❯ git clone https://github.com/lumijoe/ind1221
+</code></pre>
+</li>
+<li class="my-0">
+<p><strong>Navigate to the project directory:</strong></p>
+<pre><code class="language-sh">❯ cd ind1221
+</code></pre>
+</li>
+<li class="my-0">
+<p><strong>Install the dependencies:</strong></p>
+</li>
+</ol>
+<p><strong>Using <a href="https://www.php.net/">composer</a>:</strong></p>
+<pre><code class="language-sh">❯ composer install
+</code></pre>
+<h3>Usage</h3>
+<p>Run the project with:</p>
+<p><strong>Using <a href="https://www.php.net/">composer</a>:</strong></p>
+<pre><code class="language-sh">php {entrypoint}
+</code></pre>
+<h3>Testing</h3>
+<p>Ind1221 uses the {<strong>test_framework</strong>} test framework. Run the test suite with:</p>
+<p><strong>Using <a href="https://www.php.net/">composer</a>:</strong></p>
+<pre><code class="language-sh">vendor/bin/phpunit
+</code></pre>
+<hr>
+<div align="left" class=""><a href="#top">⬆ Return</a></div>
+<hr></div></div></div>
+
+
+
+
+
+
+
+
+
 ## ind1221
 
 https://lkcodetest.sakura.ne.jp/ind1221/
