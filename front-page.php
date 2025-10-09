@@ -94,23 +94,14 @@ get_header();
                                         <img src="<?php the_field('post_imageurl'); ?>" alt="" class="news-cap">
                                         <!-- span新着タグ -->
                                         <?php
-                                        // 投稿日と現在の日付を取得
                                         $post_date = get_the_date('Y-m-d');
                                         $post_datetime = new DateTime($post_date);
                                         $now = new DateTime();
-
-                                        // 投稿が過去の日付かチェック（未来記事を除外）
-                                        if ($post_datetime <= $now) {
-                                            $interval = $now->diff($post_datetime)->days;
-
-                                            // 7日以内ならNEWを表示
-                                            if ($interval < 7) :
+                                        $interval = $now->diff($post_datetime)->days;
+                                        if ($interval < 7) :
                                         ?>
-                                                <span class="mark-newsarrival text80">NEW</span>
-                                        <?php
-                                            endif;
-                                        }
-                                        ?>
+                                            <span class="mark-newsarrival text80">NEW</span>
+                                        <?php endif; ?>
                                     </div>
                                     <article class="news-item" style="border-bottom:none!important;">
                                         <div class="news-item-level1">
@@ -172,23 +163,14 @@ get_header();
                                         <img src="<?php the_field('irpost_imageurl'); ?>" alt="" class="news-cap">
                                         <!-- span新着タグ -->
                                         <?php
-                                        // 投稿日と現在の日付を取得
                                         $post_date = get_the_date('Y-m-d');
                                         $post_datetime = new DateTime($post_date);
                                         $now = new DateTime();
-
-                                        // 投稿が過去の日付かチェック（未来記事を除外）
-                                        if ($post_datetime <= $now) {
-                                            $interval = $now->diff($post_datetime)->days;
-
-                                            // 7日以内ならNEWを表示
-                                            if ($interval < 7) :
+                                        $interval = $now->diff($post_datetime)->days;
+                                        if ($interval < 7) :
                                         ?>
-                                                <p class="mark-newsarrival text80">NEW</p>
-                                        <?php
-                                            endif;
-                                        }
-                                        ?>
+                                            <span class="mark-newsarrival text80">NEW</span>
+                                        <?php endif; ?>
                                     </div>
                                     <article class="news-item ir" style="border-bottom:none!important;">
                                         <div class="news-item-level1">
