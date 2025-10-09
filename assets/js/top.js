@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 初期表示時に「すべて」タブをアクティブに
-    document.querySelector('.news-tab[data-tab="all"]').classList.add('active');
+    document.querySelector('.news-tab[data-tab="all"]')?.classList.add('active');
 
     // フッターのアニメーションを適用
     const footer = document.querySelector('.footer-inner'); // フッターの要素を選択
