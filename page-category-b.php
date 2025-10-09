@@ -26,7 +26,7 @@ get_header('product-cat-b');
                     <input type="checkbox" class="filter-checkbox" value="脱炭素化"> 脱炭素化
                 </label>
                 <label class="hashtag_2test">
-                    <input type="checkbox" class="filter-checkbox" value="IOT/ICT"> IOT/ICT
+                    <input type="checkbox" class="filter-checkbox" value="IOT / ICT"> IOT / ICT
                 </label>
                 <label class="hashtag_2test">
                     <input type="checkbox" class="filter-checkbox" value="現場改善"> 現場改善
@@ -78,7 +78,7 @@ get_header('product-cat-b');
             </div>
             <div class="filter-container">
                 <label class="hashtag_2test">
-                    <input type="checkbox" class="filter-checkbox" value="受託テスト"> 受託テスト有り
+                    <input type="checkbox" class="filter-checkbox" value="受託テスト有り"> 受託テスト有り
                 </label>
             </div>
         </section>
