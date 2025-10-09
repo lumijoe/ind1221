@@ -89,8 +89,8 @@ get_header('product-cat-c');
     <!-- メインコンテンツ -->
     <main>
         <?php
-        // 製品グループ（バーナ設備炉、プラント設備炉、熱処理炉）を指定順で表示
-        $product_group_slugs = array('baanasetsubiro', 'purantsetsubiro', 'netsusyoriro');
+        // 製品グループ（熱処理炉、プラント設備炉、バーナ設備炉）を指定順で表示
+        $product_group_slugs = array('netsusyoriro', 'purantsetsubiro', 'baanasetsubiro');
 
         foreach ($product_group_slugs as $group_slug) :
             // スラッグから該当するタームを取得
