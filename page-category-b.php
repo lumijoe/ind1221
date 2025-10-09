@@ -10,14 +10,14 @@ get_header('product-cat-b');
     <!-- 左サイドナビゲーション -->
     <aside class="side-nav_2test">
         <section class="issue-search_2test">
+            <div id="filter-results">
+                <p>該当する製品は: <span id="result-count">0</span>件</p>
+            </div>
             <!-- 課題から -->
             <div class="section-header_2test">
                 <h2>課題から探す</h2>
                 <span class="toggle-icon_2test"></span>
-            </div>
-            <div id="filter-results">
-                <p>該当する製品は: <span id="result-count">0</span>件</p>
-            </div>
+            </div>  
             <div class="filter-container">
                 <label class="hashtag_2test">
                     <input type="checkbox" class="filter-checkbox" value="電化"> 電化
