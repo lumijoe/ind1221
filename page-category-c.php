@@ -12,14 +12,14 @@ get_header('product-cat-c');
     <!-- 左サイドナビゲーション -->
     <aside class="side-nav_2test">
         <section class="issue-search_2test">
+            <div id="filter-results">
+                <p>該当する製品は: <span id="result-count">0</span>件</p>
+            </div>
             <!-- 課題から -->
             <div class="section-header_2test">
                 <h2>課題から探す</h2>
                 <span class="toggle-icon_2test"></span>
-            </div>
-            <div id="filter-results">
-                <p>該当する製品は: <span id="result-count">0</span>件</p>
-            </div>
+            </div>  
             <div class="filter-container">
                 <label class="hashtag_2test">
                     <input type="checkbox" class="filter-checkbox" value="電化"> 電化
@@ -28,7 +28,7 @@ get_header('product-cat-c');
                     <input type="checkbox" class="filter-checkbox" value="脱炭素化"> 脱炭素化
                 </label>
                 <label class="hashtag_2test">
-                    <input type="checkbox" class="filter-checkbox" value="IOT/ICT"> IOT/ICT
+                    <input type="checkbox" class="filter-checkbox" value="IOT / ICT"> IOT / ICT
                 </label>
                 <label class="hashtag_2test">
                     <input type="checkbox" class="filter-checkbox" value="現場改善"> 現場改善
@@ -80,285 +80,109 @@ get_header('product-cat-c');
             </div>
             <div class="filter-container">
                 <label class="hashtag_2test">
-                    <input type="checkbox" class="filter-checkbox" value="受託テスト"> 受託テスト有り
+                    <input type="checkbox" class="filter-checkbox" value="受託テスト有り"> 受託テスト有り
                 </label>
             </div>
         </section>
-        
-        
-        
-        <!-- <section class="category-list">
-            <div class="section-header_2test">
-                <h2>製品カテゴリー</h2>
-                <span class="toggle-icon_2test"></span>
-            </div>
-            <div class="accordion-content_2test">
-                <h3>熱処理炉</h3>
-                <ul>
-                    <li><a href="/products/category-a/a1/product1.html">製品B-1-1</a></li>
-                    <li><a href="/products/category-a/a1/product2.html">製品B-1-2</a></li>
-                    <li><a href="/products/category-a/a1/product3.html">製品B-1-3</a></li>
-                </ul>
-                <h3>プラント設備</h3>
-                <ul>
-                    <li><a href="/products/category-a/a2/product1.html">製品B-2-1</a></li>
-                    <li><a href="/products/category-a/a2/product2.html">製品B-2-2</a></li>
-                    <li><a href="/products/category-a/a2/product3.html">製品B-2-3</a></li>
-                </ul>
-                <h3>バーナ</h3>
-                <ul>
-                    <li><a href="/products/category-a/a3/product1.html">製品B-3-1</a></li>
-                    <li><a href="/products/category-a/a3/product2.html">製品B-3-2</a></li>
-                    <li><a href="/products/category-a/a3/product3.html">製品B-3-3</a></li>
-                </ul>
-            </div>
-        </section> -->
-
-        
     </aside>
 
     <!-- メインコンテンツ -->
     <main>
-        <h4>熱処理炉</h4>
-        <div class="product-grid_2test">
-            <!-- C-1製品群 -->
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1542274368-443d694d79aa?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">脱炭素化</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工業炉</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工業炉</span>
-                            <p class="product-tag-test">受託テスト可</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1547895749-888a559fc2a7?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工業炉</span>
-                            <p class="product-tag-test">受託テスト可</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- C-2製品群 -->
-        <h4>プラント設備炉</h4>
-        <div class="product-grid_2test">
-            <!-- C-2製品群 -->
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1517732747537-877644b96f8b?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">脱炭素化</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工業炉</span>
-                            <p class="product-tag-test">受託テスト可</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1637035640140-496a91d00dc0?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工業炉</span>
-                            
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1539186607619-df476afe6ff1?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>真空炉<br>真空炉A式<br>窒素雰囲気ABC炉</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工業炉</span>
-                            <p class="product-tag-test">受託テスト可</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- C-3製品群 -->
-        <h4>バーナ設備炉</h4>
-        <div class="product-grid_2test">
-            <!-- C-2製品群 -->
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1605359848061-682b4cae1e7a?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>バーナ<br>ガスバーナ炉<br>ABCDEFGHI</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">金属</span>
-                            <span class="product-tag-product">工業炉</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1607809610701-3c6adfea2a8b?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>バーナ<br>水素バーナ炉<br>JKLMNOPQ</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">セラミックス</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">脱炭素化</span>
-                            <span class="product-tag-product">工業炉</span>
-                            <p class="product-tag-test">受託テスト可</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a href="../category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1510772314292-9c0ad420734a?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>バーナ<br>アンモニアバーナ炉<br>RSTUVWX</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">現場改善</span>
-                            <span class="product-tag-product">脱炭素化</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">環境に配慮</span>
-                            <span class="product-tag-product">工業炉</span>
-                            <p class="product-tag-test">受託テスト可</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- test -->
-        <h4>熱処理炉</h4>
-        <section>
-            <div>
-                <div>
-                    <?php the_content(); ?>
-                </div>
         <?php
-        $args = array(
-            'post_type' => 'entry_product',
-            'post_status' => 'publish',
-            'posts_per_page' => -1,
-        );
+        // 製品グループ（バーナ設備炉、プラント設備炉、熱処理炉）を指定順で表示
+        $product_group_slugs = array('baanasetsubiro', 'purantsetsubiro', 'knetsusyoriro');
 
-        $the_query = new WP_Query($args);
-        if ($the_query->have_posts()) {
+        foreach ($product_group_slugs as $group_slug) :
+            // スラッグから該当するタームを取得
+            $group_term = get_term_by('slug', $group_slug, 'bunrui');
+
+            if (!$group_term || is_wp_error($group_term)) continue;
         ?>
-            <div class="works-box">
-                <ul class="works-lists">
-                    <?php
-                    while ($the_query->have_posts()) {
-                        $the_query->the_post();
-                    ?>
-                    <li class="works-list">
-                        <a href="<?php the_permalink(); ?>" class="works-link">
-                            <div class="works-link-thumb"><img src="<?php the_thumbnail_url(); ?>" alt=""></div>
-                            <div class="works-link-body">
-                                <h3 class="works-link-title"><?php the_title(); ?></h3>
-                                <p class="works-link-text"><?php echo get_the_excerpt(); ?></p>
+            <h4><?php echo esc_html($group_term->name); ?></h4>
+            <div class="product-grid_2test">
+                <?php
+                $args = array(
+                    'post_type' => 'entry_product',
+                    'posts_per_page' => -1,
+                    'orderby' => 'date',
+                    'order' => 'DESC',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'bunrui',
+                            'field' => 'slug',
+                            'terms' => $group_slug
+                        )
+                    )
+                );
+
+                $product_query = new WP_Query($args);
+
+                if ($product_query->have_posts()) :
+                    while ($product_query->have_posts()) : $product_query->the_post();
+
+                        // カスタムフィールド取得
+                        $image_url = get_field('product_image_url'); //製品画像URL
+                        $name01 = get_field('product_name01'); // 製品名01
+                        $name02 = get_field('product_name02'); // 製品名02
+                        $name03 = get_field('product_name03'); // 製品名03
+                        $product_url = get_permalink();
+
+                        // 全タクソノミーのタームを取得
+                        $kadai_terms_post = get_the_terms(get_the_ID(), 'kadai');
+                        $youto_terms_post = get_the_terms(get_the_ID(), 'youto');
+                        $zairyo_terms_post = get_the_terms(get_the_ID(), 'zairyo');
+                        $test_terms_post = get_the_terms(get_the_ID(), 'test');
+                        $bunrui_terms_post = get_the_terms(get_the_ID(), 'bunrui');
+
+                        // 全タグを1つの配列に統合
+                        $all_tags = array();
+                        if ($kadai_terms_post && !is_wp_error($kadai_terms_post)) {
+                            $all_tags = array_merge($all_tags, $kadai_terms_post);
+                        }
+                        if ($youto_terms_post && !is_wp_error($youto_terms_post)) {
+                            $all_tags = array_merge($all_tags, $youto_terms_post);
+                        }
+                        if ($zairyo_terms_post && !is_wp_error($zairyo_terms_post)) {
+                            $all_tags = array_merge($all_tags, $zairyo_terms_post);
+                        }
+                        if ($test_terms_post && !is_wp_error($test_terms_post)) {
+                            $all_tags = array_merge($all_tags, $test_terms_post);
+                        }
+                        if ($bunrui_terms_post && !is_wp_error($bunrui_terms_post)) {
+                            $all_tags = array_merge($all_tags, $bunrui_terms_post);
+                        }
+                ?>
+
+                <a href="<?php echo esc_url($product_url); ?>" target="_blank" rel="noopener noreferrer" class="product-card_2test">
+                    <div>
+                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($name02); ?>">
+                        <div class="product-card-productname_2test">
+                            <p><?php echo esc_html($name01); ?><br><?php echo esc_html($name02); ?><br><?php echo esc_html($name03); ?></p>
+                        </div>
+                        <div class="product-info-product_2test">
+                            <div class="product-tags">
+                                <?php if (!empty($all_tags)) : ?>
+                                    <?php foreach ($all_tags as $tag) : ?>
+                                        <span class="product-tag-product"><?php echo esc_html($tag->name); ?></span>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
                             </div>
-                        </a>
-                    </li>
-                    <?php
-                    }
-                    wp_rest_postdata();
-                    ?>
-                </ul>
-            </div>
-            <?php
-        }
-        ?>
-        </div>
-    </section>
+                        </div>
+                    </div>
+                </a>
 
-    <?php wp_rest_query(); ?>
-    
-    
-            
-        <!-- testここまで -->
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                else :
+                    // 製品がない場合のメッセージ
+                    echo '<p>この分類の製品はまだ登録されていません。</p>';
+                endif;
+                ?>
+            </div>
+        <?php endforeach; ?>
     </main>
 </div>
 <?php
-    get_footer('products'); 
+    get_footer('products');
 ?>
