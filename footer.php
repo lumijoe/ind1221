@@ -116,7 +116,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/megamenu.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/product-detail.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/product-top.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/product-search.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/products-search.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/top.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/common.js"></script>
 </body>
