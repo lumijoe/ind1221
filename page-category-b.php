@@ -83,250 +83,103 @@ get_header('product-cat-b');
             </div>
         </section>
         
-        
-        
-        <!-- <section class="category-list">
-            <div class="section-header_2test">
-                <h2>製品カテゴリー</h2>
-                <span class="toggle-icon_2test"></span>
-            </div>
-            <div class="accordion-content_2test">
-                <h3>切削・加工</h3>
-                <ul>
-                    <li><a href="/products/category-a/a1/product1.html">製品B-1-1</a></li>
-                    <li><a href="/products/category-a/a1/product2.html">製品B-1-2</a></li>
-                    <li><a href="/products/category-a/a1/product3.html">製品B-1-3</a></li>
-                </ul>
-                <h3>研磨・研削</h3>
-                <ul>
-                    <li><a href="/products/category-a/a2/product1.html">製品B-2-1</a></li>
-                    <li><a href="/products/category-a/a2/product2.html">製品B-2-2</a></li>
-                    <li><a href="/products/category-a/a2/product3.html">製品B-2-3</a></li>
-                </ul>
-                <h3>光学部品</h3>
-                <ul>
-                    <li><a href="/products/category-a/a3/product1.html">製品B-3-1</a></li>
-                    <li><a href="/products/category-a/a3/product2.html">製品B-3-2</a></li>
-                    <li><a href="/products/category-a/a3/product3.html">製品B-3-3</a></li>
-                </ul>
-            </div>
-        </section> -->
-
-        
     </aside>
 
     <!-- メインコンテンツ -->
     <main>
-        <!-- B-1製品群 -->
-        <h4>切削・加工</h4>
-        <div class="product-grid_2test">
-            <!-- B-1製品群 -->
-                <a href="<?php echo esc_url(home_url()); ?>/category-b/b1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1712003752927-d4d14921f96a?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>切削<br>B-1-1<br>B11式ABCDEF</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">脱炭素化</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b1-2/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div >
-                    <img src="https://images.unsplash.com/photo-1655562693681-ee2a0a81db88?auto=format&fit=crop&q=80" alt="製品A-1-2">
-                    <div class="product-card-productname_2test">
-                        <p>切削<br>B-1-2<br>B12式GHIJK</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">現場改善</span>
-                            <span class="product-tag-product">ろう付け</span>
-                            <span class="product-tag-product">金属</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <?php
+        // 製品グループ（切削・加工、研磨・研削、光学部品）を指定順で表示
+        $product_group_slugs = array('sessakukakou', 'kenmakensaku', 'kougakubuhin');
+        
+        foreach ($product_group_slugs as $group_slug) :
+            // スラッグから該当するタームを取得
+            $group_term = get_term_by('slug', $group_slug, 'bunrui');
             
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b1-3/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1703777607612-3b6b210c3adf?auto=format&fit=crop&q=80" alt="製品A-1-3">
-                    <div class="product-card-productname_2test">
-                        <p>加工<br>B-1-3<br>B13式LMNOPQRS</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">リユース</span>
-                            <span class="product-tag-product">環境に配慮</span>
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">セラミックス</span>
-                            <span class="product-tag-product">洗浄</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b1-4/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1529255848089-c4e456d166e0?auto=format&fit=crop&q=80" alt="製品A-1-2">
-                    <div class="product-card-productname_2test">
-                        <p>加工<br>B-1-4<br>B14式TUVWXYZ</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">現場改善</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b1-5/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1625773084027-5ede6d300b25?auto=format&fit=crop&q=80" alt="製品A-1-3">
-                    <div class="product-card-productname_2test">
-                        <p>加工<br>B-1-5<br>B15式ABCDEFG</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">リユース</span>
-                            <span class="product-tag-product">環境に配慮</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- B-2製品群 -->
-        <h4>研磨・研削</h4>
-        <div class="product-grid_2test">
-            <!-- B-2製品群 -->
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b2-1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1597423497965-32b0da69bce3?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>研磨<br>B-2-1<br>B21式ABCDE</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">脱炭素化</span>
-                            <span class="product-tag-product">金属</span>
-                            <span class="product-tag-product">窒化</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b2-2/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1515630771457-09367d0ae038?auto=format&fit=crop&q=80" alt="製品A-1-2">
-                    <div class="product-card-productname_2test">
-                        <p>研磨<br>B-2-2<br>B22式FGHIJ</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">現場改善</span>
-                            <span class="product-tag-product">セラミックス</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b2-3/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1564182872950-978e194a05cd?auto=format&fit=crop&q=80" alt="製品A-1-3">
-                    <div class="product-card-productname_2test">
-                        <p>研削<br>B-2-3<br>B23式KLMNOPQRST</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">リユース</span>
-                            <span class="product-tag-product">環境に配慮</span>
-                            <span class="product-tag-product">金属</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- B-3製品群 -->
-        <h4>光学部品</h4>
-        <div class="product-grid_2test">
-            <!-- B-3製品群 -->
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b3-1/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1606814540563-5c02d62fd409?auto=format&fit=crop&q=80" alt="製品A-1-1">
-                    <div class="product-card-productname_2test">
-                        <p>光学部品<br>B-3-1<br>B31式UVWX</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">電化</span>
-                            <span class="product-tag-product">脱炭素化</span>
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">カーボン</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b3-2/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1651340675491-6fb0bfb5c4ea?auto=format&fit=crop&q=80" alt="製品A-1-2">
-                    <div class="product-card-productname_2test">
-                        <p>光学部品<br>B-3-2<br>B32式YZABCDE</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">現場改善</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
+            if (!$group_term || is_wp_error($group_term)) continue;
+        ?>
+            <h4><?php echo esc_html($group_term->name); ?></h4>
+            <div class="product-grid_2test">
+                <?php
+                $args = array(
+                    'post_type' => 'entry_product',
+                    'posts_per_page' => -1,
+                    'orderby' => 'date',
+                    'order' => 'DESC',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'bunrui',
+                            'field' => 'slug',
+                            'terms' => $group_slug
+                        )
+                    )
+                );
                 
-            <a href="<?php echo esc_url(home_url()); ?>/category-b/b3-3/product1.html" target="_blank" rel="noopener noreferrer" class="product-card_2test">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1722710070506-eb16da390855?auto=format&fit=crop&q=80" alt="製品A-1-3">
-                    <div class="product-card-productname_2test">
-                        <p>光学部品<br>B-3-3<br>B33式FGHIJKLMN</p>
-                    </div>
-                    <div class="product-info-product_2test">
-                        <div class="product-tags">
-                            <span class="product-tag-product">リユース</span>
-                            <span class="product-tag-product">環境に配慮</span>
-                            <span class="product-tag-product">IOT/ICT</span>
-                            <span class="product-tag-product">受託テスト</span>
-                            <span class="product-tag-product">工具・周辺機器</span>
+                $product_query = new WP_Query($args);
+                
+                if ($product_query->have_posts()) :
+                    while ($product_query->have_posts()) : $product_query->the_post();
+                        
+                        // カスタムフィールド取得
+                        $image_url = get_field('product_image_url'); //製品画像URL
+                        $name01 = get_field('product_name01'); // 製品名01
+                        $name02 = get_field('product_name02'); // 製品名02
+                        $name03 = get_field('product_name03'); // 製品名03
+                        $product_url = get_permalink();
+                        
+                        // 全タクソノミーのタームを取得
+                        $kadai_terms_post = get_the_terms(get_the_ID(), 'kadai');
+                        $youto_terms_post = get_the_terms(get_the_ID(), 'youto');
+                        $zairyo_terms_post = get_the_terms(get_the_ID(), 'zairyo');
+                        $test_terms_post = get_the_terms(get_the_ID(), 'test');
+                        $bunrui_terms_post = get_the_terms(get_the_ID(), 'bunrui');
+                        
+                        // 全タグを1つの配列に統合
+                        $all_tags = array();
+                        if ($kadai_terms_post && !is_wp_error($kadai_terms_post)) {
+                            $all_tags = array_merge($all_tags, $kadai_terms_post);
+                        }
+                        if ($youto_terms_post && !is_wp_error($youto_terms_post)) {
+                            $all_tags = array_merge($all_tags, $youto_terms_post);
+                        }
+                        if ($zairyo_terms_post && !is_wp_error($zairyo_terms_post)) {
+                            $all_tags = array_merge($all_tags, $zairyo_terms_post);
+                        }
+                        if ($test_terms_post && !is_wp_error($test_terms_post)) {
+                            $all_tags = array_merge($all_tags, $test_terms_post);
+                        }
+                        if ($bunrui_terms_post && !is_wp_error($bunrui_terms_post)) {
+                            $all_tags = array_merge($all_tags, $bunrui_terms_post);
+                        }
+                ?>
+                
+                <a href="<?php echo esc_url($product_url); ?>" target="_blank" rel="noopener noreferrer" class="product-card_2test">
+                    <div>
+                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($name02); ?>">
+                        <div class="product-card-productname_2test">
+                            <p><?php echo esc_html($name01); ?><br><?php echo esc_html($name02); ?><br><?php echo esc_html($name03); ?></p>
+                        </div>
+                        <div class="product-info-product_2test">
+                            <div class="product-tags">
+                                <?php if (!empty($all_tags)) : ?>
+                                    <?php foreach ($all_tags as $tag) : ?>
+                                        <span class="product-tag-product"><?php echo esc_html($tag->name); ?></span>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+                
+                <?php 
+                    endwhile;
+                    wp_reset_postdata();
+                else :
+                    // 製品がない場合のメッセージ
+                    echo '<p>この分類の製品はまだ登録されていません。</p>';
+                endif;
+                ?>
+            </div>
+        <?php endforeach; ?>
     </main>
 </div>
 <?php
